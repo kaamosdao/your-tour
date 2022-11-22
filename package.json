@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/kaamosdao/your-tour#readme",
   "devDependencies": {
+    "@squoosh/lib": "^0.4.0",
     "autoprefixer": "^10.4.13",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.2",
     "html-webpack-plugin": "^5.5.0",
+    "image-minimizer-webpack-plugin": "^3.8.1",
     "mini-css-extract-plugin": "^2.7.0",
     "postcss": "^8.4.19",
     "postcss-loader": "^7.0.1",

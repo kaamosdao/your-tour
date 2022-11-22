@@ -1,8 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const CopyPlugin = require('copy-webpack-plugin');
-// const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 
@@ -28,14 +28,14 @@ module.exports = {
       template: './src/index.html',
     }),
     new MiniCssExtractPlugin(),
-    // new CopyPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, 'src/img'),
-    //       to: path.resolve(__dirname, 'dist/public/src/img'),
-    //     },
-    //   ],
-    // }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/img'),
+          to: path.resolve(__dirname, 'dist/public/src/img'),
+        },
+      ],
+    }),
   ],
   module: {
     rules: [
@@ -64,6 +64,13 @@ module.exports = {
           filename: 'src/fonts/[name][ext]',
         },
       },
+      {
+        test: /(backgound-village).*\.(jpg)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'src/img/backgound-village/[name][ext]',
+        },
+     }
     //   {
     //     test: /\.(png|jpg|gif|svg)$/,
     //     type: 'asset/resource',
@@ -73,27 +80,40 @@ module.exports = {
     //  }
     ],
   },
-  // optimization: {
-  //   minimizer: [
-  //     new ImageMinimizerPlugin({
-  //       test: /\.(jpe?g|png|)$/i,
-  //       minimizer: {
-  //         implementation: ImageMinimizerPlugin.squooshMinify,
-  //         options: {
-  //           encodeOptions: {
-  //             mozjpeg: {
-  //               quality: 100,
-  //             },
-  //             webp: {
-  //               lossless: 1,
-  //             },
-  //             avif: {
-  //               cqLevel: 0,
-  //             },
-  //           },
-  //         },
-  //       },
-  //     }),
-  //   ],
-  // },
+  optimization: {
+    minimizer: [
+      new ImageMinimizerPlugin({
+        test: /\.(jpe?g|png|)$/i,
+        minimizer: {
+          implementation: ImageMinimizerPlugin.squooshMinify,
+          options: {
+            encodeOptions: {
+              mozjpeg: {
+                quality: 100,
+              },
+              webp: {
+                lossless: 1,
+              },
+              avif: {
+                cqLevel: 0,
+              },
+            },
+          },
+        },
+        generator: [
+          {
+            type: "asset",
+            implementation: ImageMinimizerPlugin.squooshGenerate,
+            options: {
+              encodeOptions: {
+                webp: {
+                  quality: 90,
+                },
+              },
+            },
+          },
+        ],
+      }),
+    ],
+  },
 };
