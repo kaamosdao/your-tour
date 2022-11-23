@@ -1,7 +1,7 @@
 @import "../global/variables.scss";
 
 .tagline {
-  width: 610px;
+  width: 620px;
   text-align: center;
   color: $white;
 
@@ -15,9 +15,13 @@
 }
 
 .tagline__title {
+  margin-top: 121px;
+  margin-bottom: 0;
   @include font(bold, 96px, 109%);
 
   @media (max-width: $tablet-width) {
+    margin-top: 119px;
+    margin-bottom: 0;
     // @include font(bold, 96px, 109%);
   }
 
@@ -28,10 +32,11 @@
 }
 
 .tagline__description {
+  margin-top: 52px;
   @include font(normal, 20px, 142%);
 
   @media (max-width: $tablet-width) {
-    // @include font(bold, 96px, 109%);
+    margin-top: 52px;
   }
 
   @media (max-width: $mobile-width) {
@@ -40,7 +45,7 @@
   }
 }
 
-.tagline__description br {
+.tagline__description br:first-child {
   display: none;
 
   @media (max-width: $tablet-width) {
@@ -52,13 +57,30 @@
   }
 }
 
+.tagline__description br:last-child {
+  display: block;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
 .tagline__button {
   width: 118px;
   min-height: 34px;
+  margin-top: 28px;
   @include font(normal, 17px, 142%);
   background-color: $white;
   border: none;
   border-radius: 10px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 28px;
+  }
 
   @media (max-width: $mobile-width) {
     width: 114px;
