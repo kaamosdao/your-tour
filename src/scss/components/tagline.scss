@@ -1,0 +1,73 @@
+@import "../global/variables.scss";
+
+.tagline {
+  width: 610px;
+  text-align: center;
+  color: $white;
+
+  @media (max-width: $tablet-width) {
+    width: 610px;
+  }
+  
+  @media (max-width: $mobile-width) {
+    width: 250px;
+  }
+}
+
+.tagline__title {
+  @include font(bold, 96px, 109%);
+
+  @media (max-width: $tablet-width) {
+    // @include font(bold, 96px, 109%);
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 52px;
+    @include font(bold, 34px, 112%);
+  }
+}
+
+.tagline__description {
+  @include font(normal, 20px, 142%);
+
+  @media (max-width: $tablet-width) {
+    // @include font(bold, 96px, 109%);
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 40px;
+    @include font(normal, 16px, 142%, 0.3px);
+  }
+}
+
+.tagline__description br {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.tagline__button {
+  width: 118px;
+  min-height: 34px;
+  @include font(normal, 17px, 142%);
+  background-color: $white;
+  border: none;
+  border-radius: 10px;
+
+  @media (max-width: $mobile-width) {
+    width: 114px;
+    min-height: 33px;
+    margin-top: 25px;
+    @include font(normal, 16px, 142%);
+  }
+}
+
+.tagline__button:hover {
+  cursor: pointer;
+}

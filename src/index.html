@@ -35,8 +35,21 @@
   <body>
     <header class="header">
       <nav class="header__navigation navigation">
-        <a class="header__logo" href="#">
-          <img src="src/img/svg-icons/yourtour.svg" alt="YourTour logo" />
+        <a class="navigation__logo" href="#">
+          <picture>
+            <source
+              media="(max-width: 360px)"
+              srcset="src/img/svg-icons/yourtour-mobile.svg"
+                width="133"
+                height="22"
+              />
+            <img
+              src="src/img/svg-icons/yourtour.svg"
+              alt="YourTour logo"
+              width="181"
+              height="30"
+            />
+          </picture>
         </a>
         <ul class="navigation__links">
           <li class="navigation__link">Туры</li>
@@ -44,7 +57,7 @@
           <li class="navigation__link">Отзывы</li>
           <li class="navigation__link">Истории</li>
         </ul>
-        <a href="tel:89999999999">+7 999 999 99 99</a>
+        <a class="navigation__phone" href="tel:89999999999">+7 999 999 99 99</a>
       </nav>
       <div class="header__tagline tagline">
         <h1 class="tagline__title">Идеальные путешествия существуют</h1>
@@ -52,7 +65,7 @@
           Идейные соображения высшего порядка, а<br />также рамки и место
           обучения кадров
         </p>
-        <button class="tagline__button">Найти тур</button>
+        <button class="tagline__button" type="button">Найти тур</button>
       </div>
     </header>
     <header class="header-fixed">

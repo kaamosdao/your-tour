@@ -1,0 +1,61 @@
+@import '../global/variables.scss';
+
+.navigation {
+  display: flex;
+  align-items: center;
+  min-width: 1168px;
+  min-height: 88px;
+  @include font(normal, 20px, 142%);
+  color: $white;
+
+  @media (max-width: $tablet-width) {
+    min-width: 910px;
+    // order: 2;
+    // margin-top: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-content: space-between;
+    min-width: 320px;
+    width: 320px;
+    @include font(normal, 16px, 142%);
+  }
+}
+
+.navigation__links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (max-width: $tablet-width) {
+    min-width: 910px;
+    // order: 2;
+    // margin-top: 18px;
+  }
+ 
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.navigation__logo {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  @media (max-width: $mobile-width) {
+    margin: 9px 0 0 0;
+  }
+}
+
+.navigation__phone {
+  margin: 0 0 0 auto;
+  padding: 0;
+  color: $white;
+  text-decoration: none;
+
+  @media (max-width: $mobile-width) {
+    margin: 5px 0 0 0;
+  }
+}
