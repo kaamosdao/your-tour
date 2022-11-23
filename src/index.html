@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Travel agency">
-    <meta name="keywords" content="travel, tours, tour, adventure, hitchhiking, hiking">
+    <meta name="description" content="Travel agency" />
+    <meta
+      name="keywords"
+      content="travel, tours, tour, adventure, hitchhiking, hiking"
+    />
     <title>YourTour</title>
     <link
       rel="preload"
@@ -33,7 +36,7 @@
     <header class="header">
       <nav class="header__navigation navigation">
         <a class="header__logo" href="#">
-          <img src="src/img/svg-icons/yourtour.svg" alt="YourTour logo">
+          <img src="src/img/svg-icons/yourtour.svg" alt="YourTour logo" />
         </a>
         <ul class="navigation__links">
           <li class="navigation__link">Туры</li>
@@ -45,14 +48,17 @@
       </nav>
       <div class="header__tagline tagline">
         <h1 class="tagline__title">Идеальные путешествия существуют</h1>
-        <p class="tagline__description">Идейные соображения высшего порядка, а<br />также рамки и место обучения кадров</p>
+        <p class="tagline__description">
+          Идейные соображения высшего порядка, а<br />также рамки и место
+          обучения кадров
+        </p>
         <button class="tagline__button">Найти тур</button>
       </div>
     </header>
     <header class="header-fixed">
       <nav class="header-fixed__navigation navigation-fixed">
         <a class="header-fixed__logo" href="#">
-          <img src="src/img/svg-icons/yourtour.svg" alt="YourTour logo">
+          <img src="src/img/svg-icons/yourtour.svg" alt="YourTour logo" />
         </a>
         <ul class="navigation-fixed_links">
           <li class="navigation-fixed_link">Туры</li>
@@ -63,7 +69,231 @@
         <a href="tel:89999999999">+7 999 999 99 99</a>
       </nav>
     </header>
-    <main class="main"></main>
+
+    <main class="main">
+      <section class="choose-tour">
+        <h1 class="choose-tour_title">Выбери свой тур</h1>
+        <ul class="choose-tour__nav">
+          <li class="choose-tour__nav-item">
+            <a class="choose-tour__nav-link" href="#">Популярные</a>
+          </li>
+          <li class="choose-tour__nav-item">
+            <a class="choose-tour__nav-link" href="#">Авторские</a>
+          </li>
+          <li class="choose-tour__nav-item">
+            <a class="choose-tour__nav-link" href="#">Походы</a>
+          </li>
+          <li class="choose-tour__nav-item">
+            <a class="choose-tour__nav-link" href="#">Сплавы</a>
+          </li>
+          <li class="choose-tour__nav-item">
+            <a class="choose-tour__nav-link" href="#">Велопрогулки</a>
+          </li>
+        </ul>
+        <ul class="choose-tour__links tour-cards">
+          <li class="tour-cards__item tour-card tour-card--car">
+            <div class="tour-card__body">
+              <h2 class="tour-card__title">Путешествие в горы</h2>
+              <p class="tour-card__price">от 80 000 руб</p>
+              <a class="tour-card__button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="tour-cards__item tour-card tour-card--sand">
+            <div class="tour-card__body">
+              <h2 class="tour-card__title">Путешествие в горы</h2>
+              <p class="tour-card__price">от 80 000 руб</p>
+              <a class="tour-card__button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="tour-cards__item tour-card tour-card--fjord">
+            <div class="tour-card__body">
+              <h2 class="tour-card__title">Путешествие в горы</h2>
+              <p class="tour-card__price">от 80 000 руб</p>
+              <a class="tour-card__button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="tour-cards__item tour-card tour-card--street">
+            <div class="tour-card__body">
+              <h2 class="tour-card__title">Путешествие в горы</h2>
+              <p class="tour-card__price">от 80 000 руб</p>
+              <a class="tour-card__button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="tour-cards__item tour-card tour-card--beach">
+            <div class="tour-card__body">
+              <h2 class="tour-card__title">Путешествие в горы</h2>
+              <p class="tour-card__price">от 80 000 руб</p>
+              <a class="tour-card__button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="tour-cards__item tour-card tour-card--lake">
+            <div class="tour-card__body">
+              <h2 class="tour-card__title">Путешествие в горы</h2>
+              <p class="tour-card__price">от 80 000 руб</p>
+              <a class="tour-card__button" href="#">Подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="construct-tour">
+        <h1 class="construct-tour__title">Собери свой тур</h1>
+        <p class="construct-tour__description">
+          Идейные соображения высшего порядка,<br />а также рамки и место
+          обучения кадров
+        </p>
+        <form action="" class="construct-tour__form form">
+          <fieldset class="form__inputs input-fields">
+            <legend class="input-fields__title visually-hidden">
+              Заполните поля
+            </legend>
+            <ul class="input-fields__list">
+              <li class="input-fields__item">
+                <label class="input-fields__label" for="name">Имя</label>
+                <input
+                  class="input-fields__input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Введите Ваше имя"
+                  required
+                />
+              </li>
+              <li class="input-fields__item">
+                <label
+                  class="input-fields__label visually-hidden"
+                  for="direction"
+                >
+                  Направление
+                </label>
+                <select
+                  class="input-fields__select"
+                  id="direction"
+                  name="direction"
+                >
+                  <option value="">Куда хотите ехать</option>
+                  <option value="popular">Магадан</option>
+                  <option value="expensive">Магадан</option>
+                  <option value="expensive">Магадан</option>
+                </select>
+              </li>
+              <li class="input-fields__item">
+                <label class="input-fields__label" for="email"> Email</label>
+                <input
+                  class="input-fields__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="example@mail.com"
+                  required
+                />
+              </li>
+              <li class="input-fields__item">
+                <label class="input-fields__label" for="phone"> Телефон </label>
+                <input
+                  class="input-fields__input"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+                  required
+                />
+              </li>
+              <li class="input-fields__item">
+                <label class="input-fields__label" for="dateFrom">
+                  Дата от
+                </label>
+                <input
+                  class="input-fields__input"
+                  type="text"
+                  name="dateFrom"
+                  id="dateFrom"
+                  placeholder="ДД.ММ.ГГГГ"
+                  required
+                />
+              </li>
+              <li class="input-fields__item">
+                <label class="input-fields__label" for="dateTo">
+                  Дата до
+                </label>
+                <input
+                  class="input-fields__input"
+                  type="text"
+                  name="dateTo"
+                  id="dateTo"
+                  placeholder="ДД.ММ.ГГГГ"
+                  required
+                />
+              </li>
+              <li class="input-fields__item">
+                <label class="input-fields__label" for="comment">
+                  Комментарий
+                </label>
+                <textarea
+                  class="input-fields__input"
+                  name="comment"
+                  id="comment"
+                ></textarea>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__age age-confirm">
+            <legend class="age-confirm__title">
+              Вам есть 18 лет?
+            </legend>
+            <ul class="age-confirm__list age-confirm-list">
+              <li class="age-confirm-list__item">
+                <label class="control-radio">
+                  <input
+                    class="visually-hidden control-radio__input"
+                    type="radio"
+                    name="age-confirmation"
+                    value="yep"
+                  />
+                  <span class="control-radio__mark"></span>
+                  <span class="control-radio__label">Да</span>
+                </label>
+              </li>
+              <li class="age-confirm-list__item">
+                <label class="control-radio">
+                  <input
+                    class="visually-hidden control-radio-input"
+                    type="radio"
+                    name="age-confirmation"
+                    value="nope"
+                  />
+                  <span class="control-radio__mark"></span>
+                  <span class="control-radio__label">Нет</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__license license-confirm">
+            <legend class="license-confirm__title visually-hidden">
+              Принятие условий Лицензионного договора.
+            </legend>
+              <label class="control-checkbox">
+                <input
+                  class="visually-hidden control-checkbox__input"
+                  type="checkbox"
+                  name="yep"
+                />
+                <span class="control-checkbox__mark"></span>
+                <span class="control-checkbox__label">
+                  Нажимая кнопку, я принимаю условия <a class="license-confirm__link" href="#">Лицензионного договора</a>
+                </span>
+              </label>
+          </fieldset>
+
+          <div class="form__buttons">
+            <button class="button-find" type="submit">Найти тур</button>
+            <button class="button-clear" type="reset">Сбросить</button>
+          </div>
+        </form>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>
