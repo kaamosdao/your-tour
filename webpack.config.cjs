@@ -100,19 +100,19 @@ module.exports = {
             },
           },
         },
-        generator: [
-          {
-            type: "asset",
-            implementation: ImageMinimizerPlugin.squooshGenerate,
-            options: {
-              encodeOptions: {
-                webp: {
-                  quality: 90,
-                },
-              },
-            },
-          },
-        ],
+        // generator: [
+        //   {
+        //     type: "asset",
+        //     implementation: ImageMinimizerPlugin.squooshGenerate,
+        //     options: {
+        //       encodeOptions: {
+        //         webp: {
+        //           quality: 90,
+        //         },
+        //       },
+        //     },
+        //   },
+        // ],
       }),
     ],
   },
