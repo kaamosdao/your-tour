@@ -17,7 +17,7 @@
 .tagline__title {
   margin-top: 121px;
   margin-bottom: 0;
-  @include font(bold, 96px, 109%);
+  @include font(bold, 96px, 109%, 0.02em);
 
   @media (max-width: $tablet-width) {
     margin-top: 119px;
@@ -27,7 +27,7 @@
 
   @media (max-width: $mobile-width) {
     margin-top: 52px;
-    @include font(bold, 34px, 112%);
+    @include font(bold, 34px, 112%, 0.02em);
   }
 }
 
@@ -41,7 +41,7 @@
 
   @media (max-width: $mobile-width) {
     margin-top: 40px;
-    @include font(normal, 16px, 142%, 0.3px);
+    @include font(normal, 16px, 142%);
   }
 }
 
