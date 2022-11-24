@@ -25,9 +25,6 @@
 .tour-card__button {
   justify-self: flex-end;
   margin-top: auto;
-  @include font(bold, 23px, 122%);
-  color: $white;
-  text-decoration: none
 }
 
 .tour-card--car {

@@ -1,0 +1,29 @@
+@import '../global/variables.scss';
+
+.button-more {
+  position: relative;
+  width: 199px;
+  height: 42px;
+  padding: 7px 59px 7px 20px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  
+  @include font(bold, 23px, 122%);
+  color: $white;
+  text-decoration: none
+}
+
+.button-more::after {
+  position: absolute;
+  top: 13px;
+  right: 21px;
+  content: '';
+  width: 22px;
+  height: 16px;
+  background-image: url('../../src/img/svg-icons/arrow.svg')
+}
+
+.button-more:hover {
+  background-color: $green400;
+  cursor: pointer;
+}
