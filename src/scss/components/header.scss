@@ -16,17 +16,12 @@
     width: 100%;
     min-height: 831px;
     background-image: url('../../src/img/backgound-village/background-village-tablet.jpg');
-    // order: 2;
-    // margin-top: 18px;
-
-    // @include font(bold, 20px, 30px);
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     min-height: 488px;
     background-image: url('../../src/img/backgound-village/background-village-mobile.jpg');
-    // @include font(bold, 24px, 30px);
   }
 }
 

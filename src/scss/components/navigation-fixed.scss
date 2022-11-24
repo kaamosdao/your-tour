@@ -1,27 +1,24 @@
 @import '../global/variables.scss';
 
-.navigation {
+.navigation-fixed {
   display: flex;
   align-items: center;
   width: 1168px;
-  min-height: 88px;
   @include font(normal, 20px, 142%);
-  color: $white;
+  color: $black;
 
   @media (max-width: $tablet-width) {
     width: 910px;
-
   }
 
   @media (max-width: $mobile-width) {
     justify-content: space-between;
-    min-width: 320px;
     width: 320px;
     @include font(normal, 16px, 142%);
   }
 }
 
-.navigation__links {
+.navigation-fixed__links {
   display: flex;
   min-width: 470px;
   margin: 0 0 0 182px;
@@ -38,7 +35,7 @@
   }
 }
 
-.navigation__link:not(:first-child) {
+.navigation-fixed__link:not(:first-child) {
   margin-left: 51px;
 
   @media (max-width: $tablet-width) {
@@ -46,7 +43,7 @@
   }
 }
 
-.navigation__logo {
+.navigation-fixed__logo {
   margin: 9px 0 0 0;
   padding: 0;
   text-decoration: none;
@@ -60,14 +57,14 @@
   }
 }
 
-.navigation__logo img {
-  fill: $white;
+.navigation-fixed__logo img {
+  fill: $black;
 }
 
-.navigation__phone {
+.navigation-fixed__phone {
   margin: 0 0 0 auto;
   padding: 0;
-  color: $white;
+  color: $black;
   text-decoration: none;
 
   @media (max-width: $mobile-width) {

@@ -70,16 +70,29 @@
     </header>
     <header class="header-fixed">
       <nav class="header-fixed__navigation navigation-fixed">
-        <a class="header-fixed__logo" href="#">
-          <img src="src/img/svg-icons/yourtour.svg" alt="YourTour logo" />
+        <a class="navigation-fixed__logo" href="#">
+          <picture>
+            <source
+              media="(max-width: 360px)"
+              srcset="src/img/svg-icons/yourtour-mobile.svg"
+                width="133"
+                height="22"
+              />
+            <img
+              src="src/img/svg-icons/yourtour.svg"
+              alt="YourTour logo"
+              width="181"
+              height="32"
+            />
+          </picture>
         </a>
-        <ul class="navigation-fixed_links">
-          <li class="navigation-fixed_link">Туры</li>
-          <li class="navigation-fixed_link">Создать тур</li>
-          <li class="navigation-fixed_link">Отзывы</li>
-          <li class="navigation-fixed_link">Истории</li>
+        <ul class="navigation-fixed__links">
+          <li class="navigation-fixed__link">Туры</li>
+          <li class="navigation-fixed__link">Создать тур</li>
+          <li class="navigation-fixed__link">Отзывы</li>
+          <li class="navigation-fixed__link">Истории</li>
         </ul>
-        <a href="tel:89999999999">+7 999 999 99 99</a>
+        <a class="navigation-fixed__phone" href="tel:89999999999">+7 999 999 99 99</a>
       </nav>
     </header>
 

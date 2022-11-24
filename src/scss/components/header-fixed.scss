@@ -1,0 +1,20 @@
+@import '../global/variables.scss';
+
+.header-fixed {
+  position: fixed;
+  display: none;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  min-height: 88px;
+  background-color: rgba(243, 239, 232, 0.6);
+  backdrop-filter: blur(27px);
+}
+
+.header-fixed__navigation {
+  margin: 0 auto;
+}
+
+.header-fixed__tagline {
+  margin: 0 auto;
+}
