@@ -70,14 +70,14 @@ module.exports = {
         generator: {
           filename: 'src/img/backgound-village/[name][ext]',
         },
-     }
-    //   {
-    //     test: /\.(png|jpg|gif|svg)$/,
-    //     type: 'asset/resource',
-    //     generator: {
-    //       filename: 'src/img/[name][ext]',
-    //     },
-    //  }
+      },
+      //   {
+      //     test: /\.(png|jpg|gif|svg)$/,
+      //     type: 'asset/resource',
+      //     generator: {
+      //       filename: 'src/img/[name][ext]',
+      //     },
+      //  }
     ],
   },
   optimization: {
