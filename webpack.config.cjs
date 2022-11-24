@@ -71,6 +71,13 @@ module.exports = {
           filename: 'src/img/backgound-village/[name][ext]',
         },
       },
+      {
+        test: /(choose-tour-images).*\.(jpg)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'src/img/choose-tour-images/[name][ext]',
+        },
+      },
       //   {
       //     test: /\.(png|jpg|gif|svg)$/,
       //     type: 'asset/resource',
