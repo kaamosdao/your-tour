@@ -12,10 +12,6 @@
   @include font(bold, 59px, 124%);
   color: $black;
 
-  @media (max-width: $tablet-width) {
-
-  }
-
   @media (max-width: $mobile-width) {
   }
 }
@@ -27,10 +23,6 @@
   @include font(bold, 23px, 122%);
   color: $black;
   list-style-type: none;
-
-  @media (max-width: $tablet-width) {
-
-  }
 
   @media (max-width: $mobile-width) {
   }
@@ -80,4 +72,11 @@
   margin: 104px 0 0 0;
   padding: 0;
   list-style-type: none;
+
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 18px;
+  }
 }
