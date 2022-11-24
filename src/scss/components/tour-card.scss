@@ -6,7 +6,7 @@
   flex-direction: column;
   width: 370px;
   min-height: 531px;
-  padding: 50px;
+  padding: 50px 50px 41px 50px;
   box-sizing: border-box;
   color: $white;
   border-radius: 50px
@@ -23,8 +23,7 @@
 }
 
 .tour-card__button {
-  justify-self: flex-end;
-  margin-top: auto;
+  margin: auto 0 0 -20px;
 }
 
 .tour-card--car {
@@ -48,5 +47,5 @@
 }
 
 .tour-card--lake {
-  @include backgroundImage('../../src/img/choose-tour-images/car-desktop.jpg');
+  @include backgroundImage('../../src/img/choose-tour-images/lake-desktop.jpg');
 }

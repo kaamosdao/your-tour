@@ -15,12 +15,12 @@
 
 .button-more::after {
   position: absolute;
-  top: 13px;
+  top: 11px;
   right: 21px;
-  content: '';
   width: 22px;
   height: 16px;
-  background-image: url('../../src/img/svg-icons/arrow.svg')
+  background-image: url('../../src/img/svg-icons/arrow.svg');
+  content: '';
 }
 
 .button-more:hover {
