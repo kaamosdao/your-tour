@@ -14,16 +14,31 @@
   @media (max-width: $tablet-width) {
     width: 450px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 318px;
+    min-height: 318px;
+    padding: 25px 25px 13px 25px;
+    border-radius: 20px;
+  }
 }
 
 .tour-card__title {
   margin: 0;
   @include font(500, 35px, 122%);
+
+  @media (max-width: $mobile-width) {
+    @include font(bold, 23px, 120%, 0.04em);
+  }
 }
 
 .tour-card__price{
   margin-top: 16px;
   @include font(normal, 17px, 142%);
+
+  @media (max-width: $mobile-width) {
+    @include font(normal, 16px, 142%);
+  }
 }
 
 .tour-card__button {
@@ -36,6 +51,10 @@
   @media (max-width: $tablet-width) {
     @include backgroundImage('../../src/img/choose-tour-images/car-tablet.jpg');
   }
+
+  @media (max-width: $mobile-width) {
+    @include backgroundImage('../../src/img/choose-tour-images/car-mobile.jpg');
+  }
 }
 
 .tour-card--sand {
@@ -43,6 +62,10 @@
 
   @media (max-width: $tablet-width) {
     @include backgroundImage('../../src/img/choose-tour-images/sand-tablet.jpg');
+  }
+
+  @media (max-width: $mobile-width) {
+    @include backgroundImage('../../src/img/choose-tour-images/sand-mobile.jpg');
   }
 }
 
@@ -52,6 +75,10 @@
   @media (max-width: $tablet-width) {
     @include backgroundImage('../../src/img/choose-tour-images/fjord-tablet.jpg');
   }
+
+  @media (max-width: $mobile-width) {
+    @include backgroundImage('../../src/img/choose-tour-images/fjord-mobile.jpg');
+  }
 }
 
 .tour-card--street {
@@ -59,6 +86,10 @@
 
   @media (max-width: $tablet-width) {
     @include backgroundImage('../../src/img/choose-tour-images/street-tablet.jpg');
+  }
+
+  @media (max-width: $mobile-width) {
+    @include backgroundImage('../../src/img/choose-tour-images/street-mobile.jpg');
   }
 }
 
@@ -68,6 +99,10 @@
   @media (max-width: $tablet-width) {
     @include backgroundImage('../../src/img/choose-tour-images/beach-tablet.jpg');
   }
+
+  @media (max-width: $mobile-width) {
+    @include backgroundImage('../../src/img/choose-tour-images/beach-mobile.jpg');
+  }
 }
 
 .tour-card--lake {
@@ -75,5 +110,9 @@
 
   @media (max-width: $tablet-width) {
     @include backgroundImage('../../src/img/choose-tour-images/lake-tablet.jpg');
+  }
+
+  @media (max-width: $mobile-width) {
+    @include backgroundImage('../../src/img/choose-tour-images/lake-mobile.jpg');
   }
 }

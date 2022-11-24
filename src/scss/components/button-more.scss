@@ -10,7 +10,11 @@
   
   @include font(bold, 23px, 122%);
   color: $white;
-  text-decoration: none
+  text-decoration: none;
+
+  @media (max-width: $mobile-width) {
+    @include font(bold, 16px, 142%);
+  }
 }
 
 .button-more::after {
@@ -21,9 +25,18 @@
   height: 16px;
   background-image: url('../../src/img/svg-icons/arrow.svg');
   content: '';
+
+  @media (max-width: $mobile-width) {
+    top: 9px;
+    right: 57px;
+  }
 }
 
 .button-more:hover {
   background-color: $green400;
   cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    background: none;
+  }
 }

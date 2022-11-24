@@ -13,6 +13,8 @@
   color: $black;
 
   @media (max-width: $mobile-width) {
+    margin-top: 75px;
+    @include font(bold, 34px, 112%, 0.02em);
   }
 }
 
@@ -25,11 +27,32 @@
   list-style-type: none;
 
   @media (max-width: $mobile-width) {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-top: 21px;
+    @include font(bold, 16px, 142%);
   }
 }
 
 .choose-tour__nav-item:not(:first-child) {
   margin-left: 30px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 10px;
+  }
+}
+
+.choose-tour__nav-item:nth-child(3n + 4) {
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
+}
+
+.choose-tour__nav-item {
+  @media (max-width: $mobile-width) {
+    margin-top: 10px;
+  }
 }
 
 .choose-tour__nav-link {
@@ -62,6 +85,10 @@
   height: 2px;
   background-color: $orange200;
   content: "";
+
+  @media (max-width: $mobile-width) {
+    bottom: -2px;
+  }
 }
 
 .choose-tour__links {
@@ -78,5 +105,11 @@
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(3, max-content);
     grid-gap: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
+    margin-top: 49px;
   }
 }
