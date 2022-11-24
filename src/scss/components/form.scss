@@ -1,0 +1,10 @@
+@import '../global/variables.scss';
+
+.form {
+  width: 1170px;
+  height: 986px;
+  padding: 70px;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 50px;
+}

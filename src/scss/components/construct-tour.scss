@@ -1,0 +1,43 @@
+@import '../global/variables.scss';
+
+.construct-tour {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.construct-tour__title {
+  margin: 135px 0 0 0;
+  @include font(bold, 59px, 124%);
+  color: $black;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 75px;
+    @include font(bold, 34px, 112%, 0.02em);
+  }
+}
+
+.construct-tour__description {
+  margin: 30px 0 0 0;
+  @include font(normal, 20px, 142%);
+  color: $black;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+    @include font(normal, 16px, 142%, 0.02em);
+  }
+}
+
+.construct-tour__description br {
+  display: block;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.construct-tour__form {
+  margin: 100px 0 0 0;
+}

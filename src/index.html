@@ -153,12 +153,12 @@
       <section class="construct-tour">
         <h1 class="construct-tour__title">Собери свой тур</h1>
         <p class="construct-tour__description">
-          Идейные соображения высшего порядка,<br />а также рамки и место
+          Идейные соображения высшего порядка, <br />а также рамки и место
           обучения кадров
         </p>
         <form action="" class="construct-tour__form form">
           <fieldset class="form__inputs input-fields">
-            <legend class="input-fields__title visually-hidden">
+            <legend class="visually-hidden">
               Заполните поля
             </legend>
             <ul class="input-fields__list">
@@ -173,9 +173,9 @@
                   required
                 />
               </li>
-              <li class="input-fields__item">
+              <li class="input-fields__item input-fields__item--select">
                 <label
-                  class="input-fields__label visually-hidden"
+                  class="input-fields__label"
                   for="direction"
                 >
                   Направление
@@ -184,15 +184,16 @@
                   class="input-fields__select"
                   id="direction"
                   name="direction"
+                  required
                 >
-                  <option value="">Куда хотите ехать</option>
-                  <option value="popular">Магадан</option>
-                  <option value="expensive">Магадан</option>
-                  <option value="expensive">Магадан</option>
+                  <option value="" selected disabled hidden>Куда хотите ехать</option>
+                  <option value="popular">Gravity Falls</option>
+                  <option value="expensive">Hogwarts</option>
+                  <option value="expensive">To the Moon</option>
                 </select>
               </li>
               <li class="input-fields__item">
-                <label class="input-fields__label" for="email"> Email</label>
+                <label class="input-fields__label" for="email">Email</label>
                 <input
                   class="input-fields__input"
                   type="email"
@@ -203,7 +204,7 @@
                 />
               </li>
               <li class="input-fields__item">
-                <label class="input-fields__label" for="phone"> Телефон </label>
+                <label class="input-fields__label" for="phone">Телефон</label>
                 <input
                   class="input-fields__input"
                   type="tel"
@@ -239,12 +240,12 @@
                   required
                 />
               </li>
-              <li class="input-fields__item">
+              <li class="input-fields__item input-fields__item--textarea">
                 <label class="input-fields__label" for="comment">
                   Комментарий
                 </label>
                 <textarea
-                  class="input-fields__input"
+                  class="input-fields__textarea"
                   name="comment"
                   id="comment"
                 ></textarea>
