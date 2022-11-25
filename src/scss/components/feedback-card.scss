@@ -16,11 +16,30 @@
     width: 450px;
     min-height: 841px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 318px;
+    min-height: 408px;
+    padding: 20px 21px 20px 20px;
+    border-radius: 20px;
+  }
 }
 
 .feedback-card__text {
   margin: 0;
   @include font(bold, 23px, 122%);
+
+  @media (max-width: $mobile-width) {
+    @include font(bold, 16px, 144%);
+  }
+}
+
+.feedback-card__text:not(:first-child) {
+  margin: 28px 0 70px 0;
+
+  @media (max-width: $mobile-width) {
+    margin: 23px 0 40px 0;
+  }
 }
 
 .feedback-card__user {

@@ -35,6 +35,14 @@
   }
 }
 
+.feedback__description br {
+  display: block;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
 .feedback__list {
   display: flex;
   width: 1170px;
@@ -45,6 +53,12 @@
   @media (max-width: $tablet-width) {
     width: 918px;
   }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    margin: 50px 0 0 0;
+    width: 318px;
+  }
 }
 
 .feedback__item:not(:first-child) {
@@ -52,5 +66,9 @@
 
   @media (max-width: $tablet-width) {
     margin-left: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 18px 0 0 0;
   }
 }
