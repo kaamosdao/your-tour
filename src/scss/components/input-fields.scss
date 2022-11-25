@@ -16,8 +16,14 @@
   list-style-type: none;
 
   @media (max-width: $tablet-width) {
-    grid-template-columns: repeat(2, 389px);
     column-gap: 20px;
+    grid-template-columns: repeat(2, 389px);
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 279px;
+    grid-template-rows: repeat(7, max-content);
+    row-gap: 30px;
   }
 }
 
@@ -44,6 +50,11 @@
   background-image: url('../../src/img/svg-icons/select-arrow.svg');
   background-repeat: no-repeat;
   content: '';
+
+  @media (max-width: $mobile-width) {
+    top: 49px;
+    right: 15px;
+  }
 }
 
 .input-fields__input,
@@ -57,6 +68,12 @@
   background-color: $beige100;
   border: 1px solid $beige200;
   border-radius: 10px;
+
+  @media (max-width: $mobile-width) {
+    height: 44px;
+    padding: 10px;
+    @include font(normal, 16px, 142%);
+  }
 }
 
 .input-fields__input::placeholder {
@@ -77,16 +94,17 @@
 
 
 .input-fields__select {
+  color: $black;
   appearance: none;
+
+  @media (max-width: $mobile-width) {
+    height: 46px;
+  }
 }
 
 .input-fields__select:hover {
   background-color: $beige200;
   cursor: pointer;
-}
-
-.input-fields__select {
-  color: $black;
 }
 
 .input-fields__select:invalid {
@@ -108,6 +126,12 @@
   background-color: $beige100;
   border: 1px solid $beige200;
   border-radius: 10px;
+
+  @media (max-width: $mobile-width) {
+    height: 132px;
+    padding: 10px;
+    @include font(normal, 16px, 142%);
+  }
 }
 
 .input-fields__textarea:hover {
@@ -123,4 +147,9 @@
 
 .input-fields__label {
   margin-bottom: 7px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 8px;
+    @include font(normal, 16px, 142%);
+  }
 }

@@ -13,6 +13,13 @@
     height: 966px;
     padding: 60px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 318px;
+    height: 1110px;
+    padding: 20px 20px 40px;
+    border-radius: 30px;
+  }
 }
 
 .form__inputs {
@@ -21,6 +28,10 @@
 
 .form__age {
   margin: 33px 0 0 0;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 28px;
+  }
 }
 
 .form__license {
@@ -30,6 +41,10 @@
 .form__buttons {
   margin: 33px 0 0 0;
   text-align: start;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+  }
 }
 
 .form__buttons__button-find {
@@ -41,6 +56,13 @@
   background: $green400;
   border: none;
   border-radius: 10px;
+
+  @media (max-width: $mobile-width) {
+    min-width: 134px;
+    min-height: 47px;
+    padding: 12px;
+    @include font(normal, 16px, 142%);
+  }
 }
 
 .form__buttons__button-clear {
@@ -53,4 +75,12 @@
   background: $green100;
   border: none;
   border-radius: 10px;
+
+  @media (max-width: $mobile-width) {
+    min-width: 134px;
+    min-height: 47px;
+    margin-left: 5px;
+    padding: 12px;
+    @include font(normal, 16px, 142%);
+  }
 }
