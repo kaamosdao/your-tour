@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: 415px 75px;
   grid-template-rows: repeat(2, max-content);
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 295px 75px;
+  }
 }
 
 .user__name {
@@ -19,6 +23,10 @@
   padding: 0;
   @include font(normal, 17px, 142%, -0.01em);
   color: $grey300;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 5px;
+  }
 }
 
 .user__avatar {

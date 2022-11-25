@@ -11,6 +11,11 @@
   background-color: $beige200;
   border: none;
   border-radius: 50px;
+
+  @media (max-width: $tablet-width) {
+    width: 450px;
+    min-height: 841px;
+  }
 }
 
 .feedback-card__text {
