@@ -90,5 +90,11 @@
 }
 
 .tagline__button:hover {
+  color: $white;
+  background-color: $orange200;
   cursor: pointer;
+}
+
+.tagline__button:active {
+  background-color: $orange100;
 }

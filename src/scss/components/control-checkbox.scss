@@ -66,6 +66,16 @@
 }
 
 .control-checkbox__link {
+  position: relative;
   color: $black;
   text-decoration: none;
+}
+
+.control-checkbox__link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.control-checkbox__link:active {
+  color: $green400;
 }

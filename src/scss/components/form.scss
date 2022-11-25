@@ -53,7 +53,7 @@
   padding: 15px;
   @include font(normal, 20px, 142%);
   color: $white;
-  background: $green400;
+  background-color: $green400;
   border: none;
   border-radius: 10px;
 
@@ -65,6 +65,15 @@
   }
 }
 
+.form__buttons__button-find:hover {
+  background-color: $green300;
+  cursor: pointer;
+}
+
+.form__buttons__button-find:active {
+  background-color: $green200;
+}
+
 .form__buttons__button-clear {
   min-width: 235px;
   min-height: 58px;
@@ -72,7 +81,7 @@
   padding: 15px;
   @include font(normal, 20px, 142%);
   color: $green400;
-  background: $green100;
+  background-color: $green100;
   border: none;
   border-radius: 10px;
 
@@ -83,4 +92,14 @@
     padding: 12px;
     @include font(normal, 16px, 142%);
   }
+}
+
+
+.form__buttons__button-clear:hover {
+  background-color: $grey100;
+  cursor: pointer;
+}
+
+.form__buttons__button-clear:active {
+  background-color: $grey200;
 }
