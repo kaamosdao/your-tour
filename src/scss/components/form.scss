@@ -12,3 +12,35 @@
 .form__age {
   margin-top: 33px;
 }
+
+.form__license {
+  margin-top: 30px;
+}
+
+.form__buttons {
+  margin-top: 33px;
+  text-align: start;
+}
+
+.form__buttons__button-find {
+  min-width: 235px;
+  min-height: 58px;
+  padding: 15px;
+  @include font(normal, 20px, 142%);
+  color: $white;
+  background: $green400;
+  border: none;
+  border-radius: 10px;
+}
+
+.form__buttons__button-clear {
+  min-width: 235px;
+  min-height: 58px;
+  margin-left: 25px;
+  padding: 15px;
+  @include font(normal, 20px, 142%);
+  color: $white;
+  background: $green100;
+  border: none;
+  border-radius: 10px;
+}
