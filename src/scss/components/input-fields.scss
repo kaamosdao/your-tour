@@ -7,13 +7,18 @@
 
 .input-fields__list {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2, 500px);
   grid-template-rows: repeat(4, max-content);
   column-gap: 30px;
   row-gap: 33px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: repeat(2, 389px);
+    column-gap: 20px;
+  }
 }
 
 .input-fields__item {
@@ -32,7 +37,7 @@
 
 .input-fields__item--select::after {
   position: absolute;
-  top: 55px;
+  top: 65px;
   right: 24px;
   width: 18px;
   height: 11px;
@@ -43,9 +48,9 @@
 
 .input-fields__input,
 .input-fields__select {
-  width: 500px;
+  width: 100%;
   height: 68px;
-  padding: 20px;
+  padding: 18px;
   box-sizing: border-box;
   @include font(normal, 20px, 141%);
   color: $black;
@@ -94,7 +99,7 @@
 }
 
 .input-fields__textarea {
-  width: 1030px;
+  width: 100%;
   height: 152px;
   padding: 20px;
   box-sizing: border-box;

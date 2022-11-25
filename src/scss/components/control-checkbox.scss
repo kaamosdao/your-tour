@@ -6,8 +6,8 @@
 
 .control-checkbox__mark {
   position: absolute;
-  top: 0;
-  left: -2px;
+  top: 1px;
+  left: 0;
   width: 26px;
   height: 26px;
   box-sizing: border-box;
@@ -39,6 +39,10 @@
   margin-left: 43px;
   @include font(normal, 17px, 142%, -0.01em);
   color: $grey300;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 35px;
+  }
 }
 
 .control-checkbox__link {
