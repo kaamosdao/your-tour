@@ -1,0 +1,27 @@
+@import '../global/variables.scss';
+
+.user {
+  display: grid;
+  grid-template-columns: 415px 75px;
+  grid-template-rows: repeat(2, max-content);
+}
+
+.user__name {
+  grid-area: 1 / 1 / 2 / 2;
+  margin: 0;
+  padding: 0;
+  @include font(500, 35px, 122%);
+}
+
+.user__tour {
+  grid-area: 2 / 1 / -2 / 2;
+  margin: 0;
+  padding: 0;
+  @include font(normal, 17px, 142%, -0.01em);
+  color: $grey300;
+}
+
+.user__avatar {
+  grid-area: 1 / 2 / -1 / -1;
+  border-radius: 100px;
+}

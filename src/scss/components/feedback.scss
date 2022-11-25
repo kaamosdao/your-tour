@@ -1,0 +1,56 @@
+@import '../global/variables.scss';
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.feedback__title {
+  margin: 135px 0 0 0;
+  @include font(bold, 59px, 124%);
+  color: $black;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 134px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 75px;
+    @include font(bold, 34px, 112%, 0.02em);
+  }
+}
+
+.feedback__description {
+  margin: 30px 0 0 0;
+  @include font(normal, 20px, 142%);
+  color: $grey300;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+    padding: 0 20px;
+    @include font(normal, 16px, 142%);
+  }
+}
+
+.feedback__description br {
+  display: block;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.feedback__list {
+  display: flex;
+  width: 1170px;
+  margin: 99px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.feedback__item:not(:first-child) {
+  margin-left: 30px;
+}

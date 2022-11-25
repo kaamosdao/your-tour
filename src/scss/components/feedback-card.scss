@@ -1,0 +1,23 @@
+@import '../global/variables.scss';
+
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 570px;
+  min-height: 673px;
+  box-sizing: border-box;
+  text-align: start;
+  background-color: $beige200;
+  border: none;
+  border-radius: 50px;
+}
+
+.feedback-card__text {
+  margin: 0;
+  @include font(bold, 23px, 122%);
+}
+
+.feedback-card__user {
+  margin-top: auto;
+}
