@@ -117,3 +117,22 @@
     background-size: 77% auto;
   }
 }
+
+.footer__socials-link {
+  color: $black;
+  text-decoration: none;
+}
+
+.footer__socials-link:hover {
+  cursor: pointer;
+}
+
+.footer__socials-link:hover:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: $black;
+  content: '';
+}

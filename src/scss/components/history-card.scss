@@ -11,6 +11,9 @@
   text-align: start;
   border: none;
   border-radius: 50px;
+  background-size: 100%;
+  pointer-events: none;
+  transition: all 0.3s ease;
 
   @media (max-width: $tablet-width) {
     width: 918px;
@@ -22,6 +25,10 @@
     padding: 30px 30px 18px;
     border-radius: 20px;
   }
+}
+
+.history-card:hover {
+  background-size: 120%;
 }
 
 .history-card--camping {
@@ -132,6 +139,7 @@
 
 .history-card__button {
   margin-left: -20px;
+  pointer-events: auto;
 }
 
 .history-card__socials {
@@ -144,9 +152,11 @@
 }
 
 .history-card__social-link {
+  position: relative;
   @include font(normal, 20px, 142%);
   color: $white;
   text-decoration: none;
+  pointer-events: auto;
 }
 
 .history-card__social-link:not(:first-child) {
@@ -155,4 +165,22 @@
 
 .history-card__social-link:hover {
   cursor: pointer;
+}
+
+.history-card__social-link:hover:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: $white;
+  content: '';
+}
+
+.history-card__social-link:active {
+  color: $orange200;
+}
+
+.history-card__social-link:active:after {
+  background-color: $orange200;
 }

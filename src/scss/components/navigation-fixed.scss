@@ -35,12 +35,28 @@
   }
 }
 
-.navigation-fixed__link:not(:first-child) {
+.navigation-fixed__item:not(:first-child) {
   margin-left: 51px;
 
   @media (max-width: $tablet-width) {
     margin-left: 30px;
   }
+}
+
+.navigation-fixed__link {
+  position: relative;
+  color: $black;
+  text-decoration: none;
+}
+
+.navigation-fixed__link:hover:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: $black;
+  content: '';
 }
 
 .navigation-fixed__logo {
@@ -58,6 +74,7 @@
 }
 
 .navigation-fixed__phone {
+  position: relative;
   margin: 0 0 0 auto;
   padding: 0;
   color: $black;
@@ -66,4 +83,14 @@
   @media (max-width: $mobile-width) {
     margin: 5px 0 0 0;
   }
+}
+
+.navigation-fixed__phone:hover:after {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: $black;
+  content: '';
 }

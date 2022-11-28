@@ -61,7 +61,7 @@
   text-decoration: none;
 }
 
-.choose-tour__nav-link:hover::after {
+.choose-tour__nav-link:not(.choose-tour__nav-link--current):hover::after {
   z-index: 1;
   position: absolute;
   right: 0;
@@ -70,6 +70,10 @@
   height: 2px;
   background-color: $black;
   content: "";
+}
+
+.choose-tour__nav-link--current:hover {
+  cursor: default;
 }
 
 .choose-tour__nav-link--current {
