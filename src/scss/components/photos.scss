@@ -47,13 +47,62 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 100px 0 0 0;
-  padding: 0;
   width: 1860px;
+  margin: 98px 0 0 0;
+  padding: 0;
   list-style-type: none;
+
+  @media (max-width: $tablet-width) {
+    width: 984px;
+    margin-top: 99px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 318px;
+    margin-top: 50px;
+  }
 }
 
 .photos__item {
   margin-bottom: 30px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 18px;
+  }
 }
 
+.photos__item--canyon {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.photos__item--sunset {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.photos__item--map {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.photos__item--bridge {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.photos__item--town {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.photos__item--supboard {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

@@ -1,0 +1,118 @@
+@import '../global/variables.scss';
+
+.history-card {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  min-height: 567px;
+  padding: 60px 60px 52px;
+  box-sizing: border-box;
+  color: $white;
+  text-align: start;
+  border: none;
+  border-radius: 50px;
+}
+
+.history-card--camping {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+    url('../img/histories/camping-desktop.jpg');
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width) {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+      url('../img/histories/camping-tablet.jpg');
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+      url('../img/histories/camping-mobile.jpg');
+  }
+}
+
+.history-card--fire {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+    url('../img/histories/fire-desktop.jpg');
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width) {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+      url('../img/histories/fire-tablet.jpg');
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+      url('../img/histories/fire-mobile.jpg');
+  }
+}
+
+.history-card--shore {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+    url('../img/histories/shore-desktop.jpg');
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width) {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+      url('../img/histories/shore-tablet.jpg');
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
+      url('../img/histories/shore-mobile.jpg');
+  }
+}
+
+.history-card__title {
+  margin: 0;
+  @include font(normal, 35px, 122%);
+}
+
+.history-card__text {
+  width: 560px;
+  margin: 37px 0 0 0;
+  @include font(normal, 20px, 142%);
+}
+
+.history-card__list {
+  margin: 26px 0 0 30px;
+  padding: 0;
+  @include font(normal, 20px, 142%);
+  list-style-type: none;
+}
+
+.history-card__item {
+  position: relative;
+}
+
+.history-card__item:before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  font-size: 38px;
+  color: $white;
+  content:"·";
+}
+
+.history-card__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.history-card__button {
+  margin-left: -20px;
+}
+
+.history-card__socials {
+  display: flex;
+  align-items: center;
+}
+
+.history-card__social-link {
+  @include font(normal, 20px, 142%);
+  color: $white;
+  text-decoration: none;
+}
+
+.history-card__social-link:not(:first-child) {
+  margin-left: 35px;
+}
