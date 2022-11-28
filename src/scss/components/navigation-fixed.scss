@@ -60,17 +60,9 @@
 }
 
 .navigation-fixed__logo {
-  margin: 9px 0 0 0;
+  margin: 0;
   padding: 0;
   text-decoration: none;
-
-  @media (max-width: $tablet-width) {
-    margin-top: 7px;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 9px;
-  }
 }
 
 .navigation-fixed__phone {
