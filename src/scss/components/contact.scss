@@ -5,13 +5,14 @@
   grid-template-columns: max-content max-content;
   grid-template-rows: max-content max-content;
   width: 770px;
-  height: 370px;
+  min-height: 370px;
   margin: 135px auto 0;
 
   @media (max-width: $mobile-width) {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-height: 285px;
     margin-top: 77px;
     text-align: center;
   }
