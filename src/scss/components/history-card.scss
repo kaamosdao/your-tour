@@ -152,3 +152,7 @@
 .history-card__social-link:not(:first-child) {
   margin-left: 35px;
 }
+
+.history-card__social-link:hover {
+  cursor: pointer;
+}
