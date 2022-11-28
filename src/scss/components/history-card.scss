@@ -32,50 +32,83 @@
 }
 
 .history-card--camping {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-    url('../img/histories/camping-desktop.jpg');
-  background-repeat: no-repeat;
+  @include bgWithGradientSecond('../img/histories/camping-desktop.jpg');
+
+  @media (min-resolution: 2dppx) {
+    @include bgWithGradientSecond('../img/histories/camping-desktop@2x.jpg');
+    background-size: 1170px auto;
+  }
 
   @media (max-width: $tablet-width) {
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-      url('../img/histories/camping-tablet.jpg');
+    @include bgWithGradientSecond('../img/histories/camping-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond('../img/histories/camping-tablet@2x.jpg');
+      background-size: 918px auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-      url('../img/histories/camping-mobile.jpg');
+    @include bgWithGradientSecond('../img/histories/camping-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond('../img/histories/camping-mobile@2x.jpg');
+      background-size: 318px auto;
+    }
   }
 }
 
 .history-card--fire {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-    url('../img/histories/fire-desktop.jpg');
-  background-repeat: no-repeat;
+  @include bgWithGradientSecond('../img/histories/fire-desktop.jpg');
+
+  @media (min-resolution: 2dppx) {
+    @include bgWithGradientSecond('../img/histories/fire-desktop@2x.jpg');
+    background-size: 1170px auto;
+  }
 
   @media (max-width: $tablet-width) {
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-      url('../img/histories/fire-tablet.jpg');
+    @include bgWithGradientSecond('../img/histories/fire-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond('../img/histories/fire-tablet@2x.jpg');
+      background-size: 918px auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-      url('../img/histories/fire-mobile.jpg');
+    @include bgWithGradientSecond('../img/histories/fire-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond('../img/histories/fire-mobile@2x.jpg');
+      background-size: 318px auto;
+    }
   }
 }
 
 .history-card--shore {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-    url('../img/histories/shore-desktop.jpg');
-  background-repeat: no-repeat;
+  @include bgWithGradientSecond('../img/histories/shore-desktop.jpg');
+
+  @media (min-resolution: 2dppx) {
+    @include bgWithGradientSecond('../img/histories/shore-desktop@2x.jpg');
+    background-size: 1170px auto;
+  }
 
   @media (max-width: $tablet-width) {
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-      url('../img/histories/shore-tablet.jpg');
+    @include bgWithGradientSecond('../img/histories/shore-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond('../img/histories/shore-tablet@2x.jpg');
+      background-size: 918px auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-      url('../img/histories/shore-mobile.jpg');
+    @include bgWithGradientSecond('../img/histories/shore-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond('../img/histories/shore-mobile@2x.jpg');
+      background-size: 318px auto;
+    }
   }
 }
 

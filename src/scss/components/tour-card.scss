@@ -53,73 +53,163 @@
 }
 
 .tour-card--car {
-  @include backgroundImage('../img/choose-tour-images/car-desktop.jpg');
+  @include bgWithGradient('../img/choose-tour-images/car-desktop.jpg');
+
+  @media (min-resolution: 2dppx) {
+    @include bgWithGradient('../img/choose-tour-images/car-desktop@2x.jpg');
+    background-size: 370px auto;
+  }
 
   @media (max-width: $tablet-width) {
-    @include backgroundImage('../img/choose-tour-images/car-tablet.jpg');
+    @include bgWithGradient('../img/choose-tour-images/car-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/car-tablet@2x.jpg');
+      background-size: 450px auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
-    @include backgroundImage('../img/choose-tour-images/car-mobile.jpg');
+    @include bgWithGradient('../img/choose-tour-images/car-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/car-mobile@2x.jpg');
+      background-size: 318px auto;
+    }
   }
 }
 
 .tour-card--sand {
-  @include backgroundImage('../img/choose-tour-images/sand-desktop.jpg');
+  @include bgWithGradient('../img/choose-tour-images/sand-desktop.jpg');
+
+  @media (min-resolution: 2dppx) {
+    @include bgWithGradient('../img/choose-tour-images/sand-desktop@2x.jpg');
+    background-size: 370px auto;
+  }
 
   @media (max-width: $tablet-width) {
-    @include backgroundImage('../img/choose-tour-images/sand-tablet.jpg');
+    @include bgWithGradient('../img/choose-tour-images/sand-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/sand-tablet@2x.jpg');
+      background-size: 450px auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
-    @include backgroundImage('../img/choose-tour-images/sand-mobile.jpg');
+    @include bgWithGradient('../img/choose-tour-images/sand-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/sand-mobile@2x.jpg');
+      background-size: 318px auto;
+    }
   }
 }
 
 .tour-card--fjord {
-  @include backgroundImage('../img/choose-tour-images/fjord-desktop.jpg');
+  @include bgWithGradient('../img/choose-tour-images/fjord-desktop.jpg');
+
+  @media (min-resolution: 2dppx) {
+    @include bgWithGradient('../img/choose-tour-images/fjord-desktop@2x.jpg');
+    background-size: 370px auto;
+  }
 
   @media (max-width: $tablet-width) {
-    @include backgroundImage('../img/choose-tour-images/fjord-tablet.jpg');
+    @include bgWithGradient('../img/choose-tour-images/fjord-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/fjord-tablet@2x.jpg');
+      background-size: 450px auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
-    @include backgroundImage('../img/choose-tour-images/fjord-mobile.jpg');
+    @include bgWithGradient('../img/choose-tour-images/fjord-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/fjord-mobile@2x.jpg');
+      background-size: 318px auto;
+    }
   }
 }
 
 .tour-card--street {
-  @include backgroundImage('../img/choose-tour-images/street-desktop.jpg');
+  @include bgWithGradient('../img/choose-tour-images/street-desktop.jpg');
+
+  @media (min-resolution: 2dppx) {
+    @include bgWithGradient('../img/choose-tour-images/street-desktop@2x.jpg');
+    background-size: 370px auto;
+  }
 
   @media (max-width: $tablet-width) {
-    @include backgroundImage('../img/choose-tour-images/street-tablet.jpg');
+    @include bgWithGradient('../img/choose-tour-images/street-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/street-tablet@2x.jpg');
+      background-size: 450px auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
-    @include backgroundImage('../img/choose-tour-images/street-mobile.jpg');
+    @include bgWithGradient('../img/choose-tour-images/street-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/street-mobile@2x.jpg');
+      background-size: 318px auto;
+    }
   }
 }
 
 .tour-card--beach {
-  @include backgroundImage('../img/choose-tour-images/beach-desktop.jpg');
+  @include bgWithGradient('../img/choose-tour-images/beach-desktop.jpg');
+
+  @media (min-resolution: 2dppx) {
+    @include bgWithGradient('../img/choose-tour-images/beach-desktop@2x.jpg');
+    background-size: 370px auto;
+  }
 
   @media (max-width: $tablet-width) {
-    @include backgroundImage('../img/choose-tour-images/beach-tablet.jpg');
+    @include bgWithGradient('../img/choose-tour-images/beach-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/beach-tablet@2x.jpg');
+      background-size: 450px auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
-    @include backgroundImage('../img/choose-tour-images/beach-mobile.jpg');
+    @include bgWithGradient('../img/choose-tour-images/beach-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/beach-mobile@2x.jpg');
+      background-size: 318px auto;
+    }
   }
 }
 
 .tour-card--lake {
-  @include backgroundImage('../img/choose-tour-images/lake-desktop.jpg');
+  @include bgWithGradient('../img/choose-tour-images/lake-desktop.jpg');
+
+  @media (min-resolution: 2dppx) {
+    @include bgWithGradient('../img/choose-tour-images/lake-desktop@2x.jpg');
+    background-size: 370px auto;
+  }
 
   @media (max-width: $tablet-width) {
-    @include backgroundImage('../img/choose-tour-images/lake-tablet.jpg');
+    @include bgWithGradient('../img/choose-tour-images/lake-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/lake-tablet@2x.jpg');
+      background-size: 450px auto;
+    }
   }
 
   @media (max-width: $mobile-width) {
-    @include backgroundImage('../img/choose-tour-images/lake-mobile.jpg');
+    @include bgWithGradient('../img/choose-tour-images/lake-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradient('../img/choose-tour-images/lake-mobile@2x.jpg');
+      background-size: 318px auto;
+    }
   }
 }
