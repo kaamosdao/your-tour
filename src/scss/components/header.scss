@@ -7,10 +7,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-position: top;
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("../../img/background-house/index-background-house-tablet@2x.png");
-  //   background-size: 1200px auto;
-  // }
 
   @media (max-width: $tablet-width) {
     width: 100%;
