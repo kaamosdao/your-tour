@@ -14,11 +14,11 @@
   color: $black;
 
   @media (max-width: $tablet-width) {
-    margin-top: 134px;
+    margin-top: 106px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 75px;
+    margin-top: 57px;
     @include font(bold, 34px, 112%, 0.02em);
   }
 }
@@ -47,8 +47,20 @@
   margin: 98px 0 0 0;
   padding: 0;
   list-style-type: none;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 99px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 51px;
+  }
 }
 
 .histories__item:not(:first-child) {
   margin-top: 50px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+  }
 }
