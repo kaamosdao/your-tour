@@ -10,3 +10,8 @@ build:
 serve:
 	npx cross-env NODE_ENV=development webpack serve --mode development --open
 	
+gulpstart:
+	npm run serve
+
+gulpbuild:
+	npm run build

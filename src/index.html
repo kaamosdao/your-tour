@@ -10,6 +10,7 @@
       content="travel, tours, tour, adventure, hitchhiking, hiking"
     />
     <title>YourTour</title>
+    <link rel="stylesheet" href="src/css/style.min.css" />
     <link
       rel="preload"
       href="fonts/Roboto-Regular.ttf"
@@ -351,11 +352,21 @@
             <div class="feedback-card__user user">
               <p class="user__name">Мария</p>
               <p class="user__tour">Тур: Вдали от дома</p>
-              <img
-                class="user__avatar"
-                src="src/img/avatars/user-maria.jpg"
-                alt="Аватар"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="src/img/avatars/user-maria.webp"
+                  width="75"
+                  height="75"
+                />
+                <img
+                  class="user__avatar"
+                  src="src/img/avatars/user-maria.jpg"
+                  alt="Аватар"
+                  width="75"
+                  height="75"
+                />
+              </picture>
             </div>
           </li>
           <li class="feedback__item feedback-card">
@@ -375,11 +386,21 @@
             <div class="feedback-card__user user">
               <p class="user__name">Павел</p>
               <p class="user__tour">Тур: Путешествие в горы</p>
-              <img
-                class="user__avatar"
-                src="src/img/avatars/user-pavel.jpg"
-                alt="Аватар"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="src/img/avatars/user-pavel.webp"
+                  width="75"
+                  height="75"
+                />
+                <img
+                  class="user__avatar"
+                  src="src/img/avatars/user-pavel.jpg"
+                  alt="Аватар"
+                  width="75"
+                  height="75"
+                />
+              </picture>
             </div>
           </li>
         </ul>
@@ -394,6 +415,35 @@
         <ul class="photos__list">
           <li class="photos__item">
             <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/airplane-desktop-lg.webp    1x,
+                  src/img/photos/airplane-desktop-lg@2x.webp 2x
+                "
+                width="442"
+                height="300"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="
+                  src/img/photos/airplane-desktop-md.webp    1x,
+                  src/img/photos/airplane-desktop-md@2x.webp 2x
+                "
+                width="314"
+                height="300"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/airplane-mobile.webp    1x,
+                  src/img/photos/airplane-mobile@2x.webp 2x
+                "
+                width="150"
+                height="110"
+              />
               <source
                 media="(min-width: 1920px)"
                 srcset="
@@ -424,6 +474,15 @@
           </li>
           <li class="photos__item photos__item--canyon">
             <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/canyon-desktop-lg.webp    1x,
+                  src/img/photos/canyon-desktop-lg@2x.webp 2x
+                "
+                width="442"
+                height="301"
+              />
               <img
                 class="photo-gallery__picture"
                 src="src/img/photos/canyon-desktop-lg.png"
@@ -436,6 +495,25 @@
           </li>
           <li class="photos__item photos__item--sunset">
             <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/sunset-desktop-lg.webp    1x,
+                  src/img/photos/sunset-desktop-lg@2x.webp 2x
+                "
+                width="442"
+                height="301"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/sunset-desktop-md.webp    1x,
+                  src/img/photos/sunset-desktop-md@2x.webp 2x
+                "
+                width="314"
+                height="301"
+              />
               <source
                 media="(min-width: 1920px)"
                 srcset="
@@ -457,6 +535,35 @@
           </li>
           <li class="photos__item">
             <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/road-desktop-lg.webp    1x,
+                  src/img/photos/road-desktop-lg@2x.webp 2x
+                "
+                width="442"
+                height="300"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="
+                  src/img/photos/road-desktop-md.webp    1x,
+                  src/img/photos/road-desktop-md@2x.webp 2x
+                "
+                width="314"
+                height="300"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/road-mobile.webp    1x,
+                  src/img/photos/road-mobile@2x.webp 2x
+                "
+                width="150"
+                height="110"
+              />
               <source
                 media="(min-width: 1920px)"
                 srcset="
@@ -488,6 +595,35 @@
           <li class="photos__item">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/cliff-desktop-lg.webp    1x,
+                  src/img/photos/cliff-desktop-lg@2x.webp 2x
+                "
+                width="349"
+                height="301"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="
+                  src/img/photos/cliff-desktop-md.webp    1x,
+                  src/img/photos/cliff-desktop-md@2x.webp 2x
+                "
+                width="231"
+                height="301"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/cliff-mobile.webp    1x,
+                  src/img/photos/cliff-mobile@2x.webp 2x
+                "
+                width="99"
+                height="110"
+              />
+              <source
                 media="(min-width: 1920px)"
                 srcset="
                   src/img/photos/cliff-desktop-lg.png    1x,
@@ -518,6 +654,25 @@
           <li class="photos__item photos__item--map">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/map-desktop-lg.webp    1x,
+                  src/img/photos/map-desktop-lg@2x.webp 2x
+                "
+                width="347"
+                height="301"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/map-desktop-md.webp    1x,
+                  src/img/photos/map-desktop-md@2x.webp 2x
+                "
+                width="231"
+                height="301"
+              />
+              <source
                 media="(min-width: 1920px)"
                 srcset="
                   src/img/photos/map-desktop-lg.png    1x,
@@ -538,6 +693,15 @@
           </li>
           <li class="photos__item photos__item--bridge">
             <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/bridge-desktop-lg.webp    1x,
+                  src/img/photos/bridge-desktop-lg@2x.webp 2x
+                "
+                width="347"
+                height="301"
+              />
               <img
                 class="photo-gallery__picture"
                 src="src/img/photos/bridge-desktop-lg.png"
@@ -550,6 +714,35 @@
           </li>
           <li class="photos__item">
             <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/car-desktop-lg.webp    1x,
+                  src/img/photos/car-desktop-lg@2x.webp 2x
+                "
+                width="347"
+                height="301"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="
+                  src/img/photos/car-desktop-md.webp    1x,
+                  src/img/photos/car-desktop-md@2x.webp 2x
+                "
+                width="231"
+                height="301"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/car-mobile.webp    1x,
+                  src/img/photos/car-mobile@2x.webp 2x
+                "
+                width="99"
+                height="110"
+              />
               <source
                 media="(min-width: 1920px)"
                 srcset="
@@ -581,6 +774,35 @@
           <li class="photos__item">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/street-desktop-lg.webp    1x,
+                  src/img/photos/street-desktop-lg@2x.webp 2x
+                "
+                width="348"
+                height="301"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="
+                  src/img/photos/street-desktop-md.webp    1x,
+                  src/img/photos/street-desktop-md@2x.webp 2x
+                "
+                width="231"
+                height="301"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/street-mobile.webp    1x,
+                  src/img/photos/street-mobile@2x.webp 2x
+                "
+                width="99"
+                height="110"
+              />
+              <source
                 media="(min-width: 1920px)"
                 srcset="
                   src/img/photos/street-desktop-lg.png    1x,
@@ -610,6 +832,35 @@
           </li>
           <li class="photos__item">
             <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/houses-desktop-lg.webp    1x,
+                  src/img/photos/houses-desktop-lg@2x.webp 2x
+                "
+                width="442"
+                height="300"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="
+                  src/img/photos/houses-desktop-md.webp    1x,
+                  src/img/photos/houses-desktop-md@2x.webp 2x
+                "
+                width="314"
+                height="300"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/houses-mobile.webp    1x,
+                  src/img/photos/houses-mobile@2x.webp 2x
+                "
+                width="154"
+                height="110"
+              />
               <source
                 media="(min-width: 1920px)"
                 srcset="
@@ -641,6 +892,35 @@
           <li class="photos__item">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/lake-desktop-lg.webp    1x,
+                  src/img/photos/lake-desktop-lg@2x.webp 2x
+                "
+                width="442"
+                height="300"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="
+                  src/img/photos/lake-desktop-md.webp    1x,
+                  src/img/photos/lake-desktop-md@2x.webp 2x
+                "
+                width="314"
+                height="300"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/lake-mobile.webp    1x,
+                  src/img/photos/lake-mobile@2x.webp 2x
+                "
+                width="154"
+                height="110"
+              />
+              <source
                 media="(min-width: 1920px)"
                 srcset="
                   src/img/photos/lake-desktop-lg.png    1x,
@@ -671,6 +951,25 @@
           <li class="photos__item photos__item--town">
             <picture>
               <source
+                type="image/webp"
+                media="(min-width: 1920px)"
+                srcset="
+                  src/img/photos/town-desktop-lg.webp    1x,
+                  src/img/photos/town-desktop-lg@2x.webp 2x
+                "
+                width="442"
+                height="300"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/town-desktop-md.webp    1x,
+                  src/img/photos/town-desktop-md@2x.webp 2x
+                "
+                width="314"
+                height="300"
+              />
+              <source
                 media="(min-width: 1920px)"
                 srcset="
                   src/img/photos/town-desktop-lg.png    1x,
@@ -690,14 +989,25 @@
             </picture>
           </li>
           <li class="photos__item photos__item--supboard">
-            <img
-              class="photo-gallery__picture"
-              src="src/img/photos/supboard-desktop-lg.png"
-              srcset="src/img/photos/supboard-desktop-lg@2x.png 2x"
-              alt="SUP борд на воде"
-              width="442"
-              height="300"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/photos/supboard-desktop-lg.webp    1x,
+                  src/img/photos/supboard-desktop-lg@2x.webp 2x
+                "
+                width="442"
+                height="300"
+              />
+              <img
+                class="photo-gallery__picture"
+                src="src/img/photos/supboard-desktop-lg.png"
+                srcset="src/img/photos/supboard-desktop-lg@2x.png 2x"
+                alt="SUP борд на воде"
+                width="442"
+                height="300"
+              />
+            </picture>
           </li>
         </ul>
       </section>
@@ -773,6 +1083,35 @@
           >
         </p>
         <picture class="contact__picture">
+          <source
+            type="image/webp"
+            media="(min-width: 1920px)"
+            srcset="
+              src/img/histories/icon-village-desktop-lg.webp    1x,
+              src/img/histories/icon-village-desktop-lg@2x.webp 2x
+            "
+            width="370"
+            height="370"
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 1024px)"
+            srcset="
+              src/img/histories/icon-village-desktop-md.webp    1x,
+              src/img/histories/icon-village-desktop-md@2x.webp 2x
+            "
+            width="370"
+            height="370"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              src/img/histories/icon-village-mobile.webp    1x,
+              src/img/histories/icon-village-mobile@2x.webp 2x
+            "
+            width="133"
+            height="130"
+          />
           <source
             media="(min-width: 1920px)"
             srcset="
