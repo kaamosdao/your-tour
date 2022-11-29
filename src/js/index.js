@@ -1,5 +1,3 @@
-import '../scss/style.scss';
-
 const init = () => {
   window.addEventListener('scroll', () => {
     const distance = 450;

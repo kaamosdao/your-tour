@@ -26,22 +26,13 @@
 
 .construct-tour__description {
   margin: 20px 0 0 0;
-  padding: 0 20px;
+  padding: 0;
   @include font(normal, 16px, 142%);
   color: $grey300;
 
   @media (min-width: $desktop-md-width) {
     margin-top: 30px;
-    padding: 0;
     @include font(normal, 20px, 142%);
-  }
-}
-
-.construct-tour__description br {
-  display: none;
-
-  @media (min-width: $desktop-md-width) {
-    display: block;
   }
 }
 

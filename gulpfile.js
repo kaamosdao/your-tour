@@ -30,7 +30,7 @@ const html = () =>
 const scripts = () =>
   gulp
     .src('src/js/index.js')
-    .pipe(gulp.dest('dist/public/js'))
+    .pipe(gulp.dest('dist/public/src/js'))
     .pipe(browser.stream());
 
 const optimizeAvatars = () =>
