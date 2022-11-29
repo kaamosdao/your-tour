@@ -48,6 +48,9 @@
 
 .choose-tour__nav-item:nth-child(3n + 4) {
   margin-left: 0;
+  @media (min-width: $desktop-md-width) {
+    margin-left: 30px;
+  }
 }
 
 .choose-tour__nav-item {
@@ -94,6 +97,10 @@
   content: '';
 
   @media (min-width: $desktop-md-width) {
+    bottom: -5px;
+  }
+
+  @media (min-width: $desktop-lg-width) {
     bottom: -6px;
   }
 }
@@ -110,12 +117,13 @@
   @media (min-width: $desktop-md-width) {
     grid-template-columns: repeat(2, min-content);
     grid-template-rows: repeat(3, min-content);
-    grid-gap: 30px;
+    margin-top: 104px;
   }
 
   @media (min-width: $desktop-lg-width) {
     grid-template-columns: repeat(3, min-content);
     grid-template-rows: repeat(3, min-content);
-    margin-top: 104px;
+    grid-gap: 30px;
+    margin-top: 105px;
   }
 }

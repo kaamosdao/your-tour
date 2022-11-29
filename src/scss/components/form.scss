@@ -12,13 +12,13 @@
     width: 918px;
     height: 966px;
     padding: 60px;
+    border-radius: 50px;
   }
 
   @media (min-width: $desktop-lg-width) {
     width: 1170px;
     height: 986px;
     padding: 70px;
-    border-radius: 50px;
   }
 }
 

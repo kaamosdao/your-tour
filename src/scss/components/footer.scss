@@ -6,7 +6,7 @@
   margin-top: 73px;
   background-color: $beige200;
   
-  @media (min-width: $desktop-lg-width) {
+  @media (min-width: $desktop-md-width) {
     margin-top: 135px;
   }
 }
@@ -23,11 +23,11 @@
     flex-direction: row;
     justify-content: space-between;
     min-width: 916px;
+    min-height: 88px;
   }
 
   @media (min-width: $desktop-lg-width) {
     min-width: 1166px;
-    min-height: 88px;
   }
 }
 
@@ -51,6 +51,7 @@
   
   @media (min-width: $desktop-md-width) {
     margin: 0;
+    @include font(normal, 20px, 142%);
   }
 }
 

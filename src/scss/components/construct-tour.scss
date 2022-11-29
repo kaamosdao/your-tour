@@ -15,11 +15,11 @@
 
   @media (min-width: $desktop-md-width) {
     margin-top: 134px;
+    @include font(bold, 59px, 124%);
   }
 
   @media (min-width: $desktop-lg-width) {
     margin-top: 105px;
-    @include font(bold, 59px, 124%);
     
   }
 }

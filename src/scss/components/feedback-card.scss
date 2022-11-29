@@ -16,13 +16,13 @@
   @media (min-width: $desktop-md-width) {
     width: 450px;
     min-height: 841px;
+    padding: 41px 40px 40px 40px;
+    border-radius: 50px;
   }
 
   @media (min-width: $desktop-lg-width) {
     width: 570px;
     min-height: 673px;
-    padding: 40px;
-    border-radius: 50px;
   }
 }
 

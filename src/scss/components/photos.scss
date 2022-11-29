@@ -15,11 +15,11 @@
   
   @media (min-width: $desktop-md-width) {
     margin-top: 134px;
+    @include font(bold, 59px, 124%);
   }
   
   @media (min-width: $desktop-lg-width) {
     margin-top: 135px;
-    @include font(bold, 59px, 124%);
   }
 }
 
@@ -94,7 +94,7 @@
 .photos__item--bridge {
   display: none;
   @media (min-width: $desktop-lg-width) {
-    display: none;
+    display: block;
   }
 }
 

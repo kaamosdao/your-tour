@@ -38,10 +38,11 @@
   
   @media (min-width: $desktop-md-width) {
     margin-top: 5px;
+    @include font(normal, 17px, 142%, -0.01em);
   }
   
   @media (min-width: $desktop-lg-width) {
-    @include font(normal, 17px, 142%, -0.01em);
+    margin-top: 6px;
   }
 }
 

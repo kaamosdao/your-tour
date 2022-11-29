@@ -12,11 +12,11 @@
   @media (min-width: $desktop-md-width) {
     justify-content: initial;
     width: 910px;
+    @include font(normal, 20px, 142%);
   }
   
   @media (min-width: $desktop-lg-width) {
     width: 1168px;
-    @include font(normal, 20px, 142%);
   }
 }
 
@@ -40,7 +40,7 @@
 .navigation__item:not(:first-child) {
   margin-left: 30px;
   
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $desktop-lg-width) {
     margin-left: 51px;
   }
 }

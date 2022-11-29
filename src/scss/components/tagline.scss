@@ -22,11 +22,11 @@
   @media (min-width: $desktop-md-width) {
     margin-top: 119px;
     margin-bottom: 0;
+    @include font(bold, 96px, 109%, 0.02em);
   }
   
   @media (min-width: $desktop-lg-width) {
     margin-top: 121px;
-    @include font(bold, 96px, 109%, 0.02em);
   }
 }
 
@@ -36,11 +36,11 @@
   
   @media (min-width: $desktop-md-width) {
     margin-top: 52px;
+    @include font(normal, 20px, 142%);
   }
   
   @media (min-width: $desktop-lg-width) {
     margin-top: 52px;
-    @include font(normal, 20px, 142%);
   }
 }
 
@@ -74,12 +74,9 @@
   border-radius: 10px;
 
   @media (min-width: $desktop-md-width) {
-    margin-top: 28px;
-  }
-
-  @media (min-width: $desktop-lg-width) {
     width: 118px;
     min-height: 34px;
+    margin-top: 28px;
     @include font(normal, 17px, 142%);
   }
 }

@@ -15,11 +15,11 @@
   
   @media (min-width: $desktop-md-width) {
     margin-top: 134px;
+    @include font(bold, 59px, 124%);
   }
   
   @media (min-width: $desktop-lg-width) {
     margin-top: 135px;
-    @include font(bold, 59px, 124%);
   }
 }
 
@@ -55,11 +55,12 @@
   @media (min-width: $desktop-md-width) {
     flex-direction: row;
     width: 918px;
+    margin: 99px 0 0 0;
   }
 
   @media (min-width: $desktop-lg-width) {
     width: 1170px;
-    margin: 99px 0 0 0;
+    margin-top: 98px;
   }
 }
 
@@ -67,10 +68,9 @@
   margin: 18px 0 0 0;
   
   @media (min-width: $desktop-md-width) {
-    margin-left: 18px;
+    margin: 0 0 0 18px;
   }
-  
   @media (min-width: $desktop-lg-width) {
-    margin-left: 18px;
+    margin: 0 0 0 30px;
   }
 }

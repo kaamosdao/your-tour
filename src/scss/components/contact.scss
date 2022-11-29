@@ -10,11 +10,12 @@
 
   @media (min-width: $desktop-md-width) {
     display: grid;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: min-content min-content;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
     width: 770px;
     min-height: 370px;
     margin-top: 135px;
+    text-align: start;
   }
 }
 

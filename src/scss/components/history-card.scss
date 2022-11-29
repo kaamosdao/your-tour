@@ -17,13 +17,13 @@
 
   @media (min-width: $desktop-md-width) {
     width: 918px;
+    min-height: 567px;
+    padding: 60px 60px 52px;
+    border-radius: 50px;
   }
 
   @media (min-width: $desktop-lg-width) {
     width: 1170px;
-    min-height: 567px;
-    padding: 60px 60px 52px;
-    border-radius: 50px;
   }
 }
 
@@ -121,7 +121,7 @@
 
   @media (min-width: $desktop-md-width) {
     width: 100%;
-    @include font(normal, 35px, 122%);
+    @include font(normal, 35px, 122%, 0.004em);
   }
 }
 
@@ -132,8 +132,8 @@
   
   @media (min-width: $desktop-md-width) {
     width: 560px;
-    margin-top: 37px;
-    @include font(normal, 20px, 142%);
+    margin-top: 35px;
+    @include font(normal, 20px, 142%, 0.0005em);
   }
 }
 
@@ -189,7 +189,7 @@
 
 .history-card__social-link {
   position: relative;
-  @include font(normal, 20px, 142%);
+  @include font(normal, 20px, 142%, 0.004em);
   color: $white;
   text-decoration: none;
   pointer-events: auto;

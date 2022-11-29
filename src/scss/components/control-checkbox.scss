@@ -15,6 +15,7 @@
   border-radius: 4px;
 
   @media (min-width: $desktop-md-width) {
+    top: 1px;
     width: 26px;
     height: 26px;
     border: 2px solid $black;
@@ -55,13 +56,14 @@
   color: $grey300;
 
   @media (min-width: $desktop-md-width) {
-    margin-left: 35px;
+    display: inline;
+    margin-left: 37px;
     @include font(normal, 17px, 142%, -0.01em);
   }
 
   @media (min-width: $desktop-lg-width) {
     margin-left: 43px;
-    @include font(normal, 17px, 142%, -0.01em);
+    @include font(normal, 17px, 142%, -0.007em);
   }
 }
 
