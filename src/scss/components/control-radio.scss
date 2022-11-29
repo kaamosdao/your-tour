@@ -6,29 +6,29 @@
 
 .control-radio__mark {
   position: absolute;
-  top: -1px;
+  top: 4px;
   left: 0;
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   box-sizing: border-box;
-  border: 2px solid $black;
+  border: 1.5px solid $black;
   border-radius: 50%;
 
-  @media (max-width: $mobile-width) {
-    top: 4px;
-    width: 20px;
-    height: 20px;
-    border: 1.5px solid $black;
+  @media (min-width: $desktop-md-width) {
+    top: -1px;
+    width: 26px;
+    height: 26px;
+    border: 2px solid $black;
   }
 }
 
 .control-radio__label {
-  margin-left: 37px;
-  @include font(normal, 20px, 142%);
+  margin-left: 30px;
+  @include font(normal, 16px, 142%);
 
-  @media (max-width: $mobile-width) {
-    margin-left: 30px;
-    @include font(normal, 16px, 142%);
+  @media (min-width: $desktop-md-width) {
+    margin-left: 37px;
+    @include font(normal, 20px, 142%);
   }
 }
 
@@ -38,18 +38,18 @@
 
 .control-radio__input:checked + .control-radio__mark::before {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 12px;
-  height: 12px;
+  top: 4px;
+  left: 4.2px;
+  width: 9.23px;
+  height: 9.23px;
   background-color: $black;
   border-radius: 50%;
   content: '';
 
-  @media (max-width: $mobile-width) {
-    top: 4px;
-    left: 4.2px;
-    width: 9.23px;
-    height: 9.23px;
+  @media (min-width: $desktop-md-width) {
+    top: 5px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
   }
 }

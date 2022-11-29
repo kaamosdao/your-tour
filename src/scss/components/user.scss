@@ -2,28 +2,29 @@
 
 .user {
   display: grid;
-  grid-template-columns: 415px 75px;
-  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: 203px 75px;
 
-  @media (max-width: $desktop-md-width) {
+  grid-template-rows: repeat(2, min-content);
+
+  @media (min-width: $desktop-md-width) {
     grid-template-columns: 295px 75px;
   }
 
-  @media (max-width: $mobile-width) {
-    grid-template-columns: 203px 75px;
-  }
+  @media (min-width: $desktop-lg-width) {
+    grid-template-columns: 415px 75px;  }
 }
 
 .user__name {
   grid-area: 1 / 1 / 2 / 2;
-  margin: 0;
+  align-self: flex-end;
+  margin: 11px 0 0 0;
   padding: 0;
-  @include font(500, 35px, 122%);
-
-  @media (max-width: $mobile-width) {
-    align-self: flex-end;
-    margin-top: 15px;
-    @include font(bold, 23px, 120%, 0.04em);
+  @include font(bold, 23px, 120%, 0.04em);
+  
+  @media (min-width: $desktop-md-width) {
+    align-self: center;
+    margin: 0;
+    @include font(500, 35px, 122%);
   }
 }
 
@@ -32,15 +33,15 @@
   align-self: flex-end;
   margin: 0;
   padding: 0;
-  @include font(normal, 17px, 142%, -0.01em);
+  @include font(normal, 16px, 142%, -0.01em);
   color: $grey300;
-
-  @media (max-width: $desktop-md-width) {
+  
+  @media (min-width: $desktop-md-width) {
     margin-top: 5px;
   }
-
-  @media (max-width: $mobile-width) {
-    @include font(normal, 16px, 142%, -0.01em);
+  
+  @media (min-width: $desktop-lg-width) {
+    @include font(normal, 17px, 142%, -0.01em);
   }
 }
 

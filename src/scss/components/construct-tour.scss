@@ -9,44 +9,46 @@
 }
 
 .construct-tour__title {
-  margin: 105px 0 0 0;
-  @include font(bold, 59px, 124%);
+  margin: 75px 0 0 0;
+  @include font(bold, 34px, 112%, 0.02em);
   color: $black;
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     margin-top: 134px;
   }
 
-  @media (max-width: $mobile-width) {
-    margin-top: 75px;
-    @include font(bold, 34px, 112%, 0.02em);
+  @media (min-width: $desktop-lg-width) {
+    margin-top: 105px;
+    @include font(bold, 59px, 124%);
+    
   }
 }
 
 .construct-tour__description {
-  margin: 30px 0 0 0;
-  @include font(normal, 20px, 142%);
+  margin: 20px 0 0 0;
+  padding: 0 20px;
+  @include font(normal, 16px, 142%);
   color: $grey300;
 
-  @media (max-width: $mobile-width) {
-    margin-top: 20px;
-    padding: 0 20px;
-    @include font(normal, 16px, 142%);
+  @media (min-width: $desktop-md-width) {
+    margin-top: 30px;
+    padding: 0;
+    @include font(normal, 20px, 142%);
   }
 }
 
 .construct-tour__description br {
-  display: block;
+  display: none;
 
-  @media (max-width: $mobile-width) {
-    display: none;
+  @media (min-width: $desktop-md-width) {
+    display: block;
   }
 }
 
 .construct-tour__form {
-  margin: 100px 0 0 0;
+  margin: 41px 0 0 0;
 
-  @media (max-width: $mobile-width) {
-    margin-top: 41px;
+  @media (min-width: $desktop-md-width) {
+    margin-top: 100px;
   }
 }

@@ -8,20 +8,21 @@
 
 .age-confirm__title {
   padding: 0;
-  @include font(normal, 20px, 142%);
-  
-  @media (max-width: $mobile-width) {
-    @include font(normal, 16px, 142%);
+  @include font(normal, 16px, 142%);
+
+  @media (min-width: $desktop-md-width) {
+    @include font(normal, 20px, 142%);
   }
 }
 
 .age-confirm__list {
   display: flex;
-  margin: 9px 0 0 0;
+  margin: 3px 0 0 0;
   padding: 0;
   list-style-type: none;
-  @media (max-width: $mobile-width) {
-    margin-top: 3px;
+
+  @media (min-width: $desktop-md-width) {
+    margin-top: 9px;
   }
 }
 

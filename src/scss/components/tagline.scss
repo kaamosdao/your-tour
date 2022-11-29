@@ -1,91 +1,86 @@
 @import '../global/variables.scss';
 
 .tagline {
-  width: 620px;
+  width: 250px;
   text-align: center;
   color: $white;
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     width: 610px;
   }
-
-  @media (max-width: $mobile-width) {
-    width: 250px;
+  
+  @media (min-width: $desktop-lg-width) {
+    width: 620px;
   }
 }
 
 .tagline__title {
-  margin-top: 121px;
+  margin-top: 52px;
   margin-bottom: 0;
-  @include font(bold, 96px, 109%, 0.02em);
-
-  @media (max-width: $desktop-md-width) {
+  @include font(bold, 34px, 112%, 0.02em);
+  
+  @media (min-width: $desktop-md-width) {
     margin-top: 119px;
     margin-bottom: 0;
   }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 52px;
-    @include font(bold, 34px, 112%, 0.02em);
+  
+  @media (min-width: $desktop-lg-width) {
+    margin-top: 121px;
+    @include font(bold, 96px, 109%, 0.02em);
   }
 }
 
 .tagline__description {
-  margin-top: 52px;
-  @include font(normal, 20px, 142%);
-
-  @media (max-width: $desktop-md-width) {
+  margin-top: 40px;
+  @include font(normal, 16px, 144%);
+  
+  @media (min-width: $desktop-md-width) {
     margin-top: 52px;
   }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 40px;
-    @include font(normal, 16px, 142%);
+  
+  @media (min-width: $desktop-lg-width) {
+    margin-top: 52px;
+    @include font(normal, 20px, 142%);
   }
 }
 
 .tagline__description br:first-child {
   display: none;
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     display: block;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (min-width: $desktop-lg-width) {
     display: none;
   }
 }
 
 .tagline__description br:last-child {
-  display: block;
+  display: none;
 
-  @media (max-width: $desktop-md-width) {
-    display: none;
-  }
-
-  @media (max-width: $mobile-width) {
-    display: none;
+  @media (min-width: $desktop-lg-width) {
+    display: block;
   }
 }
 
 .tagline__button {
-  width: 118px;
-  min-height: 34px;
-  margin-top: 28px;
-  @include font(normal, 17px, 142%);
+  width: 114px;
+  min-height: 33px;
+  margin-top: 24px;
+  @include font(normal, 16px, 144%);
   background-color: $white;
   border: none;
   border-radius: 10px;
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     margin-top: 28px;
   }
 
-  @media (max-width: $mobile-width) {
-    width: 114px;
-    min-height: 33px;
-    margin-top: 25px;
-    @include font(normal, 16px, 142%);
+  @media (min-width: $desktop-lg-width) {
+    width: 118px;
+    min-height: 34px;
+    @include font(normal, 17px, 142%);
   }
 }
 

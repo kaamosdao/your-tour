@@ -7,44 +7,43 @@
   padding: 7px 59px 7px 20px;
   box-sizing: border-box;
   border-radius: 50px;
-  
-  @include font(bold, 23px, 122%);
+  @include font(bold, 16px, 142%);
   color: $white;
   text-decoration: none;
 
-  @media (max-width: $mobile-width) {
-    @include font(bold, 16px, 142%);
+  @media (min-width: $desktop-md-width) {
+    @include font(bold, 23px, 122%);
   }
 }
 
 .button-more::after {
   position: absolute;
-  top: 11px;
-  right: 21px;
+  top: 9px;
+  right: 57px;
   width: 22px;
   height: 16px;
   background-image: url('../img/svg-icons/arrow.svg');
   content: '';
 
-  @media (max-width: $mobile-width) {
-    top: 9px;
-    right: 57px;
+  @media (min-width: $desktop-md-width) {
+    top: 11px;
+    right: 21px;
   }
 }
 
 .button-more:hover {
-  background-color: $green400;
+  background: none;
   cursor: pointer;
 
-  @media (max-width: $mobile-width) {
-    background: none;
+  @media (min-width: $desktop-md-width) {
+    background-color: $green400;
   }
 }
 
 .button-more:active {
-  background-color: $orange200;
+  background: none;
 
-  @media (max-width: $mobile-width) {
-    background: none;
+  @media (min-width: $desktop-md-width) {
+    background-color: $orange200;
   }
 }

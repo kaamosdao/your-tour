@@ -3,25 +3,25 @@
 .tour-card {
   display: flex;
   flex-direction: column;
-  width: 370px;
-  min-height: 531px;
-  padding: 50px 50px 41px 50px;
+  width: 318px;
+  min-height: 318px;
+  padding: 25px 25px 13px 25px;
   box-sizing: border-box;
   color: $white;
-  border-radius: 50px;
+  border-radius: 20px;
   background-size: 100%;
   pointer-events: none;
   transition: all 0.3s ease;
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     width: 450px;
   }
 
-  @media (max-width: $mobile-width) {
-    width: 318px;
-    min-height: 318px;
-    padding: 25px 25px 13px 25px;
-    border-radius: 20px;
+  @media (min-width: $desktop-lg-width) {
+    width: 370px;
+    min-height: 531px;
+    padding: 50px 50px 41px 50px;
+    border-radius: 50px;
   }
 }
 
@@ -30,20 +30,20 @@
 }
 
 .tour-card__title {
-  margin: 0;
-  @include font(500, 35px, 122%);
-
-  @media (max-width: $mobile-width) {
-    @include font(bold, 23px, 120%, 0.04em);
+  margin: 1px 0 0 0;
+  @include font(bold, 23px, 120%, 0.04em);
+  
+  @media (min-width: $desktop-md-width) {
+    @include font(500, 35px, 122%);
   }
 }
 
 .tour-card__price {
-  margin-top: 16px;
-  @include font(normal, 17px, 142%);
-
-  @media (max-width: $mobile-width) {
-    @include font(normal, 16px, 142%);
+  margin-top: 15px;
+  @include font(normal, 16px, 142%);
+  
+  @media (min-width: $desktop-md-width) {
+    @include font(normal, 17px, 142%);
   }
 }
 
@@ -53,14 +53,14 @@
 }
 
 .tour-card--car {
-  @include bgWithGradient('../img/choose-tour-images/car-desktop-lg.jpg');
+  @include bgWithGradient('../img/choose-tour-images/car-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient('../img/choose-tour-images/car-desktop-lg@2x.jpg');
-    background-size: 370px auto;
+    @include bgWithGradient('../img/choose-tour-images/car-mobile@2x.jpg');
+    background-size: 318px auto;
   }
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     @include bgWithGradient('../img/choose-tour-images/car-desktop-md.jpg');
 
     @media (min-resolution: 2dppx) {
@@ -71,25 +71,26 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
-    @include bgWithGradient('../img/choose-tour-images/car-mobile.jpg');
+  @media (min-width: $desktop-lg-width) {
+    @include bgWithGradient('../img/choose-tour-images/car-desktop-lg.jpg');
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradient('../img/choose-tour-images/car-mobile@2x.jpg');
-      background-size: 318px auto;
+      @include bgWithGradient('../img/choose-tour-images/car-desktop-lg@2x.jpg');
+      background-size: 370px auto;
     }
+
   }
 }
 
 .tour-card--sand {
-  @include bgWithGradient('../img/choose-tour-images/sand-desktop-lg.jpg');
+  @include bgWithGradient('../img/choose-tour-images/sand-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient('../img/choose-tour-images/sand-desktop-lg@2x.jpg');
-    background-size: 370px auto;
+    @include bgWithGradient('../img/choose-tour-images/sand-mobile@2x.jpg');
+    background-size: 318px auto;
   }
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     @include bgWithGradient('../img/choose-tour-images/sand-desktop-md.jpg');
 
     @media (min-resolution: 2dppx) {
@@ -100,27 +101,25 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
-    @include bgWithGradient('../img/choose-tour-images/sand-mobile.jpg');
+  @media (min-width: $desktop-lg-width) {
+    @include bgWithGradient('../img/choose-tour-images/sand-desktop-lg.jpg');
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradient('../img/choose-tour-images/sand-mobile@2x.jpg');
-      background-size: 318px auto;
+      @include bgWithGradient('../img/choose-tour-images/sand-desktop-lg@2x.jpg');
+      background-size: 370px auto;
     }
   }
 }
 
 .tour-card--fjord {
-  @include bgWithGradient('../img/choose-tour-images/fjord-desktop-lg.jpg');
+  @include bgWithGradient('../img/choose-tour-images/fjord-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient(
-      '../img/choose-tour-images/fjord-desktop-lg@2x.jpg'
-    );
-    background-size: 370px auto;
+    @include bgWithGradient('../img/choose-tour-images/fjord-mobile@2x.jpg');
+    background-size: 318px auto;
   }
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     @include bgWithGradient('../img/choose-tour-images/fjord-desktop-md.jpg');
 
     @media (min-resolution: 2dppx) {
@@ -131,27 +130,27 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
-    @include bgWithGradient('../img/choose-tour-images/fjord-mobile.jpg');
+  @media (min-width: $desktop-lg-width) {
+    @include bgWithGradient('../img/choose-tour-images/fjord-desktop-lg.jpg');
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradient('../img/choose-tour-images/fjord-mobile@2x.jpg');
-      background-size: 318px auto;
+      @include bgWithGradient(
+        '../img/choose-tour-images/fjord-desktop-lg@2x.jpg'
+      );
+      background-size: 370px auto;
     }
   }
 }
 
 .tour-card--street {
-  @include bgWithGradient('../img/choose-tour-images/street-desktop-lg.jpg');
+  @include bgWithGradient('../img/choose-tour-images/street-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient(
-      '../img/choose-tour-images/street-desktop-lg@2x.jpg'
-    );
-    background-size: 370px auto;
+    @include bgWithGradient('../img/choose-tour-images/street-mobile@2x.jpg');
+    background-size: 318px auto;
   }
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     @include bgWithGradient('../img/choose-tour-images/street-desktop-md.jpg');
 
     @media (min-resolution: 2dppx) {
@@ -162,27 +161,27 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
-    @include bgWithGradient('../img/choose-tour-images/street-mobile.jpg');
+  @media (min-width: $desktop-lg-width) {
+    @include bgWithGradient('../img/choose-tour-images/street-desktop-lg.jpg');
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradient('../img/choose-tour-images/street-mobile@2x.jpg');
-      background-size: 318px auto;
+      @include bgWithGradient(
+        '../img/choose-tour-images/street-desktop-lg@2x.jpg'
+      );
+      background-size: 370px auto;
     }
   }
 }
 
 .tour-card--beach {
-  @include bgWithGradient('../img/choose-tour-images/beach-desktop-lg.jpg');
+  @include bgWithGradient('../img/choose-tour-images/beach-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient(
-      '../img/choose-tour-images/beach-desktop-lg@2x.jpg'
-    );
-    background-size: 370px auto;
+    @include bgWithGradient('../img/choose-tour-images/beach-mobile@2x.jpg');
+    background-size: 318px auto;
   }
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     @include bgWithGradient('../img/choose-tour-images/beach-desktop-md.jpg');
 
     @media (min-resolution: 2dppx) {
@@ -193,25 +192,27 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
-    @include bgWithGradient('../img/choose-tour-images/beach-mobile.jpg');
+  @media (min-width: $desktop-lg-width) {
+    @include bgWithGradient('../img/choose-tour-images/beach-desktop-lg.jpg');
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradient('../img/choose-tour-images/beach-mobile@2x.jpg');
-      background-size: 318px auto;
+      @include bgWithGradient(
+        '../img/choose-tour-images/beach-desktop-lg@2x.jpg'
+      );
+      background-size: 370px auto;
     }
   }
 }
 
 .tour-card--lake {
-  @include bgWithGradient('../img/choose-tour-images/lake-desktop-lg.jpg');
+  @include bgWithGradient('../img/choose-tour-images/lake-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient('../img/choose-tour-images/lake-desktop-lg@2x.jpg');
-    background-size: 370px auto;
+    @include bgWithGradient('../img/choose-tour-images/lake-mobile@2x.jpg');
+    background-size: 318px auto;
   }
 
-  @media (max-width: $desktop-md-width) {
+  @media (min-width: $desktop-md-width) {
     @include bgWithGradient('../img/choose-tour-images/lake-desktop-md.jpg');
 
     @media (min-resolution: 2dppx) {
@@ -222,12 +223,12 @@
     }
   }
 
-  @media (max-width: $mobile-width) {
-    @include bgWithGradient('../img/choose-tour-images/lake-mobile.jpg');
+  @media (min-width: $desktop-lg-width) {
+    @include bgWithGradient('../img/choose-tour-images/lake-desktop-lg.jpg');
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradient('../img/choose-tour-images/lake-mobile@2x.jpg');
-      background-size: 318px auto;
+      @include bgWithGradient('../img/choose-tour-images/lake-desktop-lg@2x.jpg');
+      background-size: 370px auto;
     }
   }
 }

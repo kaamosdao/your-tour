@@ -1,50 +1,50 @@
 @import '../global/variables.scss';
 
 .contact {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  grid-template-rows: max-content max-content;
-  width: 770px;
-  min-height: 370px;
-  margin: 135px auto 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 285px;
+  margin: 77px auto 0;
+  text-align: center;
 
-  @media (max-width: $mobile-width) {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 285px;
-    margin-top: 77px;
-    text-align: center;
+  @media (min-width: $desktop-md-width) {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content min-content;
+    width: 770px;
+    min-height: 370px;
+    margin-top: 135px;
   }
 }
 
 .contact__title {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  align-self: flex-end;
-  margin: 3px 0 0 29px;
-  @include font(500, 35px, 122%);
+  order: 2;
+  align-self: center;
+  margin: 33px 0 0 0;
+  @include font(bold, 23px, 120%, 0.04em);
   color: $black;
 
-  @media (max-width: $mobile-width) {
-    order: 2;
-    align-self: center;
-    margin: 33px 0 0 0;
-    @include font(bold, 23px, 120%, 0.04em);
+  @media (min-width: $desktop-md-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+    margin: 3px 0 0 29px;
+    @include font(500, 35px, 122%);
   }
 }
 
 .contact__text {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  margin: 20px 0 0 29px;
-  @include font(normal, 20px, 142%);
+  order: 3;
+  margin: 20px 0 0 0;
+  @include font(normal, 16px, 142%);
   color: $grey300;
 
-  @media (max-width: $mobile-width) {
-    order: 3;
-    margin: 20px 0 0 0;
-    @include font(normal, 16px, 142%);
+  @media (min-width: $desktop-md-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 20px 0 0 29px;
+    @include font(normal, 20px, 142%);
   }
 }
 
@@ -64,11 +64,11 @@
 }
 
 .contact__picture {
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
+  order: 1;
+  align-self: center;
 
-  @media (max-width: $mobile-width) {
-    order: 1;
-    align-self: center;
+  @media (min-width: $desktop-md-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
   }
 }
