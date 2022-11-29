@@ -1,14 +1,14 @@
-@import "../global/variables.scss";
+@import '../global/variables.scss';
 
 .tagline {
   width: 620px;
   text-align: center;
   color: $white;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     width: 610px;
   }
-  
+
   @media (max-width: $mobile-width) {
     width: 250px;
   }
@@ -19,7 +19,7 @@
   margin-bottom: 0;
   @include font(bold, 96px, 109%, 0.02em);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     margin-top: 119px;
     margin-bottom: 0;
   }
@@ -34,7 +34,7 @@
   margin-top: 52px;
   @include font(normal, 20px, 142%);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     margin-top: 52px;
   }
 
@@ -47,7 +47,7 @@
 .tagline__description br:first-child {
   display: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     display: block;
   }
 
@@ -59,7 +59,7 @@
 .tagline__description br:last-child {
   display: block;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     display: none;
   }
 
@@ -77,7 +77,7 @@
   border: none;
   border-radius: 10px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     margin-top: 28px;
   }
 

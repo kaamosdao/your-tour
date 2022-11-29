@@ -8,7 +8,7 @@
   background-color: $white;
   border-radius: 50px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     width: 918px;
     height: 966px;
     padding: 60px;
@@ -93,7 +93,6 @@
     @include font(normal, 16px, 142%);
   }
 }
-
 
 .form__buttons__button-clear:hover {
   background-color: $grey100;

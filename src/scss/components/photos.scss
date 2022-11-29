@@ -13,7 +13,7 @@
   @include font(bold, 59px, 124%);
   color: $black;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     margin-top: 134px;
   }
 
@@ -52,7 +52,7 @@
   padding: 0;
   list-style-type: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     width: 984px;
     margin-top: 99px;
   }
@@ -72,7 +72,7 @@
 }
 
 .photos__item--canyon {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     display: none;
   }
 }
@@ -90,7 +90,7 @@
 }
 
 .photos__item--bridge {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     display: none;
   }
 }
@@ -102,7 +102,7 @@
 }
 
 .photos__item--supboard {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     display: none;
   }
 }

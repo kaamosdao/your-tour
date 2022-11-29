@@ -78,6 +78,20 @@ module.exports = {
           filename: 'src/img/choose-tour-images/[name][ext]',
         },
       },
+      {
+        test: /(svg-icons).*\.(svg)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'src/img/svg-icons/[name][ext]',
+        },
+      },
+      {
+        test: /(histories).*\.(jpg)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'src/img/histories/[name][ext]',
+        },
+      },
       //   {
       //     test: /\.(png|jpg|gif|svg)$/,
       //     type: 'asset/resource',

@@ -5,7 +5,7 @@
   grid-template-columns: 415px 75px;
   grid-template-rows: repeat(2, max-content);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     grid-template-columns: 295px 75px;
   }
 
@@ -35,7 +35,7 @@
   @include font(normal, 17px, 142%, -0.01em);
   color: $grey300;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     margin-top: 5px;
   }
 

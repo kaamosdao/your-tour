@@ -13,7 +13,7 @@
   @include font(bold, 59px, 124%);
   color: $black;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     margin-top: 106px;
   }
 
@@ -48,7 +48,7 @@
   padding: 0;
   list-style-type: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     margin-top: 99px;
   }
 

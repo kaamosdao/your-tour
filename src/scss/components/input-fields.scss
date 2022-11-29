@@ -15,7 +15,7 @@
   padding: 0;
   list-style-type: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     column-gap: 20px;
     grid-template-columns: repeat(2, 389px);
   }
@@ -91,7 +91,6 @@
   background-color: $beige200;
   cursor: pointer;
 }
-
 
 .input-fields__select {
   color: $black;

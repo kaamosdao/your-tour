@@ -7,7 +7,7 @@
   @include font(normal, 20px, 142%);
   color: $black;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     width: 910px;
   }
 
@@ -25,11 +25,11 @@
   padding: 0;
   list-style-type: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     min-width: 408px;
     margin-left: 83px;
   }
- 
+
   @media (max-width: $mobile-width) {
     display: none;
   }
@@ -38,7 +38,7 @@
 .navigation-fixed__item:not(:first-child) {
   margin-left: 51px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     margin-left: 30px;
   }
 }

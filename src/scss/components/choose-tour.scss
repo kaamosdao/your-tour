@@ -69,7 +69,7 @@
   left: 0;
   height: 2px;
   background-color: $black;
-  content: "";
+  content: '';
 }
 
 .choose-tour__nav-link--current:hover {
@@ -88,7 +88,7 @@
   left: 0;
   height: 2px;
   background-color: $orange200;
-  content: "";
+  content: '';
 
   @media (max-width: $mobile-width) {
     bottom: -2px;
@@ -104,8 +104,7 @@
   padding: 0;
   list-style-type: none;
 
-
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-md-width) {
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(3, max-content);
     grid-gap: 18px;
