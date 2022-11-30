@@ -14,21 +14,21 @@
     <script src="src/js/index.js" async defer></script>
     <link
       rel="preload"
-      href="fonts/Roboto-Regular.ttf"
+      href="fonts/roboto-regular.woff2"
       as="font"
-      type="font/ttf"
+      type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="fonts/Roboto-Bold.ttf"
+      href="fonts/roboto-500.woff2"
       as="font"
-      type="font/ttf"
+      type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="fonts/Roboto-Medium.ttf"
+      href="fonts/roboto-700.woff2"
       as="font"
       type="font/ttf"
       crossorigin="anonymous"
@@ -71,9 +71,10 @@
         <a class="navigation__phone" href="tel:89999999999">+7 999 999 99 99</a>
       </nav>
       <div class="header__tagline tagline">
-        <h1 class="tagline__title">Идеальные путешествия существуют</h1>
+        <h2 class="tagline__title">Идеальные путешествия существуют</h2>
         <p class="tagline__description">
-          Идейные соображения высшего порядка, а&nbsp;<br />также рамки и&nbsp;<br />
+          Идейные соображения высшего порядка, а&nbsp;<br />также рамки
+          и&nbsp;<br />
           место обучения кадров
         </p>
         <button class="tagline__button" type="button">Найти тур</button>
@@ -119,8 +120,9 @@
     </header>
 
     <main class="main">
+      <h1 class="visually-hidden">Выбери свой тур c YourTour</h1>
       <section class="choose-tour">
-        <h1 class="choose-tour__title">Выбери свой тур</h1>
+        <h2 class="choose-tour__title">Выбери свой тур</h2>
         <ul class="choose-tour__nav">
           <li class="choose-tour__nav-item">
             <a
@@ -144,32 +146,32 @@
         </ul>
         <ul class="choose-tour__links">
           <li class="choose-tour__links-item tour-card tour-card--car">
-            <h2 class="tour-card__title">Путешествие в горы</h2>
+            <h3 class="tour-card__title">Путешествие в горы</h3>
             <p class="tour-card__price">от 80 000 руб</p>
             <a class="tour-card__button button-more" href="#">Подробнее</a>
           </li>
-          <li class="tour-cards__item tour-card tour-card--sand">
-            <h2 class="tour-card__title">Путешествие в горы</h2>
+          <li class="choose-tour__links-item tour-card tour-card--sand">
+            <h3 class="tour-card__title">Путешествие в горы</h3>
             <p class="tour-card__price">от 80 000 руб</p>
             <a class="tour-card__button button-more" href="#">Подробнее</a>
           </li>
-          <li class="tour-cards__item tour-card tour-card--fjord">
-            <h2 class="tour-card__title">Путешествие в горы</h2>
+          <li class="choose-tour__links-item tour-card tour-card--fjord">
+            <h3 class="tour-card__title">Путешествие в горы</h3>
             <p class="tour-card__price">от 80 000 руб</p>
             <a class="tour-card__button button-more" href="#">Подробнее</a>
           </li>
-          <li class="tour-cards__item tour-card tour-card--street">
-            <h2 class="tour-card__title">Путешествие в горы</h2>
+          <li class="choose-tour__links-item tour-card tour-card--street">
+            <h3 class="tour-card__title">Путешествие в горы</h3>
             <p class="tour-card__price">от 80 000 руб</p>
             <a class="tour-card__button button-more" href="#">Подробнее</a>
           </li>
-          <li class="tour-cards__item tour-card tour-card--beach">
-            <h2 class="tour-card__title">Путешествие в горы</h2>
+          <li class="choose-tour__links-item tour-card tour-card--beach">
+            <h3 class="tour-card__title">Путешествие в горы</h3>
             <p class="tour-card__price">от 80 000 руб</p>
             <a class="tour-card__button button-more" href="#">Подробнее</a>
           </li>
-          <li class="tour-cards__item tour-card tour-card--lake">
-            <h2 class="tour-card__title">Путешествие в горы</h2>
+          <li class="choose-tour__links-item tour-card tour-card--lake">
+            <h3 class="tour-card__title">Путешествие в горы</h3>
             <p class="tour-card__price">от 80 000 руб</p>
             <a class="tour-card__button button-more" href="#">Подробнее</a>
           </li>
@@ -177,12 +179,12 @@
       </section>
 
       <section class="construct-tour">
-        <h1 class="construct-tour__title">Собери свой тур</h1>
+        <h2 class="construct-tour__title">Собери свой тур</h2>
         <p class="construct-tour__description">
           Идейные соображения высшего порядка,&nbsp;<br />а также рамки и место
           обучения кадров
         </p>
-        <form action="" class="construct-tour__form form">
+        <form class="construct-tour__form form">
           <fieldset class="form__inputs input-fields">
             <legend class="visually-hidden">Заполните поля</legend>
             <ul class="input-fields__list">
@@ -338,7 +340,7 @@
       </section>
 
       <section class="feedback">
-        <h1 class="feedback__title">Отзывы наших<br />путешественников</h1>
+        <h2 class="feedback__title">Отзывы наших<br />путешественников</h2>
         <p class="feedback__description">
           Идейные соображения высшего порядка, а<br />также рамки и место
           обучения кадров
@@ -410,7 +412,7 @@
       </section>
 
       <section class="photos">
-        <h1 class="photos__title">Фотографии путешествий</h1>
+        <h2 class="photos__title">Фотографии путешествий</h2>
         <p class="photos__description">
           Идейные соображения высшего порядка, а<br />также рамки и место
           обучения кадров
@@ -466,7 +468,6 @@
                 height="300"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/airplane-mobile.png"
                 srcset="src/img/photos/airplane-mobile@2x.png 2x"
                 alt="Самолет в небе"
@@ -488,7 +489,6 @@
                 height="301"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/canyon-desktop-lg.png"
                 srcset="src/img/photos/canyon-desktop-lg@2x.png 2x"
                 alt="Палатка в каньоне."
@@ -529,7 +529,6 @@
                 height="301"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/sunset-desktop-md.png"
                 srcset="src/img/photos/sunset-desktop-md@2x.png 2x"
                 alt="Закат в горах."
@@ -589,7 +588,6 @@
                 height="300"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/road-mobile.png"
                 srcset="src/img/photos/road-mobile@2x.png 2x"
                 alt="Туманная дорога в горах"
@@ -649,7 +647,6 @@
                 height="301"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/cliff-mobile.png"
                 srcset="src/img/photos/cliff-mobile@2x.png 2x"
                 alt="Люди на утесе"
@@ -690,7 +687,6 @@
                 height="301"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/map-desktop-md.png"
                 srcset="src/img/photos/map-desktop-md@2x.png 2x"
                 alt="Рука указывает на карту"
@@ -712,7 +708,6 @@
                 height="301"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/bridge-desktop-lg.png"
                 srcset="src/img/photos/bridge-desktop-lg@2x.png 2x"
                 alt="Мост в лесу"
@@ -772,7 +767,6 @@
                 height="301"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/car-mobile.png"
                 srcset="src/img/photos/car-mobile@2x.png 2x"
                 alt="Машина с палаткой у воды"
@@ -832,7 +826,6 @@
                 height="301"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/street-mobile.png"
                 srcset="src/img/photos/street-mobile@2x.png 2x"
                 alt="Пустая улица"
@@ -892,7 +885,6 @@
                 height="300"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/houses-mobile.png"
                 srcset="src/img/photos/houses-mobile@2x.png 2x"
                 alt="Дома на улице"
@@ -952,7 +944,6 @@
                 height="300"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/lake-mobile.png"
                 srcset="src/img/photos/lake-mobile@2x.png 2x"
                 alt="Озеро в горах"
@@ -993,7 +984,6 @@
                 height="300"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/town-desktop-md.png"
                 srcset="src/img/photos/town-desktop-md@2x.png 2x"
                 alt="Оживленная улица"
@@ -1015,7 +1005,6 @@
                 height="300"
               />
               <img
-                class="photo-gallery__picture"
                 src="src/img/photos/supboard-desktop-lg.png"
                 srcset="src/img/photos/supboard-desktop-lg@2x.png 2x"
                 alt="SUP борд на воде"
@@ -1029,14 +1018,14 @@
       </section>
 
       <section class="histories">
-        <h1 class="histories__title">Истории путешествий</h1>
+        <h2 class="histories__title">Истории путешествий</h2>
         <p class="histories__description">
           Идейные соображения высшего порядка, а<br />также рамки и место
           обучения кадров
         </p>
         <ul class="histories__list">
           <li class="histories__item history-card history-card--camping">
-            <h2 class="history-card__title">Автостопом в Стамбул</h2>
+            <h3 class="history-card__title">Автостопом в Стамбул</h3>
             <p class="history-card__text">
               Идейные соображения высшего порядка, а также рамки и место
               обучения кадров обеспечивает широкому кругу (специалистов) участие
@@ -1057,7 +1046,7 @@
             </footer>
           </li>
           <li class="histories__item history-card history-card--fire">
-            <h2 class="history-card__title">Автостопом в Стамбул</h2>
+            <h3 class="history-card__title">Автостопом в Стамбул</h3>
             <p class="history-card__text">
               Идейные соображения высшего порядка, а также рамки и место
               обучения кадров обеспечивает широкому кругу (специалистов) участие
@@ -1072,7 +1061,7 @@
             </footer>
           </li>
           <li class="histories__item history-card history-card--shore">
-            <h2 class="history-card__title">Автостопом в Стамбул</h2>
+            <h3 class="history-card__title">Автостопом в Стамбул</h3>
             <p class="history-card__text">
               Идейные соображения высшего порядка, а также рамки и место
               обучения кадров обеспечивает широкому кругу (специалистов) участие
@@ -1091,7 +1080,7 @@
       </section>
 
       <section class="contact">
-        <h1 class="contact__title">Пора в путешествие<br />вместе с нами!</h1>
+        <h2 class="contact__title">Пора в путешествие<br />вместе с нами!</h2>
         <p class="contact__text">
           Напиши на почту и узнай подробности<br />на
           <a class="contact__link" href="mailto:yourtour@gmail.com"
