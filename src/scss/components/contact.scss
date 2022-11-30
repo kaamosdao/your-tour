@@ -10,8 +10,8 @@
 
   @media (min-width: $desktop-md-width) {
     display: grid;
-    grid-template-columns: max-content max-content;
-    grid-template-rows: max-content max-content;
+    grid-template-columns: max-content min-content;
+    grid-template-rows: max-content min-content;
     width: 770px;
     min-height: 370px;
     margin-top: 135px;
@@ -27,9 +27,11 @@
   color: $black;
 
   @media (min-width: $desktop-md-width) {
+    display: block;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     align-self: flex-end;
+    width: 365px;
     margin: 3px 0 0 29px;
     @include font(500, 35px, 122%);
   }
@@ -42,8 +44,10 @@
   color: $grey300;
 
   @media (min-width: $desktop-md-width) {
+    display: block;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    width: 365px;
     margin: 20px 0 0 29px;
     @include font(normal, 20px, 142%);
   }

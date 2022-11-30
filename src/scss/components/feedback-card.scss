@@ -29,6 +29,7 @@
 .feedback-card__text {
   margin: 0;
   @include font(bold, 16px, 144%);
+  color: $black;
   
   @media (min-width: $desktop-md-width) {
     @include font(bold, 23px, 122%);

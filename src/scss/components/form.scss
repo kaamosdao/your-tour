@@ -2,7 +2,7 @@
 
 .form {
   width: 318px;
-  height: 1110px;
+  min-height: 1110px;
   padding: 20px 20px 40px;
   box-sizing: border-box;
   background-color: $white;
@@ -10,14 +10,14 @@
 
   @media (min-width: $desktop-md-width) {
     width: 918px;
-    height: 966px;
+    min-height: 966px;
     padding: 60px;
     border-radius: 50px;
   }
 
   @media (min-width: $desktop-lg-width) {
     width: 1170px;
-    height: 986px;
+    min-height: 986px;
     padding: 70px;
   }
 }
@@ -48,7 +48,7 @@
 }
 
 .form__buttons__button-find {
-  min-width: 134px;
+  width: 134px;
   min-height: 47px;
   padding: 12px;
   @include font(normal, 16px, 142%);
@@ -58,7 +58,7 @@
   border-radius: 10px;
   
   @media (min-width: $desktop-md-width) {
-    min-width: 235px;
+    width: 235px;
     min-height: 58px;
     padding: 15px;
     @include font(normal, 20px, 142%);
@@ -75,7 +75,7 @@
 }
 
 .form__buttons__button-clear {
-  min-width: 134px;
+  width: 134px;
   min-height: 47px;
   margin-left: 5px;
   padding: 12px;
