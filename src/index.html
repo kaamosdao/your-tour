@@ -236,6 +236,7 @@
                   name="phone"
                   id="phone"
                   placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+                  pattern="^([+]7)\s(\([0-9]{3})\)([0-9]{3})([-])([0-9]{2})([-])([0-9]{2})"
                   required
                 />
               </li>
@@ -249,6 +250,7 @@
                   name="dateFrom"
                   id="dateFrom"
                   placeholder="ДД.ММ.ГГГГ"
+                  pattern="^(?:(?:31(\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"
                   required
                 />
               </li>
@@ -262,6 +264,7 @@
                   name="dateTo"
                   id="dateTo"
                   placeholder="ДД.ММ.ГГГГ"
+                  pattern="^(?:(?:31(\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"
                   required
                 />
               </li>
@@ -288,6 +291,7 @@
                     type="radio"
                     name="age-confirmation"
                     value="yep"
+                    required
                   />
                   <span class="control-radio__mark"></span>
                   <span class="control-radio__label">Да</span>
@@ -300,6 +304,7 @@
                     type="radio"
                     name="age-confirmation"
                     value="nope"
+                    required
                   />
                   <span class="control-radio__mark"></span>
                   <span class="control-radio__label">Нет</span>
@@ -317,6 +322,7 @@
                 class="visually-hidden control-checkbox__input"
                 type="checkbox"
                 name="yep"
+                required
               />
               <span class="control-checkbox__mark"></span>
               <span class="control-checkbox__label">
