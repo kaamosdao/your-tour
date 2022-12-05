@@ -9,12 +9,12 @@
 }
 
 .histories__title {
-  margin: 57px 0 0 0;
+  margin: 59px 0 0 0;
   @include font(bold, 34px, 112%, 0.02em);
   color: $black;
 
   @media (min-width: $desktop-md-width) {
-    margin-top: 106px;
+    margin-top: 108px;
     @include font(bold, 59px, 124%);
   }
 }

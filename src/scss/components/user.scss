@@ -49,6 +49,7 @@
 .user__avatar {
   grid-area: 1 / 2 / -1 / -1;
   border-radius: 100px;
+  display: block;
 }
 
 .user__avatar-picture {

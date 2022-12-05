@@ -113,6 +113,10 @@
   padding: 0;
   list-style-type: none;
 
+  @media (min-width: $tablet-lg-width) {
+    grid-template-columns: repeat(2, min-content);
+  }
+
   @media (min-width: $desktop-md-width) {
     grid-template-columns: repeat(2, min-content);
     grid-template-rows: repeat(3, min-content);

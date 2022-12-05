@@ -65,10 +65,10 @@
 }
 
 .photos__item {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 
   @media (min-width: $desktop-md-width) {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 }
 
@@ -80,14 +80,16 @@
 }
 
 .photos__item--sunset {
-  @media (max-width: $mobile-width) {
-    display: none;
+  display: none;
+  @media (min-width: $desktop-md-width) {
+    display: block;
   }
 }
 
 .photos__item--map {
-  @media (max-width: $mobile-width) {
-    display: none;
+  display: none;
+  @media (min-width: $desktop-md-width) {
+    display: block;
   }
 }
 
@@ -99,8 +101,9 @@
 }
 
 .photos__item--town {
-  @media (max-width: $mobile-width) {
-    display: none;
+  display: none;
+  @media (min-width: $desktop-md-width) {
+    display: block;
   }
 }
 

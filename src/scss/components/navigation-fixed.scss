@@ -4,17 +4,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   @include font(normal, 16px, 142%);
   color: $black;
   
   @media (min-width: $desktop-md-width) {
     justify-content: initial;
-    width: 910px;
+    min-width: 910px;
   }
   
   @media (min-width: $desktop-lg-width) {
-    width: 1168px;
+    min-width: 1168px;
     @include font(normal, 20px, 142%);
   }
 }

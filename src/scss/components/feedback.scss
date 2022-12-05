@@ -12,12 +12,12 @@
   margin: 75px 0 0 0;
   @include font(bold, 34px, 112%, 0.02em);
   color: $black;
-  
+
   @media (min-width: $desktop-md-width) {
     margin-top: 134px;
     @include font(bold, 59px, 124%);
   }
-  
+
   @media (min-width: $desktop-lg-width) {
     margin-top: 135px;
   }
@@ -28,7 +28,7 @@
   padding: 0 20px;
   @include font(normal, 16px, 142%);
   color: $grey300;
-  
+
   @media (min-width: $desktop-md-width) {
     margin-top: 30px;
     padding: 0;
@@ -48,10 +48,14 @@
   display: grid;
   grid-template-columns: max-content;
   gap: 18px;
-  width: 318px;
+  width: auto;
   margin: 50px 0 0 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-lg-width) {
+    grid-template-columns: repeat(2, max-content);
+  }
 
   @media (min-width: $desktop-md-width) {
     grid-template-columns: max-content max-content;

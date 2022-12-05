@@ -2,9 +2,9 @@
 
 .button-more {
   position: relative;
-  width: 199px;
-  min-height: 42px;
-  padding: 7px 59px 7px 20px;
+  width: 149px;
+  min-height: 37px;
+  padding: 7px 15px;
   box-sizing: border-box;
   border-radius: 50px;
   @include font(bold, 16px, 142%);
@@ -12,6 +12,8 @@
   text-decoration: none;
 
   @media (min-width: $desktop-md-width) {
+    width: 199px;
+    padding-right: 59px;
     @include font(bold, 23px, 122%);
   }
 }
@@ -19,7 +21,7 @@
 .button-more::after {
   position: absolute;
   top: 9px;
-  right: 57px;
+  right: 12px;
   width: 22px;
   height: 16px;
   background-image: url('../img/svg-icons/arrow.svg');
@@ -27,7 +29,7 @@
 
   @media (min-width: $desktop-md-width) {
     top: 11px;
-    right: 21px;
+    right: 26px;
   }
 }
 

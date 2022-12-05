@@ -1,4 +1,4 @@
-$font-family: 'Roboto', "Arial", sans-serif;
+$font-family: 'Roboto', 'Arial', sans-serif;
 
 @mixin font(
   $weight: normal,
@@ -50,4 +50,6 @@ $beige100: #f9f7f4;
 
 $desktop-lg-width: 1920px;
 $desktop-md-width: 1024px;
+$tablet-lg-width: 800px;
+$tablet-md-width: 500px;
 $mobile-width: 360px;
