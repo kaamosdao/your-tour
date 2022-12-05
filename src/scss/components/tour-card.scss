@@ -8,6 +8,7 @@
   padding: 25px 25px 13px 25px;
   box-sizing: border-box;
   color: $white;
+  text-decoration: none;
   border-radius: 20px;
   background-size: 100%;
   transition: all 0.3s ease;
@@ -53,7 +54,7 @@
 .tour-card__button {
   margin: auto 0 5px -15px;
   @media (min-width: $desktop-md-width) {
-    margin: auto 0 0 -15px;
+    margin: auto 0 0 -20px;
   }
 }
 

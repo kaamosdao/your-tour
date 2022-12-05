@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-md-width) {
     width: 199px;
+    padding-left: 20px;;
     padding-right: 59px;
     @include font(bold, 23px, 122%);
   }
@@ -29,7 +30,7 @@
 
   @media (min-width: $desktop-md-width) {
     top: 11px;
-    right: 26px;
+    right: 21px;
   }
 }
 
