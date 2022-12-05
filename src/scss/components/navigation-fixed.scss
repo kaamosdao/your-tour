@@ -23,18 +23,16 @@
 .navigation-fixed__links {
   display: none;
 
-
   @media (min-width: $desktop-md-width) {
     display: flex;
     min-width: 408px;
-    margin: 0 0 0 83px;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
   }
   
   @media (min-width: $desktop-lg-width) {
     min-width: 470px;
-    margin-left: 182px;
   }
 }
 
@@ -76,7 +74,7 @@
   text-decoration: none;
   
   @media (min-width: $desktop-md-width) {
-    margin: 0 0 0 auto;
+    margin: 0;
   }
 }
 

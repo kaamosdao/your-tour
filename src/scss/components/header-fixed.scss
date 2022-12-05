@@ -14,6 +14,10 @@
 
 .header-fixed__navigation {
   margin: 0 5.5%;
+
+  @media (min-width: $desktop-lg-width) {
+    margin: 0 19.6%;
+  }
 }
 
 .header-fixed__tagline {
