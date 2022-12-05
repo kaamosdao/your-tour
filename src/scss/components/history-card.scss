@@ -12,7 +12,6 @@
   border: none;
   border-radius: 20px;
   background-size: 100%;
-  pointer-events: none;
   transition: all 0.3s ease;
 
   @media (min-width: $desktop-md-width) {
@@ -29,6 +28,10 @@
 
 .history-card:hover {
   background-size: 120%;
+}
+
+.history-card:hover .history-card__button {
+  background-color: $green400;
 }
 
 .history-card--camping {
@@ -175,7 +178,6 @@
 
 .history-card__button {
   margin-left: -20px;
-  pointer-events: auto;
 }
 
 .history-card__socials {
@@ -192,7 +194,6 @@
   @include font(normal, 20px, 142%, 0.004em);
   color: $white;
   text-decoration: none;
-  pointer-events: auto;
 }
 
 .history-card__social-link:not(:first-child) {

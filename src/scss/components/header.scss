@@ -1,7 +1,8 @@
 @import '../global/variables.scss';
 
 .header {
-  width: 100%;
+  min-width: 360px;
+  width: auto;
   min-height: 488px;
   background-image: url('../img/backgound-village/background-village-mobile.jpg');
   background-repeat: no-repeat;
@@ -14,7 +15,8 @@
   }
 
   @media (min-width: $desktop-md-width) {
-    width: 100%;
+    min-width: 1024px;
+    width: auto;
     min-height: 831px;
     background-image: url('../img/backgound-village/background-village-desktop-md.jpg');
 
@@ -25,7 +27,8 @@
   }
 
   @media (min-width: $desktop-lg-width) {
-    width: 100%;
+    min-width: 1920px;
+    width: auto;
     min-height: 831px;
     background-image: url('../img/backgound-village/background-village-desktop-lg.jpg');
 
