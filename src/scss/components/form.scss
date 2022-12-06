@@ -19,10 +19,15 @@
     border-radius: 50px;
   }
 
+  @media (min-width: 1300px) {
+    width: 70.6%;
+
+  }
+
   @media (min-width: $desktop-lg-width) {
-    width: 1170px;
+    width: 61%;
     min-height: 986px;
-    padding: 70px;
+    padding: 3.65%;
   }
 }
 

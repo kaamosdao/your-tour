@@ -20,10 +20,14 @@
     column-gap: 20px;
     row-gap: 34px;
   }
+
+  @media (min-width: 1300px) {
+    grid-template-columns: repeat(2, 48.7%);
+  }
   
   @media (min-width: $desktop-lg-width) {
-    grid-template-columns: repeat(2, 500px);
-    column-gap: 30px;
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
   }
 }
 
