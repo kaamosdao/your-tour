@@ -12,17 +12,28 @@
   background-color: $beige200;
   border: none;
   
+  @media (min-width: $tablet-md-width) {
+    width: 100%;
+    padding: 6.2% 6.4% 6.2% 6.3%;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    width: 318px;
+    min-height: 408px;
+    padding: 20px 21px 20px 20px;
+  }
 
   @media (min-width: $desktop-md-width) {
-    width: 450px;
+    width: auto;
     min-height: 841px;
-    padding: 41px 40px 40px 40px;
+    padding: 9.1% 8.9% 8.9%;
     border-radius: 50px;
   }
 
   @media (min-width: $desktop-lg-width) {
-    width: 570px;
+    width: auto;
     min-height: 673px;
+    padding: 7.1% 7% 6.9%;
   }
 }
 

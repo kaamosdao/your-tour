@@ -6,12 +6,16 @@
 
   grid-template-rows: repeat(2, min-content);
 
+  @media (min-width: $tablet-md-width) {
+    grid-template-columns: 73% 27%;
+  }
+
   @media (min-width: $desktop-md-width) {
-    grid-template-columns: 295px 75px;
+    grid-template-columns: 80% 20%;
   }
 
   @media (min-width: $desktop-lg-width) {
-    grid-template-columns: 415px 75px;  }
+    grid-template-columns: 85% 15%;  }
 }
 
 .user__name {
@@ -50,6 +54,9 @@
   grid-area: 1 / 2 / -1 / -1;
   border-radius: 100px;
   display: block;
+  min-width: 75px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .user__avatar-picture {
