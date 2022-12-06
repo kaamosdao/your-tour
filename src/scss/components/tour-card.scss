@@ -13,15 +13,22 @@
   background-size: 100%;
   transition: all 0.3s ease;
 
+  @media (min-width: $tablet-md-width) {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    padding: 6.7% 7.5% 3.5%;
+  }
+
   @media (min-width: $desktop-md-width) {
-    width: 450px;
+    width: 100%;
     min-height: 531px;
-    padding: 50px 50px 41px 50px;
+    padding: 11% 11% 9.1%;
     border-radius: 50px;
   }
 
   @media (min-width: $desktop-lg-width) {
-    width: 370px;
+    width: 100%;
+    padding: 13% 14% 11%;
   }
 }
 
