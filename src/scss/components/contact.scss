@@ -8,14 +8,20 @@
   margin: 77px auto 0;
   text-align: center;
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-lg-width) {
     display: grid;
-    grid-template-columns: max-content min-content;
-    grid-template-rows: max-content min-content;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+    width: 670px;
+    min-height: 370px;
+    margin-top: 77px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-md-width) {
     width: 770px;
     min-height: 370px;
     margin-top: 135px;
-    text-align: start;
   }
 }
 
@@ -26,11 +32,17 @@
   @include font(bold, 23px, 120%, 0.04em);
   color: $black;
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-lg-width) {
     display: block;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     align-self: flex-end;
+    width: 100%;
+    margin: -7px 0 0 20px;
+    @include font(500, 23px, 120%, 0.04em);
+  }
+
+  @media (min-width: $desktop-md-width) {
     width: 365px;
     margin: -7px 0 0 29px;
     @include font(500, 35px, 122%, 0.004em);
@@ -43,10 +55,16 @@
   @include font(normal, 16px, 142%);
   color: $grey300;
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-lg-width) {
     display: block;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    width: 100%;
+    margin: 20px 0 0 20px;
+    @include font(normal, 16px, 142%);
+  }
+
+  @media (min-width: $desktop-md-width) {
     width: 365px;
     margin: 20px 0 0 29px;
     @include font(normal, 20px, 142%);
@@ -72,7 +90,7 @@
   order: 1;
   align-self: center;
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-lg-width) {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
   }
