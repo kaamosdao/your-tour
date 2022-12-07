@@ -3,7 +3,7 @@
 .history-card {
   display: flex;
   flex-direction: column;
-  width: 318px;
+  width: 100%;
   min-height: 455px;
   padding: 30px 30px 18px;
   box-sizing: border-box;
@@ -16,19 +16,24 @@
   transition: all 0.3s ease;
 
   @media (min-width: $desktop-md-width) {
-    width: 918px;
     min-height: 567px;
     padding: 60px 60px 52px;
     border-radius: 50px;
-  }
-
-  @media (min-width: $desktop-lg-width) {
-    width: 1170px;
   }
 }
 
 .history-card:hover {
   background-size: 120%;
+
+  @media (min-width: 361px) {
+    background-size: 899px auto;
+  }
+  @media (min-width: $desktop-md-width) {
+    background-size: 120%;
+  }
+  @media (min-width: 1025px) {
+    background-size: 1404px auto;
+  }
 }
 
 .history-card:hover .history-card__button {
@@ -43,8 +48,22 @@
     background-size: 318px auto;
   }
 
+  @media (min-width: 361px) {
+    @include bgWithGradientSecond('../img/histories/camping-desktop-md.jpg');
+    background-position: right;
+    background-size: 749px auto;
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond(
+        '../img/histories/camping-desktop-md@2x.jpg'
+      );
+      background-size: 918px auto;
+    }
+  }
+
   @media (min-width: $desktop-md-width) {
     @include bgWithGradientSecond('../img/histories/camping-desktop-md.jpg');
+    background-position:initial;
+    background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond(
@@ -54,8 +73,22 @@
     }
   }
 
+  @media (min-width: 1025px) {
+    @include bgWithGradientSecond('../img/histories/camping-desktop-lg.jpg');
+    background-position: right;
+    background-size: 1170px auto;
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond(
+        '../img/histories/camping-desktop-lg@2x.jpg'
+      );
+      background-size: 1170px auto;
+    }
+  }
+
   @media (min-width: $desktop-lg-width) {
     @include bgWithGradientSecond('../img/histories/camping-desktop-lg.jpg');
+    background-position:initial;
+    background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond('../img/histories/camping-desktop-lg@2x.jpg');
@@ -72,8 +105,22 @@
     background-size: 318px auto;
   }
 
+  @media (min-width: 361px) {
+    @include bgWithGradientSecond('../img/histories/fire-desktop-md.jpg');
+    background-position: 50%;
+    background-size: 749px auto;
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond(
+        '../img/histories/fire-desktop-md@2x.jpg'
+      );
+      background-size: 918px auto;
+    }
+  }
+
   @media (min-width: $desktop-md-width) {
     @include bgWithGradientSecond('../img/histories/fire-desktop-md.jpg');
+    background-position:initial;
+    background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond('../img/histories/fire-desktop-md@2x.jpg');
@@ -81,8 +128,22 @@
     }
   }
 
+  @media (min-width: 1025px) {
+    @include bgWithGradientSecond('../img/histories/fire-desktop-lg.jpg');
+    background-position: right;
+    background-size: 1170px auto;
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond(
+        '../img/histories/fire-desktop-lg@2x.jpg'
+      );
+      background-size: 1170px auto;
+    }
+  }
+
   @media (min-width: $desktop-lg-width) {
     @include bgWithGradientSecond('../img/histories/fire-desktop-lg.jpg');
+    background-position:initial;
+    background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond('../img/histories/fire-desktop-lg@2x.jpg');
@@ -99,8 +160,22 @@
     background-size: 318px auto;
   }
 
+  @media (min-width: 361px) {
+    @include bgWithGradientSecond('../img/histories/shore-desktop-md.jpg');
+    background-position: 50%;
+    background-size: 749px auto;
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond(
+        '../img/histories/shore-desktop-md@2x.jpg'
+      );
+      background-size: 918px auto;
+    }
+  }
+
   @media (min-width: $desktop-md-width) {
     @include bgWithGradientSecond('../img/histories/shore-desktop-md.jpg');
+    background-position:initial;
+    background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond('../img/histories/shore-desktop-md@2x.jpg');
@@ -108,8 +183,22 @@
     }
   }
 
+  @media (min-width: 1025px) {
+    @include bgWithGradientSecond('../img/histories/shore-desktop-lg.jpg');
+    background-position: right;
+    background-size: 1170px auto;
+    @media (min-resolution: 2dppx) {
+      @include bgWithGradientSecond(
+        '../img/histories/shore-desktop-lg@2x.jpg'
+      );
+      background-size: 1170px auto;
+    }
+  }
+
   @media (min-width: $desktop-lg-width) {
     @include bgWithGradientSecond('../img/histories/shore-desktop-lg.jpg');
+    background-position:initial;
+    background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond('../img/histories/shore-desktop-lg@2x.jpg');
@@ -119,7 +208,7 @@
 }
 
 .history-card__title {
-  width: 150px;
+  width: 60%;
   margin: 2px 0 0 0;
   @include font(bold, 23px, 120%, 0.04em);
 

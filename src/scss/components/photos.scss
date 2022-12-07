@@ -65,7 +65,9 @@
 }
 
 .photos__item {
-  margin-bottom: 10px;
+  margin-bottom: 3.1%;
+  border-radius: 20px;
+  overflow: hidden;
 
   @media (min-width: $desktop-md-width) {
     margin-bottom: 22px;

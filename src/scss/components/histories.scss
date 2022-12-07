@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 360px;
   text-align: center;
 }
 
@@ -42,15 +43,22 @@
 
 .histories__list {
   position: relative;
+  width: 88%;
+  max-width: 670px;
+
   margin: 51px 0 0 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $desktop-md-width) {
+    width: 89.6%;
+    max-width: 1170px;
     margin-top: 99px;
   }
 
   @media (min-width: $desktop-lg-width) {
+    width: 61%;
+    max-width: none;
     margin-top: 98px;
   }
 }
@@ -61,6 +69,16 @@
 
 .histories__item:hover .histories__item-link {
   background-size: 120%;
+
+  @media (min-width: 361px) {
+    background-size: 899px auto;
+  }
+  @media (min-width: $desktop-md-width) {
+    background-size: 120%;
+  }
+  @media (min-width: 1025px) {
+    background-size: 1404px auto;
+  }
 }
 
 .histories__item:not(:first-child) {
