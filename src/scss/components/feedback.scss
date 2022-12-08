@@ -62,6 +62,7 @@
 
   @media (min-width: $tablet-lg-width) {
     grid-template-columns: repeat(2, max-content);
+    gap: 35px;
     width: auto;
   }
 

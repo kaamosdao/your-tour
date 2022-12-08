@@ -52,9 +52,11 @@
   width: 230px;
   margin-left: 30px;
   @include font(normal, 16px, 142%);
-
   color: $grey300;
 
+  @media (min-width: $tablet-md-width) {
+    width: 80%;
+  }
   @media (min-width: $desktop-md-width) {
     display: inline;
     margin-left: 37px;

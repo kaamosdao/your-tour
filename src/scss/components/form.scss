@@ -9,7 +9,8 @@
   border-radius: 30px;
 
   @media (min-width: $tablet-md-width) {
-    width: 65%;
+    width: 80%;
+    padding: 4.7%;
   }
 
   @media (min-width: $desktop-md-width) {
@@ -21,7 +22,6 @@
 
   @media (min-width: 1300px) {
     width: 70.6%;
-
   }
 
   @media (min-width: $desktop-lg-width) {
