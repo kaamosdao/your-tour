@@ -89,8 +89,9 @@
     background-size: 318px auto;
   }
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-md-width) {
     @include bgWithGradient('../img/choose-tour-images/car-desktop-md.jpg');
+    background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
@@ -119,8 +120,9 @@
     background-size: 318px auto;
   }
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-md-width) {
     @include bgWithGradient('../img/choose-tour-images/sand-desktop-md.jpg');
+    background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
@@ -148,8 +150,9 @@
     background-size: 318px auto;
   }
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-md-width) {
     @include bgWithGradient('../img/choose-tour-images/fjord-desktop-md.jpg');
+    background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
@@ -179,8 +182,9 @@
     background-size: 318px auto;
   }
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-md-width) {
     @include bgWithGradient('../img/choose-tour-images/street-desktop-md.jpg');
+    background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
@@ -210,8 +214,9 @@
     background-size: 318px auto;
   }
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-md-width) {
     @include bgWithGradient('../img/choose-tour-images/beach-desktop-md.jpg');
+    background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
@@ -241,9 +246,10 @@
     background-size: 318px auto;
   }
 
-  @media (min-width: $desktop-md-width) {
+  @media (min-width: $tablet-md-width) {
     @include bgWithGradient('../img/choose-tour-images/lake-desktop-md.jpg');
-
+    background-position: bottom;
+    
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
         '../img/choose-tour-images/lake-desktop-md@2x.jpg'
