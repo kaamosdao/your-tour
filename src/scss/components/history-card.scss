@@ -1,6 +1,7 @@
 @import '../global/variables.scss';
 
 .history-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -27,21 +28,20 @@
   }
 }
 
-.history-card:hover {
-  background-size: 120%;
+.history-card::before { 
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  border-radius: inherit;
+  background:inherit;
+  transition:inherit;
+  content:"";
+}
 
-  @media (min-width: 361px) {
-    background-size: 899px auto;
-  }
-  @media (min-width: $desktop-md-width) {
-    background-size: 120%;
-  }
-  @media (min-width: 1025px) {
-    background-size: 1404px auto;
-  }
-  @media (min-width: $desktop-lg-width) {
-    background-size: 120%;
-  }
+.history-card:hover::before { 
+  transform: scale(1.2);
 }
 
 .history-card:hover .history-card__button {
@@ -53,7 +53,7 @@
 
   @media (min-resolution: 2dppx) {
     @include bgWithGradientSecond('../img/histories/camping-mobile@2x.jpg');
-    background-size: 318px auto;
+    background-size: 100% auto;
   }
 
   @media (min-width: 361px) {
@@ -216,6 +216,7 @@
 }
 
 .history-card__title {
+  z-index: 2;
   width: 60%;
   margin: 2px 0 0 0;
   @include font(bold, 23px, 120%, 0.04em);
@@ -227,6 +228,7 @@
 }
 
 .history-card__text {
+  z-index: 2;
   width: 100%;
   margin: 20px 0 0 0;
   @include font(normal, 16px, 142%);
@@ -257,6 +259,7 @@
 .history-card__item {
   position: relative;
 }
+
 
 .history-card__item:before {
   position: absolute;

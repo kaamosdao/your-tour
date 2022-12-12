@@ -65,19 +65,11 @@
 
 .histories__item {
   position: relative;
-}
+  overflow: hidden;
+  border-radius: 20px;
 
-.histories__item:hover .histories__item-link {
-  background-size: 120%;
-
-  @media (min-width: 361px) {
-    background-size: 899px auto;
-  }
   @media (min-width: $desktop-md-width) {
-    background-size: 120%;
-  }
-  @media (min-width: 1025px) {
-    background-size: 1404px auto;
+    border-radius: 50px;
   }
 }
 
@@ -90,6 +82,7 @@
 }
 
 .histories__item-socials {
+  z-index: 2;
   display: none;
   
   @media (min-width: $desktop-md-width) {
@@ -100,6 +93,10 @@
     align-items: center;
     content: '';
   }
+}
+
+.histories__item-socials:hover ~ .history-card::before {
+  transform: scale(1.2);
 }
 
 .histories__item-social-link {
