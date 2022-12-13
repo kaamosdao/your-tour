@@ -44,9 +44,5 @@
 }
 
 .button-more:active {
-  background: none;
-
-  @media (min-width: $desktop-md-width) {
-    background-color: $orange200;
-  }
+  background-color: $orange200;
 }

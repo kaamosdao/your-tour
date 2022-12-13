@@ -54,6 +54,10 @@
   background-color: $green400;
 }
 
+.tour-card:active .button-more {
+  background-color: $orange200;
+}
+
 .tour-card__title {
   z-index: 2;
   margin: 1px 0 0 0;
