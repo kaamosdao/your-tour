@@ -48,6 +48,10 @@
   background-color: $green400;
 }
 
+.history-card:active .history-card__button {
+  background-color: $orange200;
+}
+
 .history-card--camping {
   @include bgWithGradientSecond('../img/histories/camping-mobile.jpg');
 
