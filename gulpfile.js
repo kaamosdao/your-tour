@@ -137,7 +137,7 @@ const copyHistories = () =>
 const copyPhotos = () =>
   gulp
     .src('src/img/photos/*.{png,jpg}')
-    .pipe(gulp.dest('dist/public/src/src/img/photos'));
+    .pipe(gulp.dest('dist/public/src/img/photos'));
 
 const copySvg = () =>
   gulp
@@ -149,6 +149,20 @@ const copyFonts = (done) => {
   done();
 };
 
+const copyIcoWebmanifest = (done) => {
+  gulp
+    .src("src/*.{ico,webmanifest}")
+    .pipe(gulp.dest("dist/public"));
+    done();
+};
+
+const copyFavicons = (done) => {
+  gulp
+    .src("src/img/favicons/*.{png,svg}")
+    .pipe(gulp.dest("dist/public/src/img/favicons"));
+  done();
+};
+
 const copy = gulp.parallel(
   copyAvatars,
   copyBackground,
@@ -156,7 +170,9 @@ const copy = gulp.parallel(
   copyHistories,
   copyPhotos,
   copySvg,
-  copyFonts
+  copyFonts,
+  copyIcoWebmanifest,
+  copyFavicons
 );
 
 const clean = () => {
@@ -189,6 +205,8 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copyFonts,
+  copyIcoWebmanifest,
+  copyFavicons,
   optimizeAllImages,
   gulp.parallel(styles, html, scripts, createWebp)
 );
