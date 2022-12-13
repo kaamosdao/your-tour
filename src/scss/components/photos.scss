@@ -51,7 +51,7 @@
   justify-content: space-between;
   width: 318px;
   width: 88.3%;
-  max-width: 375px;
+  max-width: 350px;
   margin: 50px 0 0 0;
   padding: 0;
   list-style-type: none;
@@ -62,12 +62,12 @@
 
   @media (min-width: $desktop-md-width) {
     width: 96.1%;
-    max-width: 1225px;
+    max-width: 1165px;
     margin-top: 99px;
   }
 
   @media (min-width: 1600px) {
-    max-width: 1670px;
+    max-width: 1565px;
   }
 
   @media (min-width: $desktop-lg-width) {
