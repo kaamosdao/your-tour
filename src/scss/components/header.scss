@@ -17,11 +17,11 @@
   @media (min-width: $tablet-md-width) {
     background-image: url('../img/backgound-village/background-village-desktop-md.jpg');
     background-position: top;
-    background-size: 1024px auto;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/backgound-village/background-village-desktop-md@2x.jpg');
-      background-size: 1024px auto;
+      background-size: cover;
     }
   }
 
