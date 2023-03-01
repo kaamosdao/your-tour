@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 
@@ -35,6 +36,17 @@ module.exports = {
           to: path.resolve(__dirname, 'dist/public/src/img'),
         },
       ],
+    }),
+    new FaviconsWebpackPlugin({
+      logo: './src/img/favicons/favicon.png',
+      mode: 'webapp',
+      favicons: {
+        icons: {
+          coast: false,
+          yandex: false,
+          windows: false
+        }
+      }
     }),
   ],
   module: {
@@ -92,13 +104,6 @@ module.exports = {
           filename: 'src/img/histories/[name][ext]',
         },
       },
-      //   {
-      //     test: /\.(png|jpg|gif|svg)$/,
-      //     type: 'asset/resource',
-      //     generator: {
-      //       filename: 'src/img/[name][ext]',
-      //     },
-      //  }
     ],
   },
   optimization: {
