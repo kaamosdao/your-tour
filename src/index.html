@@ -10,33 +10,46 @@
       content="travel, tours, tour, adventure, hitchhiking, hiking"
     />
     <title>YourTour</title>
-    <link rel="stylesheet" href="src/css/style.min.css" />
-    <script src="src/js/index.js" async defer></script>
+    <!-- <link rel="stylesheet" href="src/css/style.min.css" />
+    <script src="src/js/index.js" async defer></script> -->
     <link
       rel="preload"
-      href="fonts/roboto-regular.woff2"
+      href="src/fonts/roboto-regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="fonts/roboto-500.woff2"
+      href="src/fonts/roboto-500.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="fonts/roboto-700.woff2"
+      href="src/fonts/roboto-700.woff2"
       as="font"
       type="font/ttf"
       crossorigin="anonymous"
     />
     <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="src/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="src/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="src/img/favicons/apple-icon-180x180.png" />
+    <link
+      rel="icon"
+      href="src/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="src/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="src/img/favicons/apple-icon-180x180.png"
+    />
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
@@ -387,9 +400,16 @@
                   width="75"
                   height="75"
                 />
+                <source
+                  type="image/jpeg"
+                  srcset="src/img/avatars/user-maria.jpg"
+                  width="75"
+                  height="75"
+                />
                 <img
                   class="user__avatar"
-                  src="src/img/avatars/user-maria.jpg"
+                  type="image/webp"
+                  src="src/img/avatars/user-maria.webp"
                   alt="Аватар"
                   width="75"
                   height="75"
@@ -421,7 +441,14 @@
                   width="75"
                   height="75"
                 />
+                <source
+                  type="image/jpeg"
+                  srcset="src/img/avatars/user-pavel.jpg"
+                  width="75"
+                  height="75"
+                />
                 <img
+                  type="image/jpg"
                   class="user__avatar"
                   src="src/img/avatars/user-pavel.jpg"
                   alt="Аватар"
