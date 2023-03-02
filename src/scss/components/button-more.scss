@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-md-width) {
     width: 199px;
-    padding-left: 20px;;
+    padding-left: 20px;
     padding-right: 59px;
     @include font(bold, 23px, 122%);
   }
@@ -25,7 +25,7 @@
   right: 12px;
   width: 22px;
   height: 16px;
-  background-image: url('../img/svg-icons/arrow.svg');
+  background-image: url('../assets/img/svg-icons/arrow.svg');
   content: '';
 
   @media (min-width: $desktop-md-width) {

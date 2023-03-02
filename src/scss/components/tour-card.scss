@@ -34,19 +34,19 @@
   }
 }
 
-.tour-card::before { 
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+.tour-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   border-radius: inherit;
-  background:inherit;
-  transition:inherit;
-  content:"";
+  background: inherit;
+  transition: inherit;
+  content: '';
 }
 
-.tour-card:hover::before { 
+.tour-card:hover::before {
   transform: scale(1.2);
 }
 
@@ -62,7 +62,7 @@
   z-index: 2;
   margin: 1px 0 0 0;
   @include font(bold, 23px, 120%, 0.04em);
-  
+
   @media (min-width: $desktop-md-width) {
     @include font(500, 35px, 122%, 0.004em);
   }
@@ -72,7 +72,7 @@
   z-index: 2;
   margin-top: 15px;
   @include font(normal, 16px, 142%);
-  
+
   @media (min-width: $desktop-md-width) {
     @include font(normal, 17px, 142%);
   }
@@ -86,92 +86,113 @@
 }
 
 .tour-card--car {
-  @include bgWithGradient('../img/choose-tour-images/car-mobile.jpg');
+  @include bgWithGradient('../assets/img/choose-tour-images/car-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient('../img/choose-tour-images/car-mobile@2x.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/car-mobile@2x.jpg'
+    );
     background-size: 100% auto;
   }
 
   @media (min-width: $tablet-md-width) {
-    @include bgWithGradient('../img/choose-tour-images/car-desktop-md.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/car-desktop-md.jpg'
+    );
     background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
-        '../img/choose-tour-images/car-desktop-md@2x.jpg'
+        '../assets/img/choose-tour-images/car-desktop-md@2x.jpg'
       );
       background-size: cover;
     }
   }
 
   @media (min-width: $desktop-lg-width) {
-    @include bgWithGradient('../img/choose-tour-images/car-desktop-lg.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/car-desktop-lg.jpg'
+    );
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradient('../img/choose-tour-images/car-desktop-lg@2x.jpg');
+      @include bgWithGradient(
+        '../assets/img/choose-tour-images/car-desktop-lg@2x.jpg'
+      );
       background-size: 100% auto;
     }
-
   }
 }
 
 .tour-card--sand {
-  @include bgWithGradient('../img/choose-tour-images/sand-mobile.jpg');
+  @include bgWithGradient('../assets/img/choose-tour-images/sand-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient('../img/choose-tour-images/sand-mobile@2x.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/sand-mobile@2x.jpg'
+    );
     background-size: 100% auto;
   }
 
   @media (min-width: $tablet-md-width) {
-    @include bgWithGradient('../img/choose-tour-images/sand-desktop-md.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/sand-desktop-md.jpg'
+    );
     background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
-        '../img/choose-tour-images/sand-desktop-md@2x.jpg'
+        '../assets/img/choose-tour-images/sand-desktop-md@2x.jpg'
       );
       background-size: cover;
     }
   }
 
   @media (min-width: $desktop-lg-width) {
-    @include bgWithGradient('../img/choose-tour-images/sand-desktop-lg.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/sand-desktop-lg.jpg'
+    );
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradient('../img/choose-tour-images/sand-desktop-lg@2x.jpg');
+      @include bgWithGradient(
+        '../assets/img/choose-tour-images/sand-desktop-lg@2x.jpg'
+      );
       background-size: 100% auto;
     }
   }
 }
 
 .tour-card--fjord {
-  @include bgWithGradient('../img/choose-tour-images/fjord-mobile.jpg');
+  @include bgWithGradient('../assets/img/choose-tour-images/fjord-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient('../img/choose-tour-images/fjord-mobile@2x.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/fjord-mobile@2x.jpg'
+    );
     background-size: 100% auto;
   }
 
   @media (min-width: $tablet-md-width) {
-    @include bgWithGradient('../img/choose-tour-images/fjord-desktop-md.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/fjord-desktop-md.jpg'
+    );
     background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
-        '../img/choose-tour-images/fjord-desktop-md@2x.jpg'
+        '../assets/img/choose-tour-images/fjord-desktop-md@2x.jpg'
       );
       background-size: cover;
     }
   }
 
   @media (min-width: $desktop-lg-width) {
-    @include bgWithGradient('../img/choose-tour-images/fjord-desktop-lg.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/fjord-desktop-lg.jpg'
+    );
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
-        '../img/choose-tour-images/fjord-desktop-lg@2x.jpg'
+        '../assets/img/choose-tour-images/fjord-desktop-lg@2x.jpg'
       );
       background-size: 100% auto;
     }
@@ -179,31 +200,37 @@
 }
 
 .tour-card--street {
-  @include bgWithGradient('../img/choose-tour-images/street-mobile.jpg');
+  @include bgWithGradient('../assets/img/choose-tour-images/street-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient('../img/choose-tour-images/street-mobile@2x.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/street-mobile@2x.jpg'
+    );
     background-size: 100% auto;
   }
 
   @media (min-width: $tablet-md-width) {
-    @include bgWithGradient('../img/choose-tour-images/street-desktop-md.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/street-desktop-md.jpg'
+    );
     background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
-        '../img/choose-tour-images/street-desktop-md@2x.jpg'
+        '../assets/img/choose-tour-images/street-desktop-md@2x.jpg'
       );
       background-size: cover;
     }
   }
 
   @media (min-width: $desktop-lg-width) {
-    @include bgWithGradient('../img/choose-tour-images/street-desktop-lg.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/street-desktop-lg.jpg'
+    );
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
-        '../img/choose-tour-images/street-desktop-lg@2x.jpg'
+        '../assets/img/choose-tour-images/street-desktop-lg@2x.jpg'
       );
       background-size: 100% auto;
     }
@@ -211,31 +238,37 @@
 }
 
 .tour-card--beach {
-  @include bgWithGradient('../img/choose-tour-images/beach-mobile.jpg');
+  @include bgWithGradient('../assets/img/choose-tour-images/beach-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient('../img/choose-tour-images/beach-mobile@2x.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/beach-mobile@2x.jpg'
+    );
     background-size: 100% auto;
   }
 
   @media (min-width: $tablet-md-width) {
-    @include bgWithGradient('../img/choose-tour-images/beach-desktop-md.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/beach-desktop-md.jpg'
+    );
     background-position: bottom;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
-        '../img/choose-tour-images/beach-desktop-md@2x.jpg'
+        '../assets/img/choose-tour-images/beach-desktop-md@2x.jpg'
       );
       background-size: cover;
     }
   }
 
   @media (min-width: $desktop-lg-width) {
-    @include bgWithGradient('../img/choose-tour-images/beach-desktop-lg.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/beach-desktop-lg.jpg'
+    );
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
-        '../img/choose-tour-images/beach-desktop-lg@2x.jpg'
+        '../assets/img/choose-tour-images/beach-desktop-lg@2x.jpg'
       );
       background-size: 100% auto;
     }
@@ -243,30 +276,38 @@
 }
 
 .tour-card--lake {
-  @include bgWithGradient('../img/choose-tour-images/lake-mobile.jpg');
+  @include bgWithGradient('../assets/img/choose-tour-images/lake-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradient('../img/choose-tour-images/lake-mobile@2x.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/lake-mobile@2x.jpg'
+    );
     background-size: 100% auto;
   }
 
   @media (min-width: $tablet-md-width) {
-    @include bgWithGradient('../img/choose-tour-images/lake-desktop-md.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/lake-desktop-md.jpg'
+    );
     background-position: bottom;
-    
+
     @media (min-resolution: 2dppx) {
       @include bgWithGradient(
-        '../img/choose-tour-images/lake-desktop-md@2x.jpg'
+        '../assets/img/choose-tour-images/lake-desktop-md@2x.jpg'
       );
       background-size: cover;
     }
   }
 
   @media (min-width: $desktop-lg-width) {
-    @include bgWithGradient('../img/choose-tour-images/lake-desktop-lg.jpg');
+    @include bgWithGradient(
+      '../assets/img/choose-tour-images/lake-desktop-lg.jpg'
+    );
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradient('../img/choose-tour-images/lake-desktop-lg@2x.jpg');
+      @include bgWithGradient(
+        '../assets/img/choose-tour-images/lake-desktop-lg@2x.jpg'
+      );
       background-size: 100% auto;
     }
   }

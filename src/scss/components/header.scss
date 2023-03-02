@@ -4,23 +4,23 @@
   min-width: 360px;
   width: auto;
   min-height: 488px;
-  background-image: url('../img/backgound-village/background-village-desktop-md.jpg');
+  background-image: url('../assets/img/backgound-village/background-village-desktop-md.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 601px auto;
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../img/backgound-village/background-village-desktop-md@2x.jpg');
+    background-image: url('../assets/img/backgound-village/background-village-desktop-md@2x.jpg');
     background-size: 601px auto;
   }
 
   @media (min-width: $tablet-md-width) {
-    background-image: url('../img/backgound-village/background-village-desktop-md.jpg');
+    background-image: url('../assets/img/backgound-village/background-village-desktop-md.jpg');
     background-position: top;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../img/backgound-village/background-village-desktop-md@2x.jpg');
+      background-image: url('../assets/img/backgound-village/background-village-desktop-md@2x.jpg');
       background-size: cover;
     }
   }
@@ -29,11 +29,11 @@
     min-width: 800px;
     width: auto;
     min-height: 831px;
-    background-image: url('../img/backgound-village/background-village-desktop-md.jpg');
+    background-image: url('../assets/img/backgound-village/background-village-desktop-md.jpg');
     background-position: top;
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../img/backgound-village/background-village-desktop-md@2x.jpg');
+      background-image: url('../assets/img/backgound-village/background-village-desktop-md@2x.jpg');
       background-size: 1024px auto;
     }
   }
@@ -42,11 +42,11 @@
     min-width: 1024px;
     width: auto;
     min-height: 831px;
-    background-image: url('../img/backgound-village/background-village-desktop-lg.jpg');
+    background-image: url('../assets/img/backgound-village/background-village-desktop-lg.jpg');
     background-size: 1920px auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../img/backgound-village/background-village-desktop-lg@2x.jpg');
+      background-image: url('../assets/img/backgound-village/background-village-desktop-lg@2x.jpg');
       background-size: 1920px auto;
     }
   }
@@ -55,11 +55,11 @@
     min-width: 1920px;
     width: auto;
     min-height: 831px;
-    background-image: url('../img/backgound-village/background-village-desktop-lg.jpg');
+    background-image: url('../assets/img/backgound-village/background-village-desktop-lg.jpg');
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../img/backgound-village/background-village-desktop-lg@2x.jpg');
+      background-image: url('../assets/img/backgound-village/background-village-desktop-lg@2x.jpg');
       background-size: cover;
     }
   }

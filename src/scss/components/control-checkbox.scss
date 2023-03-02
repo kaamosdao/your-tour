@@ -36,14 +36,14 @@
   left: 3px;
   width: 13px;
   height: 10px;
-  background-image: url('../img/svg-icons/check-mark-mobile.svg');
+  background-image: url('../assets/img/svg-icons/check-mark-mobile.svg');
   background-repeat: no-repeat;
   content: '';
 
   @media (min-width: $desktop-md-width) {
     top: 6px;
     left: 4px;
-    background-image:  url('../img/svg-icons/check-mark.svg');
+    background-image: url('../assets/img/svg-icons/check-mark.svg');
   }
 }
 

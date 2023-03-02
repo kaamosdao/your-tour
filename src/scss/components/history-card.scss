@@ -28,19 +28,19 @@
   }
 }
 
-.history-card::before { 
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+.history-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   border-radius: inherit;
-  background:inherit;
-  transition:inherit;
-  content:"";
+  background: inherit;
+  transition: inherit;
+  content: '';
 }
 
-.history-card:hover::before { 
+.history-card:hover::before {
   transform: scale(1.2);
 }
 
@@ -53,167 +53,205 @@
 }
 
 .history-card--camping {
-  @include bgWithGradientSecond('../img/histories/camping-mobile.jpg');
+  @include bgWithGradientSecond('../assets/img/histories/camping-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradientSecond('../img/histories/camping-mobile@2x.jpg');
+    @include bgWithGradientSecond(
+      '../assets/img/histories/camping-mobile@2x.jpg'
+    );
     background-size: 100% auto;
   }
 
   @media (min-width: 361px) {
-    @include bgWithGradientSecond('../img/histories/camping-desktop-md.jpg');
+    @include bgWithGradientSecond(
+      '../assets/img/histories/camping-desktop-md.jpg'
+    );
     background-position: right;
     background-size: 749px auto;
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond(
-        '../img/histories/camping-desktop-md@2x.jpg'
+        '../assets/img/histories/camping-desktop-md@2x.jpg'
       );
       background-size: 918px auto;
     }
   }
 
   @media (min-width: $desktop-md-width) {
-    @include bgWithGradientSecond('../img/histories/camping-desktop-md.jpg');
-    background-position:initial;
+    @include bgWithGradientSecond(
+      '../assets/img/histories/camping-desktop-md.jpg'
+    );
+    background-position: initial;
     background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond(
-        '../img/histories/camping-desktop-md@2x.jpg'
+        '../assets/img/histories/camping-desktop-md@2x.jpg'
       );
       background-size: 918px auto;
     }
   }
 
   @media (min-width: 1025px) {
-    @include bgWithGradientSecond('../img/histories/camping-desktop-lg.jpg');
+    @include bgWithGradientSecond(
+      '../assets/img/histories/camping-desktop-lg.jpg'
+    );
     background-position: right;
     background-size: 1170px auto;
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond(
-        '../img/histories/camping-desktop-lg@2x.jpg'
+        '../assets/img/histories/camping-desktop-lg@2x.jpg'
       );
       background-size: 1170px auto;
     }
   }
 
   @media (min-width: $desktop-lg-width) {
-    @include bgWithGradientSecond('../img/histories/camping-desktop-lg.jpg');
-    background-position:initial;
+    @include bgWithGradientSecond(
+      '../assets/img/histories/camping-desktop-lg.jpg'
+    );
+    background-position: initial;
     background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradientSecond('../img/histories/camping-desktop-lg@2x.jpg');
+      @include bgWithGradientSecond(
+        '../assets/img/histories/camping-desktop-lg@2x.jpg'
+      );
       background-size: 100% auto;
     }
   }
 }
 
 .history-card--fire {
-  @include bgWithGradientSecond('../img/histories/fire-mobile.jpg');
+  @include bgWithGradientSecond('../assets/img/histories/fire-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradientSecond('../img/histories/fire-mobile@2x.jpg');
+    @include bgWithGradientSecond('../assets/img/histories/fire-mobile@2x.jpg');
     background-size: 318px auto;
   }
 
   @media (min-width: 361px) {
-    @include bgWithGradientSecond('../img/histories/fire-desktop-md.jpg');
+    @include bgWithGradientSecond(
+      '../assets/img/histories/fire-desktop-md.jpg'
+    );
     background-position: 50%;
     background-size: 749px auto;
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond(
-        '../img/histories/fire-desktop-md@2x.jpg'
+        '../assets/img/histories/fire-desktop-md@2x.jpg'
       );
       background-size: 918px auto;
     }
   }
 
   @media (min-width: $desktop-md-width) {
-    @include bgWithGradientSecond('../img/histories/fire-desktop-md.jpg');
-    background-position:initial;
+    @include bgWithGradientSecond(
+      '../assets/img/histories/fire-desktop-md.jpg'
+    );
+    background-position: initial;
     background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradientSecond('../img/histories/fire-desktop-md@2x.jpg');
+      @include bgWithGradientSecond(
+        '../assets/img/histories/fire-desktop-md@2x.jpg'
+      );
       background-size: 918px auto;
     }
   }
 
   @media (min-width: 1025px) {
-    @include bgWithGradientSecond('../img/histories/fire-desktop-lg.jpg');
+    @include bgWithGradientSecond(
+      '../assets/img/histories/fire-desktop-lg.jpg'
+    );
     background-position: right;
     background-size: 1170px auto;
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond(
-        '../img/histories/fire-desktop-lg@2x.jpg'
+        '../assets/img/histories/fire-desktop-lg@2x.jpg'
       );
       background-size: 1170px auto;
     }
   }
 
   @media (min-width: $desktop-lg-width) {
-    @include bgWithGradientSecond('../img/histories/fire-desktop-lg.jpg');
-    background-position:initial;
+    @include bgWithGradientSecond(
+      '../assets/img/histories/fire-desktop-lg.jpg'
+    );
+    background-position: initial;
     background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradientSecond('../img/histories/fire-desktop-lg@2x.jpg');
+      @include bgWithGradientSecond(
+        '../assets/img/histories/fire-desktop-lg@2x.jpg'
+      );
       background-size: 100% auto;
     }
   }
 }
 
 .history-card--shore {
-  @include bgWithGradientSecond('../img/histories/shore-mobile.jpg');
+  @include bgWithGradientSecond('../assets/img/histories/shore-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradientSecond('../img/histories/shore-mobile@2x.jpg');
+    @include bgWithGradientSecond(
+      '../assets/img/histories/shore-mobile@2x.jpg'
+    );
     background-size: 318px auto;
   }
 
   @media (min-width: 361px) {
-    @include bgWithGradientSecond('../img/histories/shore-desktop-md.jpg');
+    @include bgWithGradientSecond(
+      '../assets/img/histories/shore-desktop-md.jpg'
+    );
     background-position: 50%;
     background-size: 749px auto;
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond(
-        '../img/histories/shore-desktop-md@2x.jpg'
+        '../assets/img/histories/shore-desktop-md@2x.jpg'
       );
       background-size: 918px auto;
     }
   }
 
   @media (min-width: $desktop-md-width) {
-    @include bgWithGradientSecond('../img/histories/shore-desktop-md.jpg');
-    background-position:initial;
+    @include bgWithGradientSecond(
+      '../assets/img/histories/shore-desktop-md.jpg'
+    );
+    background-position: initial;
     background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradientSecond('../img/histories/shore-desktop-md@2x.jpg');
+      @include bgWithGradientSecond(
+        '../assets/img/histories/shore-desktop-md@2x.jpg'
+      );
       background-size: 918px auto;
     }
   }
 
   @media (min-width: 1025px) {
-    @include bgWithGradientSecond('../img/histories/shore-desktop-lg.jpg');
+    @include bgWithGradientSecond(
+      '../assets/img/histories/shore-desktop-lg.jpg'
+    );
     background-position: right;
     background-size: 1170px auto;
     @media (min-resolution: 2dppx) {
       @include bgWithGradientSecond(
-        '../img/histories/shore-desktop-lg@2x.jpg'
+        '../assets/img/histories/shore-desktop-lg@2x.jpg'
       );
       background-size: 1170px auto;
     }
   }
 
   @media (min-width: $desktop-lg-width) {
-    @include bgWithGradientSecond('../img/histories/shore-desktop-lg.jpg');
-    background-position:initial;
+    @include bgWithGradientSecond(
+      '../assets/img/histories/shore-desktop-lg.jpg'
+    );
+    background-position: initial;
     background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
-      @include bgWithGradientSecond('../img/histories/shore-desktop-lg@2x.jpg');
+      @include bgWithGradientSecond(
+        '../assets/img/histories/shore-desktop-lg@2x.jpg'
+      );
       background-size: 100% auto;
     }
   }
@@ -236,7 +274,7 @@
   width: 100%;
   margin: 20px 0 0 0;
   @include font(normal, 16px, 142%);
-  
+
   @media (min-width: $desktop-md-width) {
     width: 70%;
     margin-top: 35px;
@@ -253,7 +291,7 @@
   padding: 0;
   @include font(normal, 16px, 142%);
   list-style-type: none;
-  
+
   @media (min-width: $desktop-md-width) {
     margin: 26px 0 0 30px;
     @include font(normal, 20px, 142%);
@@ -263,7 +301,6 @@
 .history-card__item {
   position: relative;
 }
-
 
 .history-card__item:before {
   position: absolute;

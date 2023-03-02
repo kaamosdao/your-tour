@@ -12,7 +12,7 @@ module.exports = {
   resolve: {
     extensions: ['.js'],
   },
-  entry: './src/js/index.js',
+  entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'dist/public'),
     clean: true,
@@ -32,18 +32,21 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src/img'),
-          to: path.resolve(__dirname, 'dist/public/src/img'),
+          from: path.resolve(__dirname, 'src/assets/img'),
+          to: path.resolve(__dirname, 'dist/public/src/assets/img'),
         },
       ],
     }),
     new FaviconsWebpackPlugin({
-      logo: './src/img/favicons/favicon.png',
+      logo: './src/assets/favicons/favicon.png',
       mode: 'webapp',
+      prefix: 'src/assets/favicons/',
       favicons: {
         icons: {
           coast: false,
           yandex: false,
+          appleIcon: false,
+          appleStartup: false,
           windows: false
         }
       }
@@ -73,35 +76,35 @@ module.exports = {
         test: /\.(woff(2)?|ttf|eot)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'src/fonts/[name][ext]',
+          filename: 'src/assets/fonts/[name][ext]',
         },
       },
       {
         test: /(backgound-village).*\.(jpg)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'src/img/backgound-village/[name][ext]',
+          filename: 'src/assets/img/backgound-village/[name][ext]',
         },
       },
       {
         test: /(choose-tour-images).*\.(jpg)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'src/img/choose-tour-images/[name][ext]',
+          filename: 'src/assets/img/choose-tour-images/[name][ext]',
         },
       },
       {
         test: /(svg-icons).*\.(svg)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'src/img/svg-icons/[name][ext]',
+          filename: 'src/assets/img/svg-icons/[name][ext]',
         },
       },
       {
         test: /(histories).*\.(jpg)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'src/img/histories/[name][ext]',
+          filename: 'src/assets/img/histories/[name][ext]',
         },
       },
     ],

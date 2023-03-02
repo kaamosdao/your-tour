@@ -6,7 +6,7 @@
   min-width: 360px;
   margin-top: 73px;
   background-color: $beige200;
-  
+
   @media (min-width: $desktop-md-width) {
     margin-top: 127px;
   }
@@ -36,7 +36,7 @@
   margin: 22px 0 0 0;
   @include font(normal, 16px, 142%);
   color: $grey300;
-  
+
   @media (min-width: $desktop-md-width) {
     margin: 0;
     @include font(normal, 20px, 142%);
@@ -52,7 +52,7 @@
   padding: 0 10px 10px 10px;
   @include font(normal, 16px, 142%);
   list-style-type: none;
-  
+
   @media (min-width: $desktop-md-width) {
     column-gap: 62px;
     row-gap: 10px;
@@ -82,7 +82,7 @@
   left: -18px;
   width: 14px;
   height: 14px;
-  background-image: url('../img/svg-icons/instagram.svg');
+  background-image: url('../assets/img/svg-icons/instagram.svg');
   background-size: 77% auto;
   background-repeat: no-repeat;
   content: '';
@@ -100,7 +100,7 @@
   left: -15px;
   width: 8px;
   height: 17px;
-  background-image: url('../img/svg-icons/facebook.svg');
+  background-image: url('../assets/img/svg-icons/facebook.svg');
   background-size: 77% auto;
   background-repeat: no-repeat;
   content: '';
@@ -118,7 +118,7 @@
   left: -22px;
   width: 20px;
   height: 12px;
-  background-image: url('../img/svg-icons/vk.svg');
+  background-image: url('../assets/img/svg-icons/vk.svg');
   background-size: 77% auto;
   background-repeat: no-repeat;
   content: '';
