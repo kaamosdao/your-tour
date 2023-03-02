@@ -2,13 +2,13 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header class="header">
-      <nav class="header__navigation navigation">
-        <a class="navigation__logo" href="#">
+    <header className="header">
+      <nav className="header__navigation navigation">
+        <a className="navigation__logo" href="#">
           <picture>
             <source
               media="(min-width: 1024px)"
-              srcset="src/assets/img/svg-icons/yourtour-mobile.svg"
+              srcSet="src/assets/img/svg-icons/yourtour-mobile.svg"
               width="181"
               height="32"
             />
@@ -21,42 +21,42 @@ const Header = () => {
             />
           </picture>
         </a>
-        <ul class="navigation__links">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
+        <ul className="navigation__links">
+          <li className="navigation__item">
+            <a className="navigation__link" href="#">
               Туры
             </a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
+          <li className="navigation__item">
+            <a className="navigation__link" href="#">
               Создать тур
             </a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
+          <li className="navigation__item">
+            <a className="navigation__link" href="#">
               Отзывы
             </a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
+          <li className="navigation__item">
+            <a className="navigation__link" href="#">
               Истории
             </a>
           </li>
         </ul>
-        <a class="navigation__phone" href="tel:89999999999">
+        <a className="navigation__phone" href="tel:89999999999">
           +7 999 999 99 99
         </a>
       </nav>
-      <div class="header__tagline tagline">
-        <h2 class="tagline__title">Идеальные путешествия существуют</h2>
-        <p class="tagline__description">
+      <div className="header__tagline tagline">
+        <h2 className="tagline__title">Идеальные путешествия существуют</h2>
+        <p className="tagline__description">
           Идейные соображения высшего порядка, а&nbsp;
           <br />
           также рамки и&nbsp;
           <br />
           место обучения кадров
         </p>
-        <button class="tagline__button" type="button">
+        <button className="tagline__button" type="button">
           Найти тур
         </button>
       </div>
