@@ -2,6 +2,7 @@ import React from 'react';
 import SectionChooseTour from './SectionChooseTour';
 import SectionConstructTour from './SectionConstructTour';
 import SectionFeedback from './SectionFeedback';
+import SectionHistories from './SectionHistories';
 import SectionPhotos from './SectionPhotos';
 
 const Main = () => {
@@ -12,6 +13,7 @@ const Main = () => {
       <SectionConstructTour/>
       <SectionFeedback />
       <SectionPhotos />
+      <SectionHistories/>
     </main>
   );
 };
