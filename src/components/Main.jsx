@@ -2,6 +2,7 @@ import React from 'react';
 import SectionChooseTour from './SectionChooseTour';
 import SectionConstructTour from './SectionConstructTour';
 import SectionFeedback from './SectionFeedback';
+import SectionPhotos from './SectionPhotos';
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <SectionChooseTour />
       <SectionConstructTour/>
       <SectionFeedback />
+      <SectionPhotos />
     </main>
   );
 };
