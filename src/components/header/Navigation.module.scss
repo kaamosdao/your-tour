@@ -1,4 +1,4 @@
-@import '../global/variables.scss';
+@import '../../scss/global/variables.scss';
 
 .navigation {
   display: flex;
@@ -7,6 +7,7 @@
   min-width: 320px;
   width: auto;
   min-height: 88px;
+  margin: 0 5.5%;
   @include font(normal, 16px, 142%);
   color: $white;
   
@@ -18,10 +19,11 @@
   
   @media (min-width: $desktop-lg-width) {
     min-width: 1168px;
+    margin: 0 19.6%;
   }
 }
 
-.navigation__links {
+.links {
   display: none;
 
   @media (min-width: $desktop-md-width) {
@@ -38,11 +40,11 @@
   }
 }
 
-.navigation__item {
+.item {
   max-width: 150px;
 }
 
-.navigation__item:not(:last-child) {
+.item:not(:last-child) {
   margin-right: 30px;
   
   @media (min-width: $desktop-lg-width) {
@@ -50,13 +52,13 @@
   }
 }
 
-.navigation__link {
+.link {
   position: relative;
   color: $white;
   text-decoration: none;
 }
 
-.navigation__link:hover:after {
+.link:hover:after {
   position: absolute;
   right: 0;
   left: 0;
@@ -66,7 +68,7 @@
   content: '';
 }
 
-.navigation__logo {
+.logo {
   margin: 5px 0 0 0;
   padding: 0;
   text-decoration: none;
@@ -76,7 +78,7 @@
   }
 }
 
-.navigation__phone {
+.phone {
   position: relative;
   margin: 0;
   padding: 0;
@@ -84,7 +86,7 @@
   text-decoration: none;
 }
 
-.navigation__phone:hover:after {
+.phone:hover:after {
   position: absolute;
   right: 0;
   left: 0;
