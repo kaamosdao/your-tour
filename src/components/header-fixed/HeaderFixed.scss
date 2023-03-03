@@ -1,4 +1,4 @@
-@import '../global/variables.scss';
+@import '../../scss/global/variables.scss';
 
 .header-fixed {
   z-index: 10;
@@ -10,18 +10,6 @@
   min-height: 88px;
   background-color: rgba(243, 239, 232, 0.6);
   backdrop-filter: blur(27px);
-}
-
-.header-fixed__navigation {
-  margin: 0 5.5%;
-
-  @media (min-width: $desktop-lg-width) {
-    margin: 0 19.6%;
-  }
-}
-
-.header-fixed__tagline {
-  margin: 0 auto;
 }
 
 .header-fixed--show {
