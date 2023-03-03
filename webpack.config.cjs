@@ -47,9 +47,9 @@ module.exports = {
           yandex: false,
           appleIcon: false,
           appleStartup: false,
-          windows: false
-        }
-      }
+          windows: false,
+        },
+      },
     }),
   ],
   module: {
@@ -116,15 +116,15 @@ module.exports = {
   },
   optimization: {
     minimizer: [
-      "...",
+      '...',
       new ImageMinimizerPlugin({
         test: /\.(jpe?g|png|)$/i,
         minimizer: {
           implementation: ImageMinimizerPlugin.imageminMinify,
           options: {
             plugins: [
-              ["jpegtran", { progressive: true }],
-              ["optipng", { optimizationLevel: 5 }],
+              ['jpegtran', { progressive: true }],
+              ['optipng', { optimizationLevel: 5 }],
             ],
           },
         },
