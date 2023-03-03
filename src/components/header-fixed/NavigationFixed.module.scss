@@ -1,6 +1,6 @@
 @import '../../scss/global/variables.scss';
 
-.navigation-fixed {
+.navigationFixed {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@
   }
 }
 
-.navigation-fixed__links {
+.links {
   display: none;
 
   @media (min-width: $desktop-md-width) {
@@ -38,7 +38,7 @@
   }
 }
 
-.navigation-fixed__item:not(:first-child) {
+.item:not(:first-child) {
   margin-left: 30px;
   
   @media (min-width: $desktop-md-width) {
@@ -46,13 +46,13 @@
   }
 }
 
-.navigation-fixed__link {
+.link {
   position: relative;
   color: $black;
   text-decoration: none;
 }
 
-.navigation-fixed__link:hover:after {
+.link:hover:after {
   position: absolute;
   right: 0;
   left: 0;
@@ -62,13 +62,13 @@
   content: '';
 }
 
-.navigation-fixed__logo {
+.logo {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-.navigation-fixed__phone {
+.phone {
   position: relative;
   margin: 5px 0 0 0;
   padding: 0;
@@ -80,7 +80,7 @@
   }
 }
 
-.navigation-fixed__phone:hover:after {
+.phone:hover:after {
   position: absolute;
   right: 0;
   left: 0;

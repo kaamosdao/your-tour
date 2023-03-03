@@ -38,7 +38,7 @@
     }
   }
 
-  @media (min-width: 1025px) {
+  @media (min-width: $desktop-md-width) {
     min-width: 1024px;
     width: auto;
     min-height: 831px;

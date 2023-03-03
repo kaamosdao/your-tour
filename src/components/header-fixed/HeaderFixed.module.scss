@@ -1,6 +1,6 @@
 @import '../../scss/global/variables.scss';
 
-.header-fixed {
+.headerFixed {
   z-index: 10;
   position: fixed;
   display: none;
@@ -12,6 +12,6 @@
   backdrop-filter: blur(27px);
 }
 
-.header-fixed--show {
+.showHeaderFixed {
   display: flex;
 }
