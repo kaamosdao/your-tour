@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionChooseTour from './section-choose-tour/SectionChooseTour';
-import SectionConstructTour from './SectionConstructTour';
+import SectionConstructTour from './section-construct-tour/SectionConstructTour';
 import SectionContact from './SectionContact';
 import SectionFeedback from './SectionFeedback';
 import SectionHistories from './SectionHistories';
@@ -11,11 +11,11 @@ const Main = () => {
     <main>
       <h1 className="visually-hidden">Выбери свой тур c YourTour</h1>
       <SectionChooseTour />
-      <SectionConstructTour/>
+      <SectionConstructTour />
       <SectionFeedback />
       <SectionPhotos />
-      <SectionHistories/>
-      <SectionContact/>
+      <SectionHistories />
+      <SectionContact />
     </main>
   );
 };
