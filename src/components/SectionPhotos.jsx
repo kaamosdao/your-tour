@@ -1,16 +1,18 @@
 import React from 'react';
+import cn from 'classnames';
+import styles from './SectionPhotos.module.scss';
 
 const SectionPhotos = () => {
   return (
-    <section className="photos">
-      <h2 className="photos__title">Фотографии путешествий</h2>
-      <p className="photos__description">
+    <section className={styles.photos}>
+      <h2 className={styles.title}>Фотографии путешествий</h2>
+      <p className={styles.description}>
         Идейные соображения высшего порядка, а&nbsp;
         <br />
         также рамки и место обучения кадров
       </p>
-      <ul className="photos__list">
-        <li className="photos__item photos__item--airplane">
+      <ul className={styles.list}>
+        <li className={cn(styles.item, styles.itemAirplane)}>
           <picture>
             <source
               type="image/webp"
@@ -69,7 +71,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--canyon">
+        <li className={cn(styles.item, styles.itemCanyon)}>
           <picture>
             <source
               type="image/webp"
@@ -90,7 +92,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--sunset">
+        <li className={cn(styles.item, styles.itemSunset)}>
           <picture>
             <source
               type="image/webp"
@@ -130,7 +132,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--road">
+        <li className={cn(styles.item, styles.itemRoad)}>
           <picture>
             <source
               type="image/webp"
@@ -189,7 +191,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--cliff">
+        <li className={cn(styles.item, styles.itemCliff)}>
           <picture>
             <source
               type="image/webp"
@@ -248,7 +250,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--map">
+        <li className={cn(styles.item, styles.itemMap)}>
           <picture>
             <source
               type="image/webp"
@@ -288,7 +290,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--bridge">
+        <li className={cn(styles.item, styles.itemBridge)}>
           <picture>
             <source
               type="image/webp"
@@ -309,7 +311,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--car">
+        <li className={cn(styles.item, styles.itemCar)}>
           <picture>
             <source
               type="image/webp"
@@ -368,7 +370,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--street">
+        <li className={cn(styles.item, styles.itemStreet)}>
           <picture>
             <source
               type="image/webp"
@@ -427,7 +429,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--houses">
+        <li className={cn(styles.item, styles.itemHouses)}>
           <picture>
             <source
               type="image/webp"
@@ -486,7 +488,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--lake">
+        <li className={cn(styles.item, styles.itemLake)}>
           <picture>
             <source
               type="image/webp"
@@ -545,7 +547,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--town">
+        <li className={cn(styles.item, styles.itemTown)}>
           <picture>
             <source
               type="image/webp"
@@ -585,7 +587,7 @@ const SectionPhotos = () => {
             />
           </picture>
         </li>
-        <li className="photos__item photos__item--supboard">
+        <li className={cn(styles.item, styles.itemSupboard)}>
           <picture>
             <source
               type="image/webp"
