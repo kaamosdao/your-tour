@@ -2,7 +2,7 @@ import React from 'react';
 import SectionChooseTour from './section-choose-tour/SectionChooseTour';
 import SectionConstructTour from './section-construct-tour/SectionConstructTour';
 import SectionContact from './SectionContact';
-import SectionFeedback from './SectionFeedback';
+import SectionFeedback from './section-feedback/SectionFeedback';
 import SectionHistories from './SectionHistories';
 import SectionPhotos from './SectionPhotos';
 
