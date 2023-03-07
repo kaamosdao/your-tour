@@ -8,4 +8,4 @@ serve:
 	npm run serve
 
 convert:
-	node convertToWebp.js
+	node ./utils/convertToWebp.js
