@@ -1,4 +1,3 @@
-
 import { configureStore } from '@reduxjs/toolkit';
 import headerReducer from './headerSlice.js';
 
