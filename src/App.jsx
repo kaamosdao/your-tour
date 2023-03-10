@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { showModal, hideModal } from './slices/headerSlice.js';
+import { showHeader, hideHeader } from './slices/headerSlice.js';
 import Footer from './components/Footer';
 import Header from './components/header/Header';
 import HeaderFixed from './components/header-fixed/HeaderFixed';
@@ -14,11 +14,11 @@ const App = () => {
     const distance = 450;
     if (window.scrollY >= distance) {
       if (!isShow) {
-        dispatch(showModal());
+        dispatch(showHeader());
       }
     } else {
       if (isShow) {
-        dispatch(hideModal());
+        dispatch(hideHeader());
       }
     }
   };

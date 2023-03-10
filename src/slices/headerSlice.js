@@ -8,15 +8,15 @@ const headerSlice = createSlice({
   name: 'header',
   initialState,
   reducers: {
-    showModal: (state) => {
+    showHeader: (state) => {
       state.isShow = true;
     },
-    hideModal: (state) => {
+    hideHeader: (state) => {
       state.isShow = false;
     },
   },
 });
 
-export const { showModal, hideModal } = headerSlice.actions;
+export const { showHeader, hideHeader } = headerSlice.actions;
 
 export default headerSlice.reducer;
