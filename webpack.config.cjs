@@ -45,8 +45,6 @@ module.exports = {
         icons: {
           coast: false,
           yandex: false,
-          appleIcon: false,
-          appleStartup: false,
           windows: false,
         },
       },
