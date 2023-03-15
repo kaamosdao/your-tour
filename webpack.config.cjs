@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -16,9 +17,6 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist/public'),
     clean: true,
-  },
-  optimization: {
-    runtimeChunk: 'single',
   },
   devServer: {
     port: 4242,
@@ -120,6 +118,7 @@ module.exports = {
     ],
   },
   optimization: {
+    runtimeChunk: 'single',
     minimizer: [
       '...',
       new ImageMinimizerPlugin({
