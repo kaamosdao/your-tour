@@ -6,8 +6,16 @@
   "extends": [
     "airbnb",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:import/recommended"
   ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -16,6 +24,7 @@
   "plugins": ["react"],
   "rules": {
     "react/function-component-definition": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0
   }
 }
