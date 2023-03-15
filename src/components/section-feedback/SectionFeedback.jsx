@@ -22,32 +22,32 @@ const feedbacks = [
   },
 ];
 
-const SectionFeedback = () => {
-  return (
-    <section className={styles.feedback}>
-      <h2 className={styles.title}>
-        Отзывы наших
-        <br />
-        путешественников
-      </h2>
-      <p className={styles.description}>
-        Идейные соображения высшего порядка, а&nbsp;
-        <br />
-        также рамки и место обучения кадров
-      </p>
-      <ul className={styles.list}>
-        {feedbacks.map(({ name, user, tour, text }) => (
-          <FeedbackCard
-            name={name}
-            user={user}
-            tour={tour}
-            text={text}
-            key={user}
-          />
-        ))}
-      </ul>
-    </section>
-  );
-};
+const SectionFeedback = () => (
+  <section className={styles.feedback}>
+    <h2 className={styles.title}>
+      Отзывы наших
+      <br />
+      путешественников
+    </h2>
+    <p className={styles.description}>
+      Идейные соображения высшего порядка, а&nbsp;
+      <br />
+      также рамки и место обучения кадров
+    </p>
+    <ul className={styles.list}>
+      {feedbacks.map(({
+        name, user, tour, text,
+      }) => (
+        <FeedbackCard
+          name={name}
+          user={user}
+          tour={tour}
+          text={text}
+          key={user}
+        />
+      ))}
+    </ul>
+  </section>
+);
 
 export default SectionFeedback;
