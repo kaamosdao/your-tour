@@ -14,7 +14,7 @@ const TourCard = ({ name, title, price }) => (
 TourCard.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  price: PropTypes.string.isRequired,
 };
 
 export default TourCard;

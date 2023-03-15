@@ -2,11 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './FeedbackCard.module.scss';
 
-const FeedbackCard = ({
-  name, user, tour, text,
-}) => (
+const FeedbackCard = ({ name, user, tour, text }) => (
   <li className={styles.card}>
-    {text.map((paragraph, i) => <p key={i} className={styles.text}>{paragraph}</p>)}
+    {text.map(({ paragraph, id }) => (
+      <p key={id} className={styles.text}>
+        {paragraph}
+      </p>
+    ))}
     <div className={styles.user}>
       <p className={styles.name}>{name}</p>
       <p className={styles.tour}>
@@ -43,7 +45,9 @@ FeedbackCard.propTypes = {
   name: PropTypes.string.isRequired,
   user: PropTypes.string.isRequired,
   tour: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  text: PropTypes
+    .arrayOf(PropTypes.shape({ paragraph: PropTypes.string, id: PropTypes.number }))
+    .isRequired,
 };
 
 export default FeedbackCard;
