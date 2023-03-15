@@ -14,7 +14,7 @@ const FeedbackCard = ({
     <div className={styles.user}>
       <p className={styles.name}>{name}</p>
       <p className={styles.tour}>
-        Тур:
+        Тур:&nbsp;
         {tour}
       </p>
       <picture className={styles.avatarPicture}>
