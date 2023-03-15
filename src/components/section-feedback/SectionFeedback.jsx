@@ -47,7 +47,9 @@ const SectionFeedback = () => (
       также рамки и место обучения кадров
     </p>
     <ul className={styles.list}>
-      {feedbacks.map(({ name, user, tour, text }) => (
+      {feedbacks.map(({
+        name, user, tour, text,
+      }) => (
         <FeedbackCard
           name={name}
           user={user}
