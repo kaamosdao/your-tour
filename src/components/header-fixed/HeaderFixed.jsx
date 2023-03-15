@@ -9,7 +9,7 @@ const cn = classNames.bind(styles);
 const HeaderFixed = () => {
   const isShow = useSelector((state) => state.header.isShow);
   return (
-    <header className={cn('headerFixed', { 'showHeaderFixed': isShow })}>
+    <header className={cn('headerFixed', { showHeaderFixed: isShow })}>
       <NavigationFixed />
     </header>
   );
