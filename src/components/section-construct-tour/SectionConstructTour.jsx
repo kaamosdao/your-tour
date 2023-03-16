@@ -9,8 +9,7 @@ const SectionConstructTour = () => (
     <h2 className={styles.title}>Собери свой тур</h2>
     <p className={styles.description}>
       Идейные соображения высшего порядка,&nbsp;
-      <br />
-      а также рамки и место обучения кадров
+      <br />а также рамки и место обучения кадров
     </p>
     <form className={styles.form}>
       <InputFields />

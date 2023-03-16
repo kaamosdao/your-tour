@@ -14,7 +14,11 @@ const TourLinks = () => (
       <TourCard name="fjord" title="Путешествие в горы" price="от 80 000 руб" />
     </li>
     <li className={styles.linksItem}>
-      <TourCard name="street" title="Путешествие в горы" price="от 80 000 руб" />
+      <TourCard
+        name="street"
+        title="Путешествие в горы"
+        price="от 80 000 руб"
+      />
     </li>
     <li className={styles.linksItem}>
       <TourCard name="beach" title="Путешествие в горы" price="от 80 000 руб" />

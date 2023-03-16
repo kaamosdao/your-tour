@@ -12,3 +12,6 @@ convert:
 
 lint:
 	npx eslint . --ext js,jsx
+
+prettier:
+	npx prettier --check .

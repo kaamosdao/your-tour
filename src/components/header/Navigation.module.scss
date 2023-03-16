@@ -10,13 +10,13 @@
   margin: 0 5.5%;
   @include font(normal, 16px, 142%);
   color: $white;
-  
+
   @media (min-width: $desktop-md-width) {
     justify-content: initial;
     min-width: 910px;
     @include font(normal, 20px, 142%);
   }
-  
+
   @media (min-width: $desktop-lg-width) {
     min-width: 1168px;
     margin: 0 19.6%;
@@ -34,7 +34,7 @@
     padding: 0;
     list-style-type: none;
   }
-  
+
   @media (min-width: $desktop-lg-width) {
     min-width: 470px;
   }
@@ -46,7 +46,7 @@
 
 .item:not(:last-child) {
   margin-right: 30px;
-  
+
   @media (min-width: $desktop-lg-width) {
     margin-right: 51px;
   }

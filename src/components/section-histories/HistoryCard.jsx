@@ -13,21 +13,21 @@ const List = ({ items }) => (
   </ul>
 );
 
-const HistoryCard = ({
-  title, name, text, list, socials,
-}) => (
+const HistoryCard = ({ title, name, text, list, socials }) => (
   <li className={styles.item}>
     <div className={styles.socials}>
-      {socials.map((social) => <a className={styles.socialLink} key={social} href="/">{social}</a>)}
+      {socials.map((social) => (
+        <a className={styles.socialLink} key={social} href="/">
+          {social}
+        </a>
+      ))}
     </div>
     <a className={cn(styles.historyCard, styles[name])} href="/">
       <h3 className={styles.historyCardTitle}>{title}</h3>
       <p className={styles.historyCardText}>{text}</p>
       {list && <List items={list} />}
       <footer className={styles.historyCardFooter}>
-        <p className={cn(styles.historyCardButton, 'button-more')}>
-          Подробнее
-        </p>
+        <p className={cn(styles.historyCardButton, 'button-more')}>Подробнее</p>
       </footer>
     </a>
   </li>

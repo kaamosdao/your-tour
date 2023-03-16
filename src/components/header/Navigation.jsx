@@ -22,22 +22,34 @@ const Navigation = () => (
     </a>
     <ul className={styles.links}>
       <li className={styles.item}>
-        <a className={styles.link} href="https://your-tour-test-task.vercel.app/">
+        <a
+          className={styles.link}
+          href="https://your-tour-test-task.vercel.app/"
+        >
           Туры
         </a>
       </li>
       <li className={styles.item}>
-        <a className={styles.link} href="https://your-tour-test-task.vercel.app/">
+        <a
+          className={styles.link}
+          href="https://your-tour-test-task.vercel.app/"
+        >
           Создать тур
         </a>
       </li>
       <li className={styles.item}>
-        <a className={styles.link} href="https://your-tour-test-task.vercel.app/">
+        <a
+          className={styles.link}
+          href="https://your-tour-test-task.vercel.app/"
+        >
           Отзывы
         </a>
       </li>
       <li className={styles.item}>
-        <a className={styles.link} href="https://your-tour-test-task.vercel.app/">
+        <a
+          className={styles.link}
+          href="https://your-tour-test-task.vercel.app/"
+        >
           Истории
         </a>
       </li>

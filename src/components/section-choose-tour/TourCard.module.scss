@@ -124,7 +124,9 @@
 }
 
 .sand {
-  @include bgWithGradient('../../assets/img/choose-tour-images/sand-mobile.jpg');
+  @include bgWithGradient(
+    '../../assets/img/choose-tour-images/sand-mobile.jpg'
+  );
 
   @media (min-resolution: 2dppx) {
     @include bgWithGradient(
@@ -162,7 +164,9 @@
 }
 
 .fjord {
-  @include bgWithGradient('../../assets/img/choose-tour-images/fjord-mobile.jpg');
+  @include bgWithGradient(
+    '../../assets/img/choose-tour-images/fjord-mobile.jpg'
+  );
 
   @media (min-resolution: 2dppx) {
     @include bgWithGradient(
@@ -200,7 +204,9 @@
 }
 
 .street {
-  @include bgWithGradient('../../assets/img/choose-tour-images/street-mobile.jpg');
+  @include bgWithGradient(
+    '../../assets/img/choose-tour-images/street-mobile.jpg'
+  );
 
   @media (min-resolution: 2dppx) {
     @include bgWithGradient(
@@ -238,7 +244,9 @@
 }
 
 .beach {
-  @include bgWithGradient('../../assets/img/choose-tour-images/beach-mobile.jpg');
+  @include bgWithGradient(
+    '../../assets/img/choose-tour-images/beach-mobile.jpg'
+  );
 
   @media (min-resolution: 2dppx) {
     @include bgWithGradient(
@@ -276,7 +284,9 @@
 }
 
 .lake {
-  @include bgWithGradient('../../assets/img/choose-tour-images/lake-mobile.jpg');
+  @include bgWithGradient(
+    '../../assets/img/choose-tour-images/lake-mobile.jpg'
+  );
 
   @media (min-resolution: 2dppx) {
     @include bgWithGradient(

@@ -21,7 +21,7 @@
 .socials {
   z-index: 2;
   display: none;
-  
+
   @media (min-width: $desktop-md-width) {
     position: absolute;
     bottom: 60px;
@@ -122,7 +122,9 @@
 }
 
 .camping {
-  @include bgWithGradientSecond('../../assets/img/histories/camping-mobile.jpg');
+  @include bgWithGradientSecond(
+    '../../assets/img/histories/camping-mobile.jpg'
+  );
 
   @media (min-resolution: 2dppx) {
     @include bgWithGradientSecond(
@@ -194,7 +196,9 @@
   @include bgWithGradientSecond('../../assets/img/histories/fire-mobile.jpg');
 
   @media (min-resolution: 2dppx) {
-    @include bgWithGradientSecond('../../assets/img/histories/fire-mobile@2x.jpg');
+    @include bgWithGradientSecond(
+      '../../assets/img/histories/fire-mobile@2x.jpg'
+    );
     background-size: 318px auto;
   }
 

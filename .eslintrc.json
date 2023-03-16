@@ -28,6 +28,6 @@
     "react/function-component-definition": 0,
     "import/no-extraneous-dependencies": 0,
     "import/extensions": 0,
-    "function-paren-newline": ["error", { "minItems": 3 }]
+    "function-paren-newline": 0
   }
 }

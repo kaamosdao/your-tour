@@ -35,9 +35,7 @@ const SectionHistories = () => (
       также рамки и место обучения кадров
     </p>
     <ul className={styles.list}>
-      {histories.map(({
-        title, name, text, list, socials,
-      }) => (
+      {histories.map(({ title, name, text, list, socials }) => (
         <HistoryCard
           title={title}
           name={name}
