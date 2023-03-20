@@ -11,7 +11,7 @@
   text-align: start;
   background-color: $beige200;
   border: none;
-  
+
   @media (min-width: $tablet-md-width) {
     width: 100%;
     padding: 6.2% 6.4% 6.2% 6.3%;
@@ -41,7 +41,7 @@
   margin: 0;
   @include font(bold, 16px, 144%);
   color: $black;
-  
+
   @media (min-width: $desktop-md-width) {
     @include font(bold, 23px, 122%);
   }
@@ -49,7 +49,7 @@
 
 .text:not(:first-child) {
   margin: 23px 0 40px 0;
-  
+
   @media (min-width: $desktop-md-width) {
     margin: 28px 0 70px 0;
   }
@@ -58,7 +58,7 @@
 .user {
   display: grid;
   grid-template-columns: 203px 75px;
-  
+
   grid-template-rows: repeat(2, min-content);
   margin-top: auto;
 
@@ -71,7 +71,8 @@
   }
 
   @media (min-width: $desktop-lg-width) {
-    grid-template-columns: 85% 15%;  }
+    grid-template-columns: 85% 15%;
+  }
 }
 
 .name {
@@ -80,7 +81,7 @@
   margin: 11px 0 0 0;
   padding: 0;
   @include font(bold, 23px, 120%, 0.04em);
-  
+
   @media (min-width: $desktop-md-width) {
     align-self: center;
     margin: 0;
@@ -95,12 +96,12 @@
   padding: 0;
   @include font(normal, 16px, 142%, -0.01em);
   color: $grey300;
-  
+
   @media (min-width: $desktop-md-width) {
     margin-top: 5px;
     @include font(normal, 17px, 142%, -0.01em);
   }
-  
+
   @media (min-width: $desktop-lg-width) {
     margin-top: 6px;
   }

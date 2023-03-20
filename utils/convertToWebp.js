@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import imagemin from 'imagemin';
 import imageminWebp from 'imagemin-webp';
 

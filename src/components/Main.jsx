@@ -6,18 +6,16 @@ import SectionFeedback from './section-feedback/SectionFeedback';
 import SectionHistories from './section-histories/SectionHistories';
 import SectionPhotos from './SectionPhotos';
 
-const Main = () => {
-  return (
-    <main>
-      <h1 className="visually-hidden">Выбери свой тур c YourTour</h1>
-      <SectionChooseTour />
-      <SectionConstructTour />
-      <SectionFeedback />
-      <SectionPhotos />
-      <SectionHistories />
-      <SectionContact />
-    </main>
-  );
-};
+const Main = () => (
+  <main>
+    <h1 className="visually-hidden">Выбери свой тур c YourTour</h1>
+    <SectionChooseTour />
+    <SectionConstructTour />
+    <SectionFeedback />
+    <SectionPhotos />
+    <SectionHistories />
+    <SectionContact />
+  </main>
+);
 
 export default Main;

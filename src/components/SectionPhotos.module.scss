@@ -13,12 +13,12 @@
   margin: 75px 0 0 0;
   @include font(bold, 34px, 112%, 0.02em);
   color: $black;
-  
+
   @media (min-width: $desktop-md-width) {
     margin-top: 134px;
     @include font(bold, 59px, 124%);
   }
-  
+
   @media (min-width: $desktop-lg-width) {
     margin-top: 135px;
   }
@@ -29,7 +29,7 @@
   padding: 0 20px;
   @include font(normal, 16px, 142%);
   color: $grey300;
-  
+
   @media (min-width: $desktop-md-width) {
     margin-top: 30px;
     padding: 0;
@@ -106,7 +106,7 @@
 .itemHouses,
 .itemLake,
 .itemTown,
-.itemSupboard  {
+.itemSupboard {
   aspect-ratio: 15 / 11;
   width: 47.1%;
   max-width: 165px;
