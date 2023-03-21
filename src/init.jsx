@@ -1,14 +1,7 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-
-import store from './slices/index.js';
 
 import App from './App';
 
-const init = () => (
-  <Provider store={store}>
-    <App />
-  </Provider>
-);
+const init = () => <App />;
 
 export default init;

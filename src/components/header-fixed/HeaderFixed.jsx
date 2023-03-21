@@ -1,5 +1,4 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames/bind';
 
 import NavigationFixed from './NavigationFixed';
@@ -9,9 +8,27 @@ import styles from './HeaderFixed.module.scss';
 const cn = classNames.bind(styles);
 
 const HeaderFixed = () => {
-  const isShow = useSelector((state) => state.header.isShow);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const distance = 450;
+      if (window.scrollY >= distance && !show) {
+        setShow(true);
+      } else if (window.scrollY < distance && show) {
+        setShow(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [show]);
+
   return (
-    <header className={cn('headerFixed', { showHeaderFixed: isShow })}>
+    <header className={cn('headerFixed', { showHeaderFixed: show })}>
       <NavigationFixed />
     </header>
   );
