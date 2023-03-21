@@ -1,7 +1,9 @@
 import React from 'react';
+
 import ChooseTourNavigation from './TourNavigation';
-import styles from './SectionChooseTour.module.scss';
 import TourLinks from './TourLinks';
+
+import styles from './SectionChooseTour.module.scss';
 
 const SectionChooseTour = () => (
   <section className={styles.chooseTour}>

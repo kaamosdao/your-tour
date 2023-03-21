@@ -1,6 +1,7 @@
 /* eslint-disable no-octal-escape */
 import React from 'react';
 import cn from 'classnames';
+
 import styles from './InputFields.module.scss';
 
 const InputFields = () => (

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import SectionChooseTour from './section-choose-tour/SectionChooseTour';
 import SectionConstructTour from './section-construct-tour/SectionConstructTour';
 import SectionContact from './SectionContact';

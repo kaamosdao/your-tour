@@ -1,6 +1,8 @@
 import React from 'react';
-import styles from './SectionFeedback.module.scss';
+
 import FeedbackCard from './FeedbackCard';
+
+import styles from './SectionFeedback.module.scss';
 
 const feedbacks = [
   {

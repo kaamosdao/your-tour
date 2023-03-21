@@ -1,6 +1,8 @@
 import React from 'react';
-import styles from './SectionHistories.module.scss';
+
 import HistoryCard from './HistoryCard';
+
+import styles from './SectionHistories.module.scss';
 
 const histories = [
   {

@@ -1,5 +1,7 @@
 import React from 'react';
+
 import TourCard from './TourCard';
+
 import styles from './TourLinks.module.scss';
 
 const TourLinks = () => (

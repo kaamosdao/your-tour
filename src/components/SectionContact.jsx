@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './SectionContact.module.scss';
 
 const SectionContact = () => (

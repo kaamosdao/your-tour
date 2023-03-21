@@ -1,5 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
+
 import styles from './TourNavigation.module.scss';
 
 const TourNavigation = () => (

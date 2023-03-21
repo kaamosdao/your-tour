@@ -1,6 +1,8 @@
 import React from 'react';
+
 import Navigation from './Navigation';
 import Tagline from './Tagline';
+
 import styles from './Header.module.scss';
 
 const Header = () => (

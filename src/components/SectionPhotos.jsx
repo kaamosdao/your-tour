@@ -1,5 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
+
 import styles from './SectionPhotos.module.scss';
 
 const SectionPhotos = () => (

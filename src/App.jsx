@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { showHeader, hideHeader } from './slices/headerSlice';
+
 import Footer from './components/Footer';
 import Header from './components/header/Header';
 import HeaderFixed from './components/header-fixed/HeaderFixed';

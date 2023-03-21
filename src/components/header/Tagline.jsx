@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './Tagline.module.scss';
 
 const Tagline = () => (

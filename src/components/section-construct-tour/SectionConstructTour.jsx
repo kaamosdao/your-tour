@@ -1,7 +1,9 @@
 import React from 'react';
+
 import AgeConfirm from './AgeConfirm';
 import InputFields from './InputFields';
 import LicenseConfirm from './LicenseConfirm';
+
 import styles from './SectionConstructTour.module.scss';
 
 const SectionConstructTour = () => (

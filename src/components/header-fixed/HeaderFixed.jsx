@@ -1,7 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import classNames from 'classnames/bind';
+
 import NavigationFixed from './NavigationFixed';
+
 import styles from './HeaderFixed.module.scss';
 
 const cn = classNames.bind(styles);
