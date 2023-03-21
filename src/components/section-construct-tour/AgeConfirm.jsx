@@ -1,38 +1,38 @@
 import React from 'react';
 import cn from 'classnames';
 
-import styles from './AgeConfirm.module.scss';
+import s from './AgeConfirm.module.scss';
 
 const AgeConfirm = () => (
-  <fieldset className={styles.ageConfirm}>
-    <legend className={styles.title}>Вам есть 18 лет?</legend>
-    <ul className={styles.list}>
-      <li className={styles.item}>
-        <label className={styles.radio} htmlFor="yes">
+  <fieldset className={s.ageConfirm}>
+    <legend className={s.title}>Вам есть 18 лет?</legend>
+    <ul className={s.list}>
+      <li className={s.item}>
+        <label className={s.radio} htmlFor="yes">
           <input
-            className={cn('visually-hidden', styles.radioInput)}
+            className={cn('visually-hidden', s.radioInput)}
             type="radio"
             name="age-confirmation"
             id="yes"
             value="yep"
             required
           />
-          <span className={styles.radioMark} />
-          <span className={styles.radioLabel}>Да</span>
+          <span className={s.radioMark} />
+          <span className={s.radioLabel}>Да</span>
         </label>
       </li>
-      <li className={styles.item}>
-        <label className={styles.radio} htmlFor="nope">
+      <li className={s.item}>
+        <label className={s.radio} htmlFor="nope">
           <input
-            className={cn('visually-hidden', styles.radioInput)}
+            className={cn('visually-hidden', s.radioInput)}
             type="radio"
             name="age-confirmation"
             id="nope"
             value="nope"
             required
           />
-          <span className={styles.radioMark} />
-          <span className={styles.radioLabel}>Нет</span>
+          <span className={s.radioMark} />
+          <span className={s.radioLabel}>Нет</span>
         </label>
       </li>
     </ul>

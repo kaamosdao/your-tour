@@ -3,9 +3,9 @@ import classNames from 'classnames/bind';
 
 import NavigationFixed from './NavigationFixed';
 
-import styles from './HeaderFixed.module.scss';
+import s from './HeaderFixed.module.scss';
 
-const cn = classNames.bind(styles);
+const cn = classNames.bind(s);
 
 const HeaderFixed = () => {
   const [show, setShow] = useState(false);

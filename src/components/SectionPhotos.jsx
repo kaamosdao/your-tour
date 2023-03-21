@@ -1,18 +1,18 @@
 import React from 'react';
 import cn from 'classnames';
 
-import styles from './SectionPhotos.module.scss';
+import s from './SectionPhotos.module.scss';
 
 const SectionPhotos = () => (
-  <section className={styles.photos}>
-    <h2 className={styles.title}>Фотографии путешествий</h2>
-    <p className={styles.description}>
+  <section className={s.photos}>
+    <h2 className={s.title}>Фотографии путешествий</h2>
+    <p className={s.description}>
       Идейные соображения высшего порядка, а&nbsp;
       <br />
       также рамки и место обучения кадров
     </p>
-    <ul className={styles.list}>
-      <li className={cn(styles.item, styles.itemAirplane)}>
+    <ul className={s.list}>
+      <li className={cn(s.item, s.itemAirplane)}>
         <picture>
           <source
             type="image/webp"
@@ -71,7 +71,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemCanyon)}>
+      <li className={cn(s.item, s.itemCanyon)}>
         <picture>
           <source
             type="image/webp"
@@ -92,7 +92,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemSunset)}>
+      <li className={cn(s.item, s.itemSunset)}>
         <picture>
           <source
             type="image/webp"
@@ -132,7 +132,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemRoad)}>
+      <li className={cn(s.item, s.itemRoad)}>
         <picture>
           <source
             type="image/webp"
@@ -191,7 +191,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemCliff)}>
+      <li className={cn(s.item, s.itemCliff)}>
         <picture>
           <source
             type="image/webp"
@@ -250,7 +250,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemMap)}>
+      <li className={cn(s.item, s.itemMap)}>
         <picture>
           <source
             type="image/webp"
@@ -290,7 +290,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemBridge)}>
+      <li className={cn(s.item, s.itemBridge)}>
         <picture>
           <source
             type="image/webp"
@@ -311,7 +311,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemCar)}>
+      <li className={cn(s.item, s.itemCar)}>
         <picture>
           <source
             type="image/webp"
@@ -370,7 +370,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemStreet)}>
+      <li className={cn(s.item, s.itemStreet)}>
         <picture>
           <source
             type="image/webp"
@@ -429,7 +429,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemHouses)}>
+      <li className={cn(s.item, s.itemHouses)}>
         <picture>
           <source
             type="image/webp"
@@ -488,7 +488,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemLake)}>
+      <li className={cn(s.item, s.itemLake)}>
         <picture>
           <source
             type="image/webp"
@@ -547,7 +547,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemTown)}>
+      <li className={cn(s.item, s.itemTown)}>
         <picture>
           <source
             type="image/webp"
@@ -587,7 +587,7 @@ const SectionPhotos = () => (
           />
         </picture>
       </li>
-      <li className={cn(styles.item, styles.itemSupboard)}>
+      <li className={cn(s.item, s.itemSupboard)}>
         <picture>
           <source
             type="image/webp"

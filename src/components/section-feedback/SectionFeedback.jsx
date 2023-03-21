@@ -2,7 +2,7 @@ import React from 'react';
 
 import FeedbackCard from './FeedbackCard';
 
-import styles from './SectionFeedback.module.scss';
+import s from './SectionFeedback.module.scss';
 
 const feedbacks = [
   {
@@ -37,18 +37,18 @@ const feedbacks = [
 ];
 
 const SectionFeedback = () => (
-  <section className={styles.feedback}>
-    <h2 className={styles.title}>
+  <section className={s.feedback}>
+    <h2 className={s.title}>
       Отзывы наших
       <br />
       путешественников
     </h2>
-    <p className={styles.description}>
+    <p className={s.description}>
       Идейные соображения высшего порядка, а&nbsp;
       <br />
       также рамки и место обучения кадров
     </p>
-    <ul className={styles.list}>
+    <ul className={s.list}>
       {feedbacks.map(({ name, user, tour, text }) => (
         <FeedbackCard
           name={name}
