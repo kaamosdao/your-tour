@@ -11,7 +11,7 @@ convert:
 	node ./utils/convertToWebp.js
 
 lint:
-	npx eslint . --ext js,jsx
+	npm run lint
 
 prettier:
 	npx prettier --check .
