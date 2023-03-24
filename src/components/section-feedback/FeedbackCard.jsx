@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './FeedbackCard.module.scss';
+
+import s from './FeedbackCard.module.scss';
 
 const FeedbackCard = ({ name, user, tour, text }) => (
-  <li className={styles.card}>
+  <li className={s.card}>
     {text.map(({ paragraph, id }) => (
-      <p key={id} className={styles.text}>
+      <p key={id} className={s.text}>
         {paragraph}
       </p>
     ))}
-    <div className={styles.user}>
-      <p className={styles.name}>{name}</p>
-      <p className={styles.tour}>
+    <div className={s.user}>
+      <p className={s.name}>{name}</p>
+      <p className={s.tour}>
         Тур:&nbsp;
         {tour}
       </p>
-      <picture className={styles.avatarPicture}>
+      <picture className={s.avatarPicture}>
         <source
           type="image/webp"
           srcSet={`src/assets/img/avatars/${user}.webp`}
@@ -29,7 +30,7 @@ const FeedbackCard = ({ name, user, tour, text }) => (
           height="75"
         />
         <img
-          className={styles.avatar}
+          className={s.avatar}
           type="image/jpeg"
           src={`src/assets/img/avatars/${user}.jpg`}
           alt="Аватар"

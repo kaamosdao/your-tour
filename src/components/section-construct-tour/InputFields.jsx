@@ -1,17 +1,18 @@
 /* eslint-disable no-octal-escape */
 import React from 'react';
 import cn from 'classnames';
-import styles from './InputFields.module.scss';
+
+import s from './InputFields.module.scss';
 
 const InputFields = () => (
-  <fieldset className={styles.inputFields}>
+  <fieldset className={s.inputFields}>
     <legend className="visually-hidden">Заполните поля</legend>
-    <ul className={styles.list}>
-      <li className={styles.item}>
-        <label className={styles.label} htmlFor="name">
+    <ul className={s.list}>
+      <li className={s.item}>
+        <label className={s.label} htmlFor="name">
           Имя
           <input
-            className={styles.input}
+            className={s.input}
             type="text"
             name="name"
             id="name"
@@ -20,11 +21,11 @@ const InputFields = () => (
           />
         </label>
       </li>
-      <li className={cn(styles.item, styles.itemSelect)}>
-        <label className={styles.label} htmlFor="direction">
+      <li className={cn(s.item, s.itemSelect)}>
+        <label className={s.label} htmlFor="direction">
           Направление
           <select
-            className={styles.select}
+            className={s.select}
             id="direction"
             name="direction"
             defaultValue=""
@@ -39,11 +40,11 @@ const InputFields = () => (
           </select>
         </label>
       </li>
-      <li className={styles.item}>
-        <label className={styles.label} htmlFor="email">
+      <li className={s.item}>
+        <label className={s.label} htmlFor="email">
           Email
           <input
-            className={styles.input}
+            className={s.input}
             type="email"
             name="email"
             id="email"
@@ -52,11 +53,11 @@ const InputFields = () => (
           />
         </label>
       </li>
-      <li className={styles.item}>
-        <label className={styles.label} htmlFor="phone">
+      <li className={s.item}>
+        <label className={s.label} htmlFor="phone">
           Телефон
           <input
-            className={styles.input}
+            className={s.input}
             type="tel"
             name="phone"
             id="phone"
@@ -66,11 +67,11 @@ const InputFields = () => (
           />
         </label>
       </li>
-      <li className={styles.item}>
-        <label className={styles.label} htmlFor="dateFrom">
+      <li className={s.item}>
+        <label className={s.label} htmlFor="dateFrom">
           Дата от
           <input
-            className={styles.input}
+            className={s.input}
             type="text"
             name="dateFrom"
             id="dateFrom"
@@ -80,11 +81,11 @@ const InputFields = () => (
           />
         </label>
       </li>
-      <li className={styles.item}>
-        <label className={styles.label} htmlFor="dateTo">
+      <li className={s.item}>
+        <label className={s.label} htmlFor="dateTo">
           Дата до
           <input
-            className={styles.input}
+            className={s.input}
             type="text"
             name="dateTo"
             id="dateTo"
@@ -94,10 +95,10 @@ const InputFields = () => (
           />
         </label>
       </li>
-      <li className={cn(styles.item, styles.itemTextarea)}>
-        <label className={styles.label} htmlFor="comment">
+      <li className={cn(s.item, s.itemTextarea)}>
+        <label className={s.label} htmlFor="comment">
           Комментарий
-          <textarea className={styles.textarea} name="comment" id="comment" />
+          <textarea className={s.textarea} name="comment" id="comment" />
         </label>
       </li>
     </ul>

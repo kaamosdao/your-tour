@@ -1,22 +1,23 @@
 import React from 'react';
-import styles from './SectionContact.module.scss';
+
+import s from './SectionContact.module.scss';
 
 const SectionContact = () => (
-  <section className={styles.contact}>
-    <h2 className={styles.title}>
+  <section className={s.contact}>
+    <h2 className={s.title}>
       Пора в путешествие
       <br />
       вместе с нами!
     </h2>
-    <p className={styles.text}>
+    <p className={s.text}>
       Напиши на почту и узнай подробности
       <br />
       на&nbsp;
-      <a className={styles.link} href="mailto:yourtour@gmail.com">
+      <a className={s.link} href="mailto:yourtour@gmail.com">
         yourtour@gmail.com
       </a>
     </p>
-    <picture className={styles.picture}>
+    <picture className={s.picture}>
       <source
         type="image/webp"
         media="(min-width: 1920px)"

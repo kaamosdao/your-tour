@@ -1,10 +1,12 @@
 import React from 'react';
+
 import Navigation from './Navigation';
 import Tagline from './Tagline';
-import styles from './Header.module.scss';
+
+import s from './Header.module.scss';
 
 const Header = () => (
-  <header className={styles.header}>
+  <header className={s.header}>
     <Navigation />
     <Tagline />
   </header>

@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
-import styles from './HistoryCard.module.scss';
+
+import s from './HistoryCard.module.scss';
 
 const List = ({ items }) => (
-  <ul className={styles.historyCardList}>
+  <ul className={s.historyCardList}>
     {items.map((name) => (
-      <li className={styles.historyCardItem} key={name}>
+      <li className={s.historyCardItem} key={name}>
         {name}
       </li>
     ))}
@@ -14,20 +15,20 @@ const List = ({ items }) => (
 );
 
 const HistoryCard = ({ title, name, text, list, socials }) => (
-  <li className={styles.item}>
-    <div className={styles.socials}>
+  <li className={s.item}>
+    <div className={s.socials}>
       {socials.map((social) => (
-        <a className={styles.socialLink} key={social} href="/">
+        <a className={s.socialLink} key={social} href="/">
           {social}
         </a>
       ))}
     </div>
-    <a className={cn(styles.historyCard, styles[name])} href="/">
-      <h3 className={styles.historyCardTitle}>{title}</h3>
-      <p className={styles.historyCardText}>{text}</p>
+    <a className={cn(s.historyCard, s[name])} href="/">
+      <h3 className={s.historyCardTitle}>{title}</h3>
+      <p className={s.historyCardText}>{text}</p>
       {list && <List items={list} />}
-      <footer className={styles.historyCardFooter}>
-        <p className={cn(styles.historyCardButton, 'button-more')}>Подробнее</p>
+      <footer className={s.historyCardFooter}>
+        <p className={cn(s.historyCardButton, 'button-more')}>Подробнее</p>
       </footer>
     </a>
   </li>
